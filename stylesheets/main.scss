@@ -1,6 +1,10 @@
 // @import "./react_select.css";
 
 
+// @import "slick-carousel/slick/slick-theme.css";
+// @import "~/slick-carousel/slick/slick.css";
+// @import "~/slick.css";
+// slick.min.js
 
 
 
@@ -34,6 +38,57 @@
 .pointer {
   cursor: pointer;
 }
+
+.main-image, .contacts {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
+
+#block-new7 > a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  width: 454px;
+  height: 72px;
+  line-height: 72px;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.plus {
+  background-color: #d2c566;
+}
+
+
+.button-center {
+  display: block;
+  margin: auto;
+}
+
+.test {
+  width: 304px;
+  height: 542px;
+}
+
+.slider  {
+  width: 404px !important;
+  height: 642px !important;
+}
+
+
+.center {
+  display: block;
+  margin: auto;
+}
+
+.map {
+  width: 500px;
+  height: 400px;
+}
+
 // .margin-btn .btn{
 //   margin: 10px;
 // }

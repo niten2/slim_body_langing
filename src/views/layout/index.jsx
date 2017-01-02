@@ -22,8 +22,6 @@ export default class extends React.Component {
       <div>
         <NotificationSystem className="notification" ref="notificationSystem" allowHTML={ true } />
 
-        <Header />
-        <Clearfix />
         <Grid>
           {this.props.children}
         </Grid>
@@ -34,3 +32,5 @@ export default class extends React.Component {
   }
 }
 
+        // <Header />
+        // <Clearfix />

@@ -6,6 +6,9 @@ import auth from 'auth'
 
 // Other pages
 import Notfound from 'views/shared/not_found'
+import Layout from 'views/layout'
+
+import Main from 'views/main'
 
 // Admin
 // import AdminLayout from 'views/admin/layout'
@@ -18,22 +21,21 @@ import Notfound from 'views/shared/not_found'
 
 // Login
 // import LoginLayout from 'views/login/layout'
-import Login from 'views/auth/login'
+// import Login from 'views/auth/login'
 
-// App
-import Layout from 'views/layout'
+// // App
 
-// posts
-import Post from 'views/posts'
-import ShowPost from 'views/posts/show'
-import NewPost from 'views/posts/new'
-import EditPost from 'views/posts/edit'
+// // posts
+// import Post from 'views/posts'
+// import ShowPost from 'views/posts/show'
+// import NewPost from 'views/posts/new'
+// import EditPost from 'views/posts/edit'
 
-// users
-import User from 'views/users'
+// // users
+// import User from 'views/users'
 
-// comments
-import Comment from 'views/comments'
+// // comments
+// import Comment from 'views/comments'
 
 // import About from 'views/user/about'
 // import Order from 'views/user/order'
@@ -71,15 +73,7 @@ export default (onUpdate) => {
       >
         <IndexRedirect to="/posts" />
 
-        <Route path="/posts" component={ Post } />
-        <Route path="/posts/new" component={ NewPost } />
-        <Route path="/posts/:id" component={ ShowPost } />
-        <Route path="/posts/:id/edit" component={ EditPost } />
-
-        <Route path="/users" component={ User } />
-        <Route path="/comments" component={ Comment } />
-
-        <Route path="/Login" component={ Login } />
+        <Route path="/posts" component={ Main } />
       </Route>
 
       <Route path="*" component={ Notfound } />
@@ -88,3 +82,12 @@ export default (onUpdate) => {
   )
 }
 
+
+        // <Route path="/posts/new" component={ NewPost } />
+        // <Route path="/posts/:id" component={ ShowPost } />
+        // <Route path="/posts/:id/edit" component={ EditPost } />
+
+        // <Route path="/users" component={ User } />
+        // <Route path="/comments" component={ Comment } />
+
+        // <Route path="/Login" component={ Login } />
