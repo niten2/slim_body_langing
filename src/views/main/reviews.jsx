@@ -62,7 +62,7 @@ class ImageGalleryComponent extends Component {
         items={images}
         slideInterval={2000}
         onImageLoad={this.handleImageLoad}
-        autoPlay={false}
+        autoPlay={true}
         showThumbnails={false}
         showFullscreenButton={false}
       />
