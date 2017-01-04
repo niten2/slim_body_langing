@@ -60,8 +60,8 @@ class ImageGalleryComponent extends Component {
       <ImageGallery
         ref={i => this._imageGallery = i}
         items={images}
-        slideInterval={2000}
-        autoPlay={true}
+        slideInterval={4000}
+        autoPlay={false}
         showThumbnails={false}
         showFullscreenButton={false}
       />
