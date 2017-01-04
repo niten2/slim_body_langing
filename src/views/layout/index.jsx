@@ -22,11 +22,7 @@ export default class extends React.Component {
       <div>
         <NotificationSystem className="notification" ref="notificationSystem" allowHTML={ true } />
 
-        <Grid>
-          {this.props.children}
-        </Grid>
-
-
+        {this.props.children}
       </div>
     )
   }

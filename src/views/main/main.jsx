@@ -10,33 +10,27 @@ export default class Main extends Component {
 }
 
 const renderView = () => (
-  <Col xs={12}>
+  <Grid className="main">
 
     <Col xs={6}>
       <h1 className="text-center">
-        Хочешь похудеть?
+        Хотите иметь стройное тело?
       </h1>
 
       <h3 className="text-center">
-        Оставь заявку прямо сейчас и получи бесплатное посещение
+        Оставьте заявку прямо сейчас и получите бесплатное посещение!
       </h3>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <button className="custom-button">
+      <button>
         Записаться на бесплатное посещение
       </button>
 
     </Col>
 
-
     <Col xs={6}>
-      <img className="main-image" src="images/main.png" />
+      <img src="images/main.png" />
     </Col>
 
-  </Col>
+  </Grid>
 )
 

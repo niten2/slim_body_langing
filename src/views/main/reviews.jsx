@@ -5,28 +5,19 @@ import ImageGallery from 'react-image-gallery'
 export default class Contacts extends Component {
 
   render() {
-    var settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
-
-    return renderView(settings)
+    return renderView()
   }
 
 }
 
-const renderView = (settings) => (
-  <Col xs={12}>
-
-    <h1 className="text-center"> Отзывы </h1>
-
+const renderView = () => (
+  <Grid>
     <Clearfix />
-    <ImageGalleryComponent />
-
-  </Col>
+    <Col className="reviews">
+      <h1> Отзывы </h1>
+      <ImageGalleryComponent />
+    </Col>
+  </Grid>
 )
 
 

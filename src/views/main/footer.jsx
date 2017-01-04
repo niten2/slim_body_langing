@@ -12,21 +12,19 @@ export default class Contacts extends Component {
 const renderView = () => (
   <Col xs={12} className="background-green ">
 
-    <Col className="custom-footer">
+    <Col className="footer">
       <h3>
         Оставить заявку
         на бесплатное посещение
       </h3>
 
       <input
-        value={"dsfsd"}
-        placeholder="ddfssdf"
+        placeholder="Ваше Имя"
         className="form-control"
       />
 
       <input
-        value={"dsfsd"}
-        placeholder="ddfssdf"
+        placeholder="Ваше Телефон"
         className="form-control"
       />
 
