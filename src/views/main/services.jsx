@@ -74,7 +74,7 @@ class RenderBlock extends Component {
   render() {
     const { object } = this.props
     return (
-      <Grid xs={12} className="block">
+      <Grid className="block">
 
         <Col xs={6}>
           <img src={object.image} />

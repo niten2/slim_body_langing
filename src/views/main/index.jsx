@@ -7,8 +7,6 @@ import { Post } from "models"
 import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
 import { NavLink } from 'nav_link'
 
-// import Spinner from 'spinner'
-
 import Main from "./main"
 import Footer from "./footer"
 import Contacts from "./contacts"
@@ -26,7 +24,7 @@ class Index extends Component {
 }
 
 const renderView = () => (
-  <Col xs={12}>
+  <Col>
     <Main />
     <Services />
     <Reviews />

@@ -65,22 +65,20 @@ export default (onUpdate) => {
 
   return (
 	  <Router history={ browserHistory } onUpdate={onUpdate}>
-
-      <Route
-        path='/'
-        component={ Layout }
-        onEnter={ ( nextState, replaceState ) => handleRootRouteEnter(nextState, replaceState) }
-      >
-        <IndexRedirect to="/posts" />
-
-        <Route path="/posts" component={ Main } />
-      </Route>
-
-      <Route path="*" component={ Notfound } />
-
+      <Route path="*" component={ Main } />
     </Router>
   )
 }
+
+      // <Route
+      //   path='/'
+      //   component={ Layout }
+      //   onEnter={ ( nextState, replaceState ) => handleRootRouteEnter(nextState, replaceState) }
+      // >
+      //   <IndexRedirect to="/" />
+
+      //   <Route path="/" component={ Main } />
+      // </Route>
 
 
         // <Route path="/posts/new" component={ NewPost } />

@@ -23,36 +23,36 @@ const renderView = () => (
 
 class ImageGalleryComponent extends Component {
 
-  handleImageLoad(event) {
+  // handleImageLoad(event) {
     // console.log('Image loaded ', event.target)
-  }
+  // }
 
   render() {
 
     const images = [
       {
         original: 'images/reviews/1.jpg',
-        originalClass: "review-images",
+        // originalClass: "review-images",
       },
       {
         original: 'images/reviews/2.jpg',
-        originalClass: "review-images",
+        // originalClass: "review-images",
       },
       {
         original: 'images/reviews/3.jpg',
-        originalClass: "review-images",
+        // originalClass: "review-images",
       },
       {
         original: 'images/reviews/4.jpg',
-        originalClass: "review-images",
+        // originalClass: "review-images",
       },
       {
         original: 'images/reviews/5.jpg',
-        originalClass: "review-images",
+        // originalClass: "review-images",
       },
       {
         original: 'images/reviews/6.jpg',
-        originalClass: "review-images",
+        // originalClass: "review-images",
       },
     ]
 
@@ -61,7 +61,6 @@ class ImageGalleryComponent extends Component {
         ref={i => this._imageGallery = i}
         items={images}
         slideInterval={2000}
-        onImageLoad={this.handleImageLoad}
         autoPlay={true}
         showThumbnails={false}
         showFullscreenButton={false}
@@ -72,3 +71,4 @@ class ImageGalleryComponent extends Component {
 
 }
 
+        // onImageLoad={this.handleImageLoad}
