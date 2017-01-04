@@ -11,16 +11,25 @@ export default class Main extends Component {
 
 const renderView = () => (
   <Col xs={12}>
-    <h1 className="text-center"> Хочешь похудеть? </h1>
 
     <Col xs={6}>
-      Оставь заявку прямо сейчас и получи бесплатное посещение
+      <h1 className="text-center">
+        Хочешь похудеть?
+      </h1>
+
+      <h3 className="text-center">
+        Оставь заявку прямо сейчас и получи бесплатное посещение
+      </h3>
 
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <button className="custom-button">
+        Записаться на бесплатное посещение
+      </button>
 
-      <Button className="block block-button is-button" id="#block-new7">
-        Оставь заявку
-      </Button>
     </Col>
 
 

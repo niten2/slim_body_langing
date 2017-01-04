@@ -1,7 +1,6 @@
 import React, { PropTypes, Component } from 'react'
 import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
-
-import Slider from 'react-slick'
+import ImageGallery from 'react-image-gallery'
 
 export default class Contacts extends Component {
 
@@ -25,28 +24,60 @@ const renderView = (settings) => (
     <h1 className="text-center"> Отзывы </h1>
 
     <Clearfix />
-    <App />
+    <ImageGalleryComponent />
 
   </Col>
 )
 
 
-var Carousel = require('nuka-carousel');
+class ImageGalleryComponent extends Component {
 
-const App = React.createClass({
-  mixins: [Carousel.ControllerMixin],
+  handleImageLoad(event) {
+    // console.log('Image loaded ', event.target)
+  }
+
   render() {
+
+    const images = [
+      {
+        original: 'images/reviews/1.jpg',
+        originalClass: "review-images",
+      },
+      {
+        original: 'images/reviews/2.jpg',
+        originalClass: "review-images",
+      },
+      {
+        original: 'images/reviews/3.jpg',
+        originalClass: "review-images",
+      },
+      {
+        original: 'images/reviews/4.jpg',
+        originalClass: "review-images",
+      },
+      {
+        original: 'images/reviews/5.jpg',
+        originalClass: "review-images",
+      },
+      {
+        original: 'images/reviews/6.jpg',
+        originalClass: "review-images",
+      },
+    ]
+
     return (
-      <Carousel slideWidth={0.75} slidesToShow={1} cellAlign="center" className="center">
-        <img className="test" src="images/reviews/1.jpg"/>
-        <img className="test" src="images/reviews/2.jpg"/>
-        <img className="test" src="images/reviews/3.jpg"/>
-        <img className="test" src="images/reviews/4.jpg"/>
-        <img className="test" src="images/reviews/5.jpg"/>
-        <img className="test" src="images/reviews/6.jpg"/>
-      </Carousel>
+      <ImageGallery
+        ref={i => this._imageGallery = i}
+        items={images}
+        slideInterval={2000}
+        onImageLoad={this.handleImageLoad}
+        autoPlay={false}
+        showThumbnails={false}
+        showFullscreenButton={false}
+      />
+
     )
   }
-})
 
+}
 

@@ -32,7 +32,6 @@ const renderView = () => (
     <Reviews />
     <Contacts />
     <Footer />
-
   </Col>
 )
 

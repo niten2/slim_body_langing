@@ -10,14 +10,32 @@ export default class Contacts extends Component {
 }
 
 const renderView = () => (
-  <Col xs={12}>
+  <Col xs={12} className="background-green ">
 
-    <br />
-    <br />
+    <Col className="custom-footer">
+      <h3>
+        Оставить заявку
+        на бесплатное посещение
+      </h3>
 
-    <Button className="button-center text-center">
-      Оставить заявку
-    </Button>
+      <input
+        value={"dsfsd"}
+        placeholder="ddfssdf"
+        className="form-control"
+      />
+
+      <input
+        value={"dsfsd"}
+        placeholder="ddfssdf"
+        className="form-control"
+      />
+
+      <Clearfix />
+
+      <button>
+        Записаться
+      </button>
+    </Col>
 
   </Col>
 )
