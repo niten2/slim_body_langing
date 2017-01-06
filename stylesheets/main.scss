@@ -180,3 +180,27 @@
   font-size: 24px;
 }
 
+// modal-form
+.modal-form input {
+  margin-top: 10px;
+}
+
+.modal-form .modal-button {
+  float: right;
+}
+
+.modal-form .error {
+  color: red;
+  text-align: center;
+  margin: 20px;
+}
+
+.modal-footer button.ok {
+  color: #ffffff;
+  background-color: #b62673;
+}
+
+.modal-footer button.cancel {
+  color: #ffffff;
+  background-color: #b62673;
+}

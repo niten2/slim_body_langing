@@ -13,24 +13,25 @@ import Contacts from "./contacts"
 import Reviews from "./reviews"
 import Services from "./services"
 
+import ModalOk from 'shared/modal/ok'
+import ModalForm from 'shared/modal/form'
 
 @observer
-class Index extends Component {
+export default class Index extends Component {
 
   render() {
-    return renderView()
+    return (
+      <Col>
+        { UIStore.modalOk ? <ModalOk /> : null }
+        { UIStore.modalForm ? <ModalForm /> : null }
+
+        <Main />
+        <Services />
+        <Reviews />
+        <Contacts />
+        <Footer />
+      </Col>
+    )
   }
 
 }
-
-const renderView = () => (
-  <Col>
-    <Main />
-    <Services />
-    <Reviews />
-    <Contacts />
-    <Footer />
-  </Col>
-)
-
-export default Index

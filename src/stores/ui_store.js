@@ -9,38 +9,34 @@ import bindAll from 'lodash/bindAll'
 
 let UIStore  = {
   notificationSystem: null,
-  email: "mail@example.com",
+  // email: "mail@example.com",
 }
 
 extendObservable(UIStore, {
-  login: false,
-  loading: false,
-  fobbiden: false,
+  modalOk: false,
+  modalForm: false,
+  // login: false,
+  // loading: false,
+  // fobbiden: false,
 })
 
 Object.assign(UIStore, {
 
   // loading
-  setLoading() {
-    this.loading = true
+  showModalOk() {
+    this.modalOk = true
   },
 
-  setLoaded() {
-    this.loading = false
+  hideModalOk() {
+    this.modalOk = false
   },
 
-  // fobbiden
-  setFobbiden() {
-    this.fobbiden = true
+  showModalForm() {
+    this.modalForm = true
   },
 
-  // login
-  setLogin() {
-    this.login = true
-  },
-
-  setLogout() {
-    this.login = false
+  hideModalForm() {
+    this.modalForm = false
   },
 
 })
@@ -51,9 +47,8 @@ Object.assign(UIStore, {
 // UIStore.confim = confim
 
 export default bindAll(UIStore, [
-  "setLoading",
-  "setLoaded",
-  "setFobbiden",
-  "setLogin",
-  "setLogout",
+  "showModalOk",
+  "hideModalOk",
+  "showModalForm",
+  "hideModalForm",
 ])

@@ -6,7 +6,6 @@
 //   {this.state.loading ? 'Saving' : 'Ok'}
 // </Button>
 
-'use strict'
 import React, { PropTypes, Component } from 'react'
 
 class ModalFrozeOverlay extends Component {

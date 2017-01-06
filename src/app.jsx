@@ -8,15 +8,15 @@ import 'config'
 import "../stylesheets/index.scss"
 
 // Auth & User profile
-import auth from 'lib/auth'
-import userProfile from 'stores/user_profile'
+// import auth from 'lib/auth'
+// import userProfile from 'stores/user_profile'
 
 // Routes
 import AppRoutes from 'routes/app'
 
 router(AppRoutes)
 
-auth.checkAuth()
+// auth.checkAuth()
 
 // authProvider.checkAuth(
 // 	// Success
