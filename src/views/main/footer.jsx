@@ -33,7 +33,7 @@ export default class Contacts extends Component {
 
     if (name != "" && phone != "") {
       this.setState({ error: false })
-      sendEmail()
+      sendEmail({ name: name, phone: phone})
       UIStore.showModalOk()
     }
   }

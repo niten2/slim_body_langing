@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Content } from 'shared/components'
 
 export default class NotFound extends Component {
   render() {

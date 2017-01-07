@@ -5,54 +5,41 @@ import ImageGallery from 'react-image-gallery'
 export default class Contacts extends Component {
 
   render() {
-    return renderView()
+    return (
+      <Grid>
+        <Clearfix />
+        <Col className="reviews">
+          <h1> Отзывы </h1>
+          <ImageGalleryComponent />
+        </Col>
+      </Grid>
+    )
   }
 
 }
 
-const renderView = () => (
-  <Grid>
-    <Clearfix />
-    <Col className="reviews">
-      <h1> Отзывы </h1>
-      <ImageGalleryComponent />
-    </Col>
-  </Grid>
-)
-
-
 class ImageGalleryComponent extends Component {
-
-  // handleImageLoad(event) {
-    // console.log('Image loaded ', event.target)
-  // }
 
   render() {
 
     const images = [
       {
         original: 'images/reviews/1.jpg',
-        // originalClass: "review-images",
       },
       {
         original: 'images/reviews/2.jpg',
-        // originalClass: "review-images",
       },
       {
         original: 'images/reviews/3.jpg',
-        // originalClass: "review-images",
       },
       {
         original: 'images/reviews/4.jpg',
-        // originalClass: "review-images",
       },
       {
         original: 'images/reviews/5.jpg',
-        // originalClass: "review-images",
       },
       {
         original: 'images/reviews/6.jpg',
-        // originalClass: "review-images",
       },
     ]
 
@@ -61,7 +48,7 @@ class ImageGalleryComponent extends Component {
         ref={i => this._imageGallery = i}
         items={images}
         slideInterval={4000}
-        autoPlay={false}
+        autoPlay={true}
         showThumbnails={false}
         showFullscreenButton={false}
       />
@@ -70,5 +57,3 @@ class ImageGalleryComponent extends Component {
   }
 
 }
-
-        // onImageLoad={this.handleImageLoad}

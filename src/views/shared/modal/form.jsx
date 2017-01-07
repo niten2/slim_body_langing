@@ -44,7 +44,7 @@ export default class okModal extends Component {
     }
 
     if (name != "" && phone != "") {
-      sendEmail()
+      sendEmail({ name: name, phone: phone})
       this.setState({ email_send: true, error: false })
     }
   }

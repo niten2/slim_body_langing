@@ -6,7 +6,6 @@
   background-color: #d2c566;
 }
 
-
 // main
 .main img {
   width: 470px;
@@ -22,28 +21,34 @@
 }
 
 .main button {
-  display: block;
   margin: auto;
   margin-top: 100px;
-
-  height: 72px;
-  width: 454px;
-  color: #ffffff;
-  font-size: 24;
+  display: block;
+  text-align: center;
+  display: block;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
   border-width: 1px;
   border-radius: 15px;
-
+  font-size: 24;
+  background-hover-color: #c46298;
+  color: #ffffff;
+  height: 72px;
+  width: 224px;
+  font-weight: lighter;
   background-color: #b62673;
-
+  left: 9px;
+  font-family: 'open sans', sans-serif;
   font-weight: lighter;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+  width: 254px;
+  height: 72px;
   line-height: 72px;
   color: #ffffff;
   font-size: 24px;
 }
-
 
 // reviews
 .reviews h1 {
@@ -63,9 +68,6 @@
   width: 359px;
   height: 633px;
 }
-
-
-
 
 // offers
 .offers {
@@ -204,3 +206,32 @@
   color: #ffffff;
   background-color: #b62673;
 }
+
+
+// @media only screen and (max-device-width: 768px) {
+//   body {
+//     color: green;
+//     font-size: 26pt;
+//   }
+//   // .main {
+//   //   width: 10px;
+//   //   margin: 10px;
+//   //   background-color: green;
+//   // }
+// }
+
+// @media (max-width: 768px) {
+//   // .navbar-toggle {
+//   //     margin: 60px 0;
+//   // }
+//   // .main {
+//   //   width: 10px;
+//   //   margin: 10px;
+//   //   background-color: green;
+//   // }
+// }
+
+
+// // .reviews {
+// //   background-color: black;
+// // }

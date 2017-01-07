@@ -20,11 +20,11 @@ export default class Main extends Component {
           </h1>
 
           <h3 className="text-center">
-            Оставьте заявку прямо сейчас и получите бесплатное посещение!
+            Оставьте заявку прямо сейчас и получите бесплатную процедуру!
           </h3>
 
           <button onClick={this.handeShowModalForm}>
-            Записаться на бесплатное посещение
+            Записаться
           </button>
 
         </Col>
