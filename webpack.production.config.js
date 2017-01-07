@@ -21,11 +21,11 @@ var APPLICATION_ID = process.env.APPLICATION_ID || "";
 var SECRET_KEY_ID = process.env.SECRET_KEY_ID || "";
 
 console.log('PRODUCTION CONFIG');
-console.log('S3_BUCKET>', S3_BUCKET);
+// console.log('S3_BUCKET>', S3_BUCKET);
 console.log('API_ROOT>', API_ROOT);
 console.log('ASSETS_HOST>', ASSETS_HOST);
-console.log('APPLICATION_ID>', APPLICATION_ID)
-console.log('SECRET_KEY_ID>', SECRET_KEY_ID)
+// console.log('APPLICATION_ID>', APPLICATION_ID)
+// console.log('SECRET_KEY_ID>', SECRET_KEY_ID)
 
 module.exports = {
 
