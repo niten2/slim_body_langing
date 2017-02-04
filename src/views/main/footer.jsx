@@ -47,12 +47,11 @@ export default class Contacts extends Component {
   render() {
     let { name, phone, error } = this.state
     return (
-      <Col xs={12} className="background-green ">
+      <Col xs={12} className="">
 
         <Col className="footer">
           <h3>
-            Оставить заявку
-            на бесплатное посещение
+            Оставить заявку на бесплатное посещение
           </h3>
 
           <input

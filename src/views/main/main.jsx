@@ -16,7 +16,7 @@ export default class Main extends Component {
 
         <Col xs={6}>
           <h1 className="text-center">
-            Хотите иметь стройное тело?
+            Хотите за 10 дней потерять от 5 до 8 см объема?
           </h1>
 
           <h3 className="text-center">
