@@ -12,7 +12,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.0.0-alpha.6",
     "core-decorators": "^0.14.0",
     "dotenv": "^2.0.0",
     "fake-request": "^0.2.1",

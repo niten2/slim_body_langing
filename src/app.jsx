@@ -1,20 +1,18 @@
-// import "babel-polyfill"
-
 import React from 'react'
 
 import router from 'lib/router'
-import 'config'
 
+import 'config'
 import "../stylesheets/index.scss"
+
+import AppRoutes from 'routes/app'
+router(AppRoutes)
+
 
 // Auth & User profile
 // import auth from 'lib/auth'
 // import userProfile from 'stores/user_profile'
 
-// Routes
-import AppRoutes from 'routes/app'
-
-router(AppRoutes)
 
 // auth.checkAuth()
 
