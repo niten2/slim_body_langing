@@ -6,16 +6,63 @@
   cursor: pointer !important;
 }
 
+// html, body {
+//   width: 100%;
+//   height: 100%;
+//   margin: 0;
+//   padding: 0;
+//   overflow: hidden;
+// }
+
+// .flex {
+//   width: 100% !important;
+//   height: 100% !important;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   overflow: auto;
+// }
+
+// .block {
+// }
+
+
+
+// .flex {
+//   // background: white;
+//   // height: 300px;
+//   // width: 200px;
+//   // padding: 20px;
+//   // margin: 20px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   resize: vertical;
+//   overflow: auto;
+// }
+
+// .flex-center {
+//   background: black;
+//   color: white;
+//   padding: 20px;
+//   resize: vertical;
+//   overflow: auto;
+// }
+
+
 // .card {
 //   margin: 0 auto; /* Added */
 //   float: none; /* Added */
 //   margin-bottom: 10px; /* Added */
 // }
-.parent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+// .parent {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }
 
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
@@ -373,3 +420,59 @@
   text-align: left;
   vertical-align: middle;
 }
+
+.test {
+  align-self: center;
+}
+
+
+
+.offer img {
+  width: 270px;
+  height: 135px;
+  // float: right;
+}
+
+.color-blue {
+  color:blue;
+}
+
+.red-line-through {
+  color: red;
+  text-decoration: line-through;
+}
+
+.color-black {
+  color: black;
+}
+
+.color-red {
+  color: red;
+}
+
+// .flex-centered {
+//   display: flex;
+//   justify-content: center;
+// }
+
+
+// .parent-center {
+//   width: 100%;
+//   height: 100%;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   overflow: auto;
+// }
+
+// .child-center {
+//   // width: 250px;
+//   // height: 250px;
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   margin: auto;
+// }
+

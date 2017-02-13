@@ -25,22 +25,11 @@ export default class Answers extends Component {
     )
   }
 
-  // lastButton = () => {
-  //   return(
-  //     <button
-  //       onClick={ UIStore.showOffer }
-  //       className="btn"
-  //     >
-  //       Получить спец. предложение
-  //     </button>
-  //   )
-  // }
-
   render() {
     let { question, isLastQuestion } = UIStore
 
     return  (
-      <div className="text-center custom-controls-stacked">
+      <div className="test custom-controls-stacked">
 
         { question.answers.map((answer, index) => (
               <Answer
@@ -57,7 +46,4 @@ export default class Answers extends Component {
   }
 
 }
-
-        // { isLastQuestion ? this.lastButton() : this.responseButton() }
-
 

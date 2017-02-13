@@ -3,13 +3,8 @@ import { extendObservable, transaction } from 'mobx'
 import bindAll from 'lodash/bindAll'
 import { isObject, isInteger, find } from "lodash"
 
-// import search from './ui_store/search'
-// import validate from './ui_store/validate'
-// import sidebar from './ui_store/sidebar'
-// import confim from './ui_store/confim'
-
 import { questions } from 'views/test/questions'
-
+import { subscription } from 'views/test/subscription'
 
 let UIStore  = {
   notificationSystem: null,
@@ -17,16 +12,24 @@ let UIStore  = {
 }
 
 extendObservable(UIStore, {
-  // modalOk: false,
-  // modalForm: false,
-  // login: false,
-  // loading: false,
-  // fobbiden: false,
+  isLastQuestion: false,
+
+  // isShowOffer: false,
+  isShowOffer: true,
+
+  discount: 0,
 
   questions: questions,
   question: questions[0],
-  isLastQuestion: false,
-  isShowOffer: false,
+  subscription: subscription[0],
+
+  user: {
+    name: "",
+    phone: "",
+    answers: [],
+  }
+
+
 })
 
 Object.assign(UIStore, {
@@ -35,6 +38,7 @@ Object.assign(UIStore, {
     this.question = this.questions[0]
     this.isShowOffer = false
     this.isLastQuestion = false
+    this.discount = 0
   },
 
   nextQuestion() {
@@ -44,46 +48,22 @@ Object.assign(UIStore, {
     const nextQuestion = find(this.questions, (obj) => { return obj.id == nextQuestionId })
     const nextNextQuestion = find(this.questions, (obj) => { return obj.id == nextNextQuestionId })
 
-    if (isObject(nextQuestion)) { this.question = nextQuestion }
+    if (isObject(nextQuestion)) {
+      this.question = nextQuestion
+      this.discount = this.discount + 50
+    }
+
     if (!isObject(nextNextQuestion)) {
       this.isLastQuestion = true
       this.isShowOffer = true
+      this.discount = this.discount + 50
     }
+
   },
 
-  // showOffer() {
-  //   this.isShowOffer = true
-  // }
-  // // loading
-  // showModalOk() {
-  //   this.modalOk = true
-  // },
-
-  // hideModalOk() {
-  //   this.modalOk = false
-  // },
-
-  // showModalForm() {
-  //   this.modalForm = true
-  // },
-
-  // hideModalForm() {
-  //   this.modalForm = false
-  // },
-
 })
-
-// UIStore.validate = validate
-// UIStore.sidebar = sidebar
-// UIStore.search = search
-// UIStore.confim = confim
 
 export default bindAll(UIStore, [
   "firstQuestion",
   "nextQuestion",
-  // "showOffer",
-  // "showModalOk",
-  // "hideModalOk",
-  // "showModalForm",
-  // "hideModalForm",
 ])

@@ -13,44 +13,52 @@ import Offer from './offer'
 @observer
 export default class Test extends Component {
 
-  renderView() {
-    let { question, isLastQuestion, isShowOffer } = UIStore
+  renderAnswers() {
+    let { question } = UIStore
     return (
-      <div className="card text-center">
-        <div className="card-header">
-          Slim Body
-        </div>
-        <div className="card-block">
-          <h4 className="card-title">
-            { question.question }
-          </h4>
-          <div className="card-text">
-            <Answers question={question} />
-          </div>
-
-        </div>
-        <div className="card-footer text-muted">
-          <button
-            onClick={ UIStore.firstQuestion }
-            className="btn"
-          >
-            Начать заново
-          </button>
-
-          Ваша скидка
+      <div>
+        <h4 className="card-title">
+          { question.question }
+        </h4>
+        <div className="card-text">
+          <Answers question={question} />
         </div>
       </div>
     )
   }
 
   render() {
-    let { question, isLastQuestion, isShowOffer } = UIStore
+    let { question, isLastQuestion, isShowOffer, discount } = UIStore
+
     return (
       <Grid>
-        { isShowOffer ? <Offer /> : this.renderView() }
+        <div className="card text-center">
+          <div className="card-header">
+            Slim Body (Пройдите тест и получите персональное спецпредложение)
+          </div>
+          <div className="card-block">
+
+            { isShowOffer ? <Offer /> : this.renderAnswers() }
+
+          </div>
+          <div className="card-footer text-muted">
+            <p onClick={ UIStore.firstQuestion } className="pointer">
+              Начать заново
+            </p>
+
+            Ваша скидка { discount } руб.
+          </div>
+        </div>
       </Grid>
     )
   }
 
-}
+  // render() {
+  //   return (
+  //     <div>
+  //     <Offer />
+  //     </div>
+  //   )
+  // }
 
+}
