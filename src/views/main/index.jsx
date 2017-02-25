@@ -9,13 +9,12 @@ import { NavLink } from 'nav_link'
 
 import Main from "components/main"
 import Services from "components/services"
+import Reviews from "components/reviews"
+import Contacts from "components/contacts"
+import Footer from "components/footer"
 
-import Footer from "./footer"
-import Contacts from "./contacts"
-import Reviews from "./reviews"
-
-import ModalOk from 'shared/modal/ok'
-import ModalForm from 'shared/modal/form'
+import ModalForm from 'components/modal/form'
+import ModalOk from 'components/modal/ok'
 
 @observer
 export default class Index extends Component {
@@ -23,16 +22,17 @@ export default class Index extends Component {
   render() {
     return (
       <Col>
-        { UIStore.modalOk ? <ModalOk /> : null }
-        { UIStore.modalForm ? <ModalForm /> : null }
-
-        <Main />
-        <Services />
-        <Reviews />
-        <Contacts />
-        <Footer />
+        <ModalForm />
       </Col>
     )
   }
 
 }
+        // { UIStore.modalForm ? <ModalForm /> : null }
+        // { UIStore.modalOk ? <ModalOk /> : null }
+
+        // <Main />
+        // <Services />
+        // <Reviews />
+        // <Contacts />
+        // <Footer />

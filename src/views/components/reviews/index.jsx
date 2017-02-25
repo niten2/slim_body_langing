@@ -1,6 +1,7 @@
 import React, { PropTypes, Component } from 'react'
 import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
 import ImageGallery from 'react-image-gallery'
+import "./index.scss"
 
 export default class Contacts extends Component {
 

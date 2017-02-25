@@ -12,6 +12,7 @@ let UIStore  = {
 }
 
 extendObservable(UIStore, {
+  // questions
   isLastQuestion: false,
 
   // isShowOffer: false,
@@ -27,13 +28,17 @@ extendObservable(UIStore, {
     name: "",
     phone: "",
     answers: [],
-  }
+  },
 
+  // modals
+  // modalForm: false,
+  modalForm: true,
 
 })
 
 Object.assign(UIStore, {
 
+  // questions
   firstQuestion() {
     this.question = this.questions[0]
     this.isShowOffer = false
@@ -61,9 +66,20 @@ Object.assign(UIStore, {
 
   },
 
+  // modals
+  showModalForm() {
+    this.modalForm = true
+  },
+
+  hideModalForm() {
+    this.modalForm = false
+  },
+
 })
 
 export default bindAll(UIStore, [
   "firstQuestion",
   "nextQuestion",
+  "showModalForm",
+  "hideModalForm",
 ])

@@ -3,6 +3,7 @@ import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
 import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
 import sendEmail from 'lib/email'
+import "./index.scss"
 
 @observer
 export default class Contacts extends Component {
