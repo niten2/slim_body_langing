@@ -78,49 +78,6 @@
   background-color: #d2c566;
 }
 
-// main
-.main img {
-  width: 470px;
-  height: 590;
-}
-
-.main h1 {
-  margin-top: 123px;
-}
-
-.main h3 {
-  margin-top: 80px;
-}
-
-.main button {
-  margin: auto;
-  margin-top: 100px;
-  display: block;
-  text-align: center;
-  display: block;
-  background-position: 0% 0%;
-  background-repeat: no-repeat;
-  border-width: 1px;
-  border-radius: 15px;
-  background-hover-color: #c46298;
-  color: #ffffff;
-  height: 72px;
-  width: 224px;
-  background-color: #b62673;
-  left: 9px;
-  cursor: pointer;
-  width: 254px;
-  height: 72px;
-  line-height: 72px;
-  color: #ffffff;
-  font-weight: lighter;
-  font-family: 'open sans', sans-serif;
-  font-weight: lighter;
-  text-align: center;
-  text-decoration: none;
-  // font-size: 24px;
-  // font-size: 24;
-}
 
 // reviews
 .reviews h1 {
@@ -156,72 +113,6 @@
   margin-right: -10px;
   color: white;
 }
-
-// services
-// .services {
-//   background-color: #f0e9ea;
-// }
-
-.services h1 {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.services .block {
-  // margin: auto;
-  // padding: 20px;
-  display: block;
-  border-width: 1px;
-  border-color: #cccccc;
-  border-style: none;
-  border-top: 1px solid #d1cad0;
-}
-
-.services .block img {
-  margin: auto;
-  display: block;
-  width: 200px;
-  height: 200px;
-  border-radius: 20px;
-
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.parent {
-  height: 240px;
-}
-.child {
-  display:inline-block;
-  vertical-align:middle;
-}
-.helper {
-  display:inline-block;
-  vertical-align:middle;
-  height:100%;
-  width:0px;
-}
-
-// .parent {position: relative;}
-// .child {
-// 	position: absolute;
-// 	top: 0;
-// 	bottom: 0;
-// 	// left: 0;
-// 	right: 0;
-// 	width: 50%;
-// 	height: 30%;
-// 	margin: auto;
-// }
-
-// .parent {
-//   padding: 5% 0;
-// }
-
-// .child {
-//   padding: 10% 0;
-// }
 
 
 // contacts
@@ -430,7 +321,6 @@
 .offer img {
   width: 270px;
   height: 135px;
-  // float: right;
 }
 
 .color-blue {

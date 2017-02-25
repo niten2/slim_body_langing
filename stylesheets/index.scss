@@ -6,6 +6,13 @@
 
 @import "./main.scss";
 
+@import "./fonts.scss";
+
+body {
+  font-family: 'SegoeUIRegular';
+}
+
+
 // # SCSS
 // @import "../node_modules/react-image-gallery/styles/scss/image-gallery.scss";
 

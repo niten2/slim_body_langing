@@ -57,6 +57,7 @@ module.exports = {
       path.resolve(__dirname, 'src', "views"),
       path.resolve(__dirname, 'src', "views", "shared"),
       path.resolve(__dirname, 'static', "images"),
+      path.resolve(__dirname, 'static'),
     ],
     modulesDirectories: [
       'node_modules',
@@ -166,20 +167,7 @@ module.exports = {
       },
 
       // Styles
-      { // SCSS styles included in js
-        test: /\.scss$/,
-        loaders: [
-          'style',
-          'css?module&localIdentName=[name]__[local]___[hash:base64:5]',
-          // 'resolve-url',
-          'sass?sourceMap'
-        ],
-        include: [
-          path.resolve(__dirname, "src")
-        ]
-      },
-
-      { // SCSS styles
+      {
         test: /\.scss$/,
         loaders: [
           'style',

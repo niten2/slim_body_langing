@@ -1,0 +1,32 @@
+.services h1 {
+  text-align: center;
+  margin-top: 50px;
+  // margin-bottom: 50px;
+}
+
+.services h2 {
+  text-align: center;
+}
+.services .texts {
+  margin-bottom: 50px;
+}
+
+.services .block {
+  display: block;
+  border-width: 1px;
+  border-color: #cccccc;
+  border-style: none;
+  border-top: 1px solid #d1cad0;
+}
+
+.services img {
+  margin: auto;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
