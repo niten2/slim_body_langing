@@ -1,29 +1,34 @@
-.main {
+.stock {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 50px;
   border-bottom: 3px solid #d1cad0;
 
-  img {
-    width: 470px;
-    height: 590;
-  }
-
   h1 {
-    font-size: 26pt;
-    font-weight: bold;
-    align-content: center;
     text-align: center;
+    flex: 1 100%;
   }
 
-  h3 {
-    font-size: 12pt;
-    text-align: center;
+  img {
+    width: 270px;
+    height: 390;
+    margin: auto;
+    display: block;
+  }
+
+  .offer {
+    flex: 1;
   }
 
   button {
-    width: 254px;
+    width: 354px;
     height: 72px;
 
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
 
     display: block;
     text-align: center;
@@ -35,7 +40,6 @@
     background-hover-color: #c46298;
     color: #ffffff;
     height: 72px;
-    width: 224px;
     background-color: #b62673;
     left: 9px;
     cursor: pointer;
@@ -48,5 +52,5 @@
 
     font-size: 14pt;
   }
-
 }
+

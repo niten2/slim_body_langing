@@ -10,116 +10,6 @@
   background-color: #d2c566;
 }
 
-
-
-@media only screen and (max-device-width: 768px) {
-
-  body {
-    font-size: 26pt;
-  }
-
-  .services .block img {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .parent {
-    height: auto;
-  }
-  .child {
-    display:auto;
-    vertical-align:auto;
-  }
-  .helper {
-    display:auto;
-    vertical-align:auto;
-    height:auto;
-    width:auto;
-  }
-
-  .main h1 {
-    margin-top: 20px;
-  }
-
-  h2 {
-    font-size: 26pt;
-  }
-
-  h3 {
-    font-size: 26pt;
-  }
-
-  h4 {
-    font-size: 26pt;
-  }
-
-  .modal {
-    position: fixed;
-    top: 3%;
-    right: 3%;
-    left: 3%;
-    width: auto;
-    margin: 0;
-  }
-
-  .modal > div {
-    font-size: 26pt;
-  }
-
-  .modal-body {
-    font-size: 26pt;
-    height: 60%;
-  }
-
-  .modal-body {
-    max-height: 350px;
-    padding: 15px;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .form-control {
-    height: 82px;
-    font-size: 37px;
-  }
-
-  .btn {
-    font-size: 40px;
-
-  }
-
-}
-
-.modal {
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .modal:before {
-    display: inline-block;
-    vertical-align: middle;
-    content: " ";
-    height: 100%;
-  }
-}
-
-.modal-dialog {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
-}
-
-.test {
-  align-self: center;
-}
-
-
-
-.offer img {
-  width: 270px;
-  height: 135px;
-}
-
 .color-blue {
   color:blue;
 }
@@ -138,20 +28,136 @@
 }
 
 
-// offers
-// .offers {
-//   background-color: #d2c566;
+// flex
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-first {
+  order: -1;
+}
+
+.flex-center {
+  flex: 1 100%;
+}
+
+// .clearfix::before,
+// .clearfix::after {
+//   flex-basis: 0;
+//   order: 1;
 // }
 
-// .offers img {
-//   margin-top: 25px;
+
+// @media only screen and (max-device-width: 768px) {
+
+//   body {
+//     font-size: 26pt;
+//   }
+
+//   .services .block img {
+//     margin-top: 20px;
+//     margin-bottom: 20px;
+//   }
+
+//   .parent {
+//     height: auto;
+//   }
+//   .child {
+//     display:auto;
+//     vertical-align:auto;
+//   }
+//   .helper {
+//     display:auto;
+//     vertical-align:auto;
+//     height:auto;
+//     width:auto;
+//   }
+
+//   .main h1 {
+//     margin-top: 20px;
+//   }
+
+//   h2 {
+//     font-size: 26pt;
+//   }
+
+//   h3 {
+//     font-size: 26pt;
+//   }
+
+//   h4 {
+//     font-size: 26pt;
+//   }
+
+//   .modal {
+//     position: fixed;
+//     top: 3%;
+//     right: 3%;
+//     left: 3%;
+//     width: auto;
+//     margin: 0;
+//   }
+
+//   .modal > div {
+//     font-size: 26pt;
+//   }
+
+//   .modal-body {
+//     font-size: 26pt;
+//     height: 60%;
+//   }
+
+//   .modal-body {
+//     max-height: 350px;
+//     padding: 15px;
+//     overflow-y: auto;
+//     -webkit-overflow-scrolling: touch;
+//   }
+
+//   .form-control {
+//     height: 82px;
+//     font-size: 37px;
+//   }
+
+//   .btn {
+//     font-size: 40px;
+
+//   }
+
 // }
 
-// .offers p {
-//   margin-top: 15px;
-//   margin-left: -10px;
-//   margin-right: -10px;
-//   color: white;
+// .modal {
+//   text-align: center;
 // }
 
+// @media screen and (min-width: 768px) {
+//   .modal:before {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     height: 100%;
+//   }
+// }
+
+// .modal-dialog {
+//   display: inline-block;
+//   text-align: left;
+//   vertical-align: middle;
+// }
 

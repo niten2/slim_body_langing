@@ -2,6 +2,7 @@ import React, { PropTypes, Component } from 'react'
 import { Modal } from 'react-bootstrap'
 import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
+import "./index.scss"
 
 @observer
 export default class okModal extends Component {

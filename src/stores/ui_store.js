@@ -2,9 +2,10 @@
 import { extendObservable, transaction } from 'mobx'
 import bindAll from 'lodash/bindAll'
 import { isObject, isInteger, find } from "lodash"
+import { autorun } from 'mobx'
 
-import { questions } from 'views/test/questions'
-import { subscription } from 'views/test/subscription'
+import { questions } from 'views/components/test/questions'
+import { subscription } from 'views/components/test/subscription'
 
 let UIStore  = {
   notificationSystem: null,
@@ -31,8 +32,10 @@ extendObservable(UIStore, {
   },
 
   // modals
-  // modalForm: false,
-  modalForm: true,
+  modalForm: false,
+  titleModalForm: "",
+  buttonModalForm: "",
+  // modalForm: true,
 
 })
 
@@ -67,8 +70,14 @@ Object.assign(UIStore, {
   },
 
   // modals
-  showModalForm() {
-    this.modalForm = true
+  showModalForm(options) {
+    let { title, button } = options
+
+    autorun(() => {
+      this.modalForm = true
+      this.titleModalForm = title
+      this.buttonModalForm = button
+    })
   },
 
   hideModalForm() {

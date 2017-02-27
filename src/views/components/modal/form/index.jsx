@@ -2,6 +2,7 @@ import React, { PropTypes, Component } from 'react'
 import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
 import sendEmail from 'lib/email'
+import "./index.scss"
 
 import { Modal, Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
 
@@ -44,7 +45,7 @@ export default class modalForm extends Component {
     }
 
     if (name != "" && phone != "") {
-      sendEmail({ name: name, phone: phone})
+      // sendEmail({ name: name, phone: phone})
       this.setState({ email_send: true, error: false })
     }
   }
@@ -67,7 +68,7 @@ export default class modalForm extends Component {
       <div>
         <Modal.Header closeButton>
           <Modal.Title>
-            Оставить заявку на бесплатное посещение
+            { UIStore.titleModalForm }
           </Modal.Title>
         </Modal.Header>
 
@@ -105,7 +106,7 @@ export default class modalForm extends Component {
             className="btn ok"
             onClick={this.handeSendEmail}
           >
-            Записаться
+            { UIStore.buttonModalForm }
           </button>
         </Modal.Footer>
       </div>
@@ -136,34 +137,16 @@ export default class modalForm extends Component {
   render () {
     let { email_send } = this.state
 
-    console.log("modal")
-
     return (
 
-<div className="bd-example bd-example-modal">
-  <div className="modal">
-    <div className="modal-dialog" role="document">
-      <div className="modal-content">
-        <div className="modal-header">
-          <h5 className="modal-title">Modal title</h5>
-          <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div className="modal-body">
-          <p>Modal body text goes here.</p>
-        </div>
-        <div className="modal-footer">
-          <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" className="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
+      <Modal
+        show={ UIStore.modalForm }
+        onHide={ this.onClose }
+        onKeyPress={ this.handleOnKeyPress }
+        dialogClassName="first-modal-form"
+      >
+        { email_send ? this.renderOk() : this.renderEmail() }
+      </Modal>
 
     )
   }
@@ -172,11 +155,4 @@ export default class modalForm extends Component {
 
 
 
-      // <Modal
-      //   show={ UIStore.modalForm }
-      //   onHide={ this.onClose }
-      //   onKeyPress={ this.handleOnKeyPress }
-      // >
-      //   { email_send ? this.renderOk() : this.renderEmail() }
-      // </Modal>
-//
+

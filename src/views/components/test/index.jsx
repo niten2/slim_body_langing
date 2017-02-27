@@ -1,14 +1,14 @@
 import React, { PropTypes, Component } from 'react'
 import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
-import { PromiseLoadAll } from "helpers/promise"
-import { Post } from "models"
 
 import { isObject, isInteger, find } from "lodash"
 import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
 
 import Answers from './answers'
 import Offer from './offer'
+import formOffer from './form_offer'
+import "./index.scss"
 
 @observer
 export default class Test extends Component {
@@ -31,34 +31,34 @@ export default class Test extends Component {
     let { question, isLastQuestion, isShowOffer, discount } = UIStore
 
     return (
-      <Grid>
-        <div className="card text-center">
-          <div className="card-header">
-            Slim Body (Пройдите тест и получите персональное спецпредложение)
-          </div>
-          <div className="card-block">
+      <div className="container test">
+        <h1 className="flex-center">Пройдите тест и получите персональное спец. предложение</h1>
 
-            { isShowOffer ? <Offer /> : this.renderAnswers() }
+        <div className="card flex-center">
 
-          </div>
-          <div className="card-footer text-muted">
-            <p onClick={ UIStore.firstQuestion } className="pointer">
-              Начать заново
-            </p>
-
-            Ваша скидка { discount } руб.
-          </div>
+          { isShowOffer ? <Offer /> : this.renderAnswers() }
         </div>
-      </Grid>
+
+        <div className="test-footer">
+
+          <div onClick={ UIStore.firstQuestion } className="pointer comments">
+            Начать заново
+          </div>
+
+          <div className="comments">
+            Ваша скидка
+            &nbsp;
+            <div className="color-red">{ discount } </div>
+            &nbsp;
+            руб.
+          </div>
+
+        </div>
+
+      </div>
     )
   }
 
-  // render() {
-  //   return (
-  //     <div>
-  //     <Offer />
-  //     </div>
-  //   )
-  // }
 
 }
+

@@ -8,13 +8,12 @@ import auth from 'auth'
 import Notfound from 'views/shared/not_found'
 import Layout from 'views/layout'
 import Main from 'views/main'
-import Test from 'views/test'
+// import Test from 'views/test'
 
 export default (onUpdate) => {
   return (
 	  <Router history={ browserHistory } onUpdate={onUpdate}>
       <Route path="/" component={ Main } />
-      <Route path="/test" component={ Test } />
       <Route path="*" component={ Notfound } />
     </Router>
   )

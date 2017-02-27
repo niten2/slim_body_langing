@@ -9,7 +9,10 @@ import "./index.scss"
 export default class Main extends Component {
 
   handeShowModalForm() {
-    UIStore.showModalForm()
+    UIStore.showModalForm({
+      title: "Оставить заявку на бесплатное посещение",
+      button: "Записаться",
+    })
   }
 
   render() {

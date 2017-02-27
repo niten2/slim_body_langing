@@ -31,17 +31,17 @@ class RenderBlock extends Component {
     return (
       <div className="texts row align-items-center">
 
-        <div className="col">
+        <div className="flex-1">
           <img src={object.image} />
         </div>
 
-        <div className={ !this.isOdd(order) ? "flex-first col" : "col" }>
+        <div className={ !this.isOdd(order) ? "flex-first flex-1" : "flex-1" }>
 
           <h2>
             { object.title }
           </h2>
 
-          <div className="col">
+          <div>
             { object.body }
           </div>
 

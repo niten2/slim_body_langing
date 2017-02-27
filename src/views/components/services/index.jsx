@@ -1,15 +1,15 @@
 import React, { PropTypes, Component } from 'react'
 import ImageGallery from 'react-image-gallery'
 
-import "./index.scss"
 import Massaj from "./massaj"
 import Blocks from "./blocks"
+import "./index.scss"
 
 export default class Contacts extends Component {
 
   render() {
     return (
-      <div className="services">
+      <div className="container services">
         <h1> Услуги </h1>
 
         <div className="container">

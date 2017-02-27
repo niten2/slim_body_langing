@@ -1,8 +1,6 @@
 import React, { PropTypes, Component } from 'react'
 import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
-import { PromiseLoadAll } from "helpers/promise"
-import { Post } from "models"
 
 import { isObject, isInteger, find } from "lodash"
 
@@ -26,18 +24,27 @@ export default class Answer extends Component {
     let { answer } = this.props
 
     return  (
-			<label className="custom-control custom-checkbox">
-				<input
-					type="checkbox"
-					className="custom-control-input"
-					checked={answer.checked}
-					onChange={this.handleInput}
-				/>
-				<span className="custom-control-indicator"></span>
-				<span className="custom-control-description">
-					{ answer.body }
-				</span>
-			</label>
+      <div className="flex-center">
+
+        <div className="flex-1" />
+
+        <div className="flex-answer">
+          <label>
+            <input
+              className="checkbox"
+              type="checkbox"
+              name="check"
+              checked={answer.checked}
+              onChange={this.handleInput}
+            />
+              <span className="checkbox-custom"></span>
+              &nbsp;
+              &nbsp;
+              <span className="">{ answer.body }</span>
+          </label>
+        </div>
+
+      </div>
     )
   }
 

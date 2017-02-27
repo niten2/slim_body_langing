@@ -6,17 +6,17 @@ export default class Massaj extends Component {
     return (
       <div className="texts row align-items-center">
 
-        <div className="col">
+        <div className="flex-1">
           <img src="images/services/massaj.jpg" />
         </div>
 
-        <div className="col">
+        <div className="flex-1">
 
           <h2>
             Массаж
           </h2>
 
-          <div className="col">
+          <div>
             Баночный
             <br />
             Медовый
