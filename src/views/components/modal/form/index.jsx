@@ -42,12 +42,11 @@ export default class modalForm extends Component {
 
     if (phone == "") {
       this.setState({ error: true })
-    }
-
-    if (phone != "") {
+    } else {
       sendEmail({ phone: phone })
       this.setState({ email_send: true, error: false })
     }
+
   }
 
   onClose() {
