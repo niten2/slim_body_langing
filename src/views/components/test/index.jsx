@@ -7,7 +7,6 @@ import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
 
 import Answers from './answers'
 import Offer from './offer'
-import formOffer from './form_offer'
 import "./index.scss"
 
 @observer
@@ -35,7 +34,6 @@ export default class Test extends Component {
         <h1 className="flex-center">Пройдите тест и получите персональное спец. предложение</h1>
 
         <div className="card flex-center">
-
           { isShowOffer ? <Offer /> : this.renderAnswers() }
         </div>
 
@@ -49,6 +47,7 @@ export default class Test extends Component {
             Ваша скидка
             &nbsp;
             <div className="color-red">{ discount } </div>
+
             &nbsp;
             руб.
           </div>

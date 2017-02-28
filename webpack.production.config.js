@@ -19,6 +19,7 @@ var S3_BUCKET = process.env.S3_BUCKET || "";
 
 var APPLICATION_ID = process.env.APPLICATION_ID || "";
 var SECRET_KEY_ID = process.env.SECRET_KEY_ID || "";
+var ENV = "production"
 
 console.log('PRODUCTION CONFIG');
 // console.log('S3_BUCKET>', S3_BUCKET);
@@ -213,10 +214,11 @@ module.exports = {
 
       new webpack.DefinePlugin({
         "API_ROOT": JSON.stringify(API_ROOT),
-        "APP_TOKEN":   JSON.stringify(APP_TOKEN),
-        "ASSETS_HOST":   JSON.stringify(ASSETS_HOST),
-        "APPLICATION_ID":   JSON.stringify(APPLICATION_ID),
-        "SECRET_KEY_ID":   JSON.stringify(SECRET_KEY_ID),
+        "APP_TOKEN": JSON.stringify(APP_TOKEN),
+        "ASSETS_HOST": JSON.stringify(ASSETS_HOST),
+        "APPLICATION_ID": JSON.stringify(APPLICATION_ID),
+        "SECRET_KEY_ID": JSON.stringify(SECRET_KEY_ID),
+        "ENV": JSON.stringify(ENV),
         process: {
           env: {
             NODE_ENV: JSON.stringify(process.env.NODE_ENV)

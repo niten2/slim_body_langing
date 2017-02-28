@@ -13,6 +13,7 @@ var autoprefixer = require('autoprefixer')
 
 var API_ROOT = process.env.API_ROOT || 'http://127.0.0.1:3000'
 var ASSETS_HOST = 'http://127.0.0.1:8080/'
+var ENV = "development"
 // var APP_TOKEN = process.env.APP_TOKEN || ""
 // var APPLICATION_ID = process.env.APPLICATION_ID || ""
 // var SECRET_KEY_ID = process.env.SECRET_KEY_ID || ""
@@ -83,9 +84,10 @@ module.exports = {
     new webpack.DefinePlugin({
       "API_ROOT": JSON.stringify(API_ROOT),
       "ASSETS_HOST": JSON.stringify(ASSETS_HOST),
+      "ENV": JSON.stringify(ENV),
       process: {
         env: {
-          NODE_ENV: JSON.stringify(process.env.NODE_ENV)
+          NODE_ENV: JSON.stringify(process.env.NODE_ENV),
         }
       }
     }),

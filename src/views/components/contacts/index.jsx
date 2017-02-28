@@ -13,7 +13,7 @@ export default class Contacts extends Component {
 
   render() {
     return (
-      <div className="contacts">
+      <div className="container contacts">
         <Grid>
           <h1> Контакты </h1>
           <p>

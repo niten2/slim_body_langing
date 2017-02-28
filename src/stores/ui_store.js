@@ -4,31 +4,24 @@ import bindAll from 'lodash/bindAll'
 import { isObject, isInteger, find } from "lodash"
 import { autorun } from 'mobx'
 
-import { questions } from 'views/components/test/questions'
-import { subscription } from 'views/components/test/subscription'
+import { questions } from 'views/components/test/data/questions'
+import { subscription } from 'views/components/test/data/subscription'
 
 let UIStore  = {
   notificationSystem: null,
-  // email: "mail@example.com",
 }
 
 extendObservable(UIStore, {
   // questions
   isLastQuestion: false,
-
-  // isShowOffer: false,
-  isShowOffer: true,
-
+  isShowOffer: false,
   discount: 0,
-
   questions: questions,
   question: questions[0],
-  subscription: subscription[0],
+  isSendOffer: false,
 
   user: {
-    name: "",
     phone: "",
-    answers: [],
   },
 
   // modals
@@ -43,13 +36,17 @@ Object.assign(UIStore, {
 
   // questions
   firstQuestion() {
-    this.question = this.questions[0]
-    this.isShowOffer = false
-    this.isLastQuestion = false
-    this.discount = 0
+    autorun(() => {
+      this.question = this.questions[0]
+      this.isShowOffer = false
+      this.isLastQuestion = false
+      this.discount = 0
+      this.isSendOffer = false
+    })
   },
 
   nextQuestion() {
+    let stepDiscount = 85
     let nextQuestionId = this.question.id + 1
     let nextNextQuestionId = this.question.id + 1
 
@@ -58,15 +55,23 @@ Object.assign(UIStore, {
 
     if (isObject(nextQuestion)) {
       this.question = nextQuestion
-      this.discount = this.discount + 50
+      this.discount = this.discount + stepDiscount
     }
 
     if (!isObject(nextNextQuestion)) {
       this.isLastQuestion = true
       this.isShowOffer = true
-      this.discount = this.discount + 50
+      this.discount = this.discount + stepDiscount
     }
 
+  },
+
+  sendOffer() {
+    this.isSendOffer = true
+  },
+
+  returnOffer() {
+    this.isSendOffer = false
   },
 
   // modals
@@ -91,4 +96,6 @@ export default bindAll(UIStore, [
   "nextQuestion",
   "showModalForm",
   "hideModalForm",
+  "sendOffer",
+  "returnOffer",
 ])

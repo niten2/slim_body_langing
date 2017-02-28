@@ -2,9 +2,9 @@ import React, { PropTypes, Component } from 'react'
 import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
 import sendEmail from 'lib/email'
-import "./index.scss"
 
 import { Modal, Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
+import "./index.scss"
 
 @observer
 export default class modalForm extends Component {
@@ -38,14 +38,14 @@ export default class modalForm extends Component {
 
   handeSendEmail = () => {
     let { contact } = this.state
-    let { name, phone } = contact
+    let { phone } = contact
 
-    if (name == "" || phone == "") {
+    if (phone == "") {
       this.setState({ error: true })
     }
 
-    if (name != "" && phone != "") {
-      // sendEmail({ name: name, phone: phone})
+    if (phone != "") {
+      sendEmail({ phone: phone })
       this.setState({ email_send: true, error: false })
     }
   }
@@ -74,13 +74,6 @@ export default class modalForm extends Component {
 
         <Modal.Body>
           <Col className="modal-form">
-            <input
-              name="name"
-              onChange={this.handeInput}
-              placeholder="Ваше Имя*"
-              className="form-control"
-              value={name}
-            />
 
             <input
               name="phone"

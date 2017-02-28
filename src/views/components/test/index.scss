@@ -12,11 +12,6 @@
     height: 135px;
   }
 
-  // h2 {
-  //   text-align: center;
-  //   margin-bottom: 10px;
-  // }
-
   h1 {
     text-align: center;
     margin-top: 50px;
@@ -86,6 +81,10 @@
     text-align: center;
   }
 
+  .offer.ok {
+    margin: 100px;
+  }
+
   .checkbox {
     display: none;
   }
@@ -101,7 +100,6 @@
   .checkbox-custom, .label {
     display: inline-block;
     vertical-align: middle;
-    color: #000 !important;
   }
 
   .checkbox:checked + .checkbox-custom::before {
@@ -114,11 +112,9 @@
     bottom: 2px;
     left: 2px;
 
-    background: #413548;
+    background: #b62673;
     border-radius: 2px;
   }
-
-
 
 }
 

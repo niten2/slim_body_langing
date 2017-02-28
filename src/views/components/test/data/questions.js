@@ -34,11 +34,7 @@ let questions = [
         body: "убрать растяжки на теле",
         checked: false,
       },
-      {
-        id: 6,
-        body: "другое",
-        checked: false,
-      },
+
     ]
   },
 
@@ -63,7 +59,7 @@ let questions = [
       },
       {
         id: 4,
-        body: "ляшки",
+        body: "бедра",
         checked: false,
       },
       {
@@ -76,84 +72,12 @@ let questions = [
         body: "руки",
         checked: false,
       },
-      {
-        id: 7,
-        body: "другое",
-        checked: false,
-      },
+
     ]
   },
 
   {
     id: 3,
-    question: "Планируете взять для себя или в подарок?",
-    answers: [
-      {
-        id: 1,
-        body: "для себя",
-        checked: false,
-      },
-      {
-        id: 2,
-        body: "в подарок",
-        checked: false,
-      },
-    ]
-  },
-
-  {
-    id: 4,
-    question: "Удобное для вас время посещения?",
-    answers: [
-      {
-        id: 1,
-        body: "c 10 до 13",
-        checked: false,
-      },
-
-      {
-        id: 2,
-        body: "с 13 до 17",
-        checked: false,
-      },
-
-      {
-        id: 3,
-        body: "с 17 до 21",
-        checked: false,
-      },
-    ]
-  },
-
-  {
-    id: 5,
-    question: "Сколько раз в неделю планируете посещать студию?",
-    answers: [
-      {
-        id: 1,
-        body: "1",
-        checked: false,
-      },
-      {
-        id: 2,
-        body: "2",
-        checked: false,
-      },
-      {
-        id: 3,
-        body: "3",
-        checked: false,
-      },
-      {
-        id: 4,
-        body: "больше 3",
-        checked: false,
-      },
-    ]
-  },
-
-  {
-    id: 6,
     question: "Какие услуги вам интересны?",
     answers: [
       {
@@ -181,11 +105,16 @@ let questions = [
         body: "прессотерапия",
         checked: false,
       },
+      {
+        id: 6,
+        body: "массаж",
+        checked: false,
+      },
     ]
   },
 
   {
-    id: 7,
+    id: 4,
     question: "Какой массаж вам интересен?",
     answers: [
       {
@@ -225,15 +154,66 @@ let questions = [
       },
       {
         id: 8,
-        body: "массаж мне не интересен",
+        body: "не интересен",
         checked: false,
       },
     ]
   },
 
   {
-    id: 8,
-    question: "какая стоимость абонемента была бы для вас комфортна?",
+    id: 5,
+    question: "Удобное для вас время посещения?",
+    answers: [
+      {
+        id: 1,
+        body: "c 10 до 13",
+        checked: false,
+      },
+
+      {
+        id: 2,
+        body: "с 13 до 17",
+        checked: false,
+      },
+
+      {
+        id: 3,
+        body: "с 17 до 21",
+        checked: false,
+      },
+    ]
+  },
+
+  {
+    id: 6,
+    question: "Сколько раз в неделю планируете посещать студию?",
+    answers: [
+      {
+        id: 1,
+        body: "1",
+        checked: false,
+      },
+      {
+        id: 2,
+        body: "2",
+        checked: false,
+      },
+      {
+        id: 3,
+        body: "3",
+        checked: false,
+      },
+      {
+        id: 4,
+        body: "больше 3",
+        checked: false,
+      },
+    ]
+  },
+
+  {
+    id: 7,
+    question: "Какая стоимость абонемента была бы для вас комфортна? (срок действия абонемента 3 месяца)",
     answers: [
       {
         id: 1,
@@ -242,27 +222,37 @@ let questions = [
       },
       {
         id: 2,
-        body: "1000 до 3000",
+        body: "от 1000 до 2000",
         checked: false,
       },
       {
         id: 3,
-        body: "1000 до 5000",
+        body: "от 2000 до 3000",
         checked: false,
       },
       {
         id: 4,
-        body: "5000 до 10000",
+        body: "от 3000 до 4000",
         checked: false,
       },
       {
         id: 5,
-        body: "больше 10000",
+        body: "от 5000 до 7000",
         checked: false,
       },
       {
         id: 6,
-        body: "мне также интересна рассрочка",
+        body: "от 7000 до 10000",
+        checked: false,
+      },
+      {
+        id: 7,
+        body: "больше 10000",
+        checked: false,
+      },
+      {
+        id: 8,
+        body: "я хочу взять в рассрочку эту сумму",
         checked: false,
       },
     ]

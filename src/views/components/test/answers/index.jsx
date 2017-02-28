@@ -29,7 +29,6 @@ export default class Answers extends Component {
 
         <button
           onClick={ UIStore.nextQuestion }
-          className="btn"
         >
           Ответить
         </button>

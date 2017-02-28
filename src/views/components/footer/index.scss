@@ -1,13 +1,6 @@
-.footer {
-  width: 400px;
-  height: 350px;
-  border-radius: 40px;
-  margin: auto;
+footer {
   margin-top: 20px;
   margin-bottom: 20px;
-  display: block;
-  text-align: center;
-  padding: 20px;
 
   h3 {
     margin: 20px;
@@ -21,9 +14,6 @@
   }
 
   button {
-    width: 254px;
-    height: 72px;
-
     margin: auto;
     margin-top: 20px;
 
@@ -36,8 +26,6 @@
     border-radius: 15px;
     background-hover-color: #c46298;
     color: #ffffff;
-    height: 72px;
-    width: 224px;
     background-color: #b62673;
     left: 9px;
     cursor: pointer;
@@ -49,6 +37,8 @@
     text-decoration: none;
 
     font-size: 14pt;
+    height: 72px;
+    width: 224px;
   }
 
 }

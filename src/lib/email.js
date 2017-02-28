@@ -1,5 +1,19 @@
+// import sendEmail from "lib/email"
 export default function(options = {}) {
-  let { name, phone} = options
-  console.log(`send email with ${name}, ${phone}`)
-  // emailjs.send("mailgun","test", { name: name, phone: phone })
+  let { phone, questions } = options
+
+  if (ENV == "production") {
+    emailjs.send(
+      "mailgun",
+      "test",
+      {
+        phone: phone,
+        questions: questions.slice()
+      }
+    )
+  } else {
+    console.log("send test email!!!")
+    console.log(options)
+  }
+
 }

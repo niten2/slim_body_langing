@@ -48,20 +48,12 @@ export default class Contacts extends Component {
   render() {
     let { name, phone, error } = this.state
     return (
-      <Col xs={12} className="">
+      <footer>
 
-        <Col className="footer">
+        <Col xsOffset={3} xs={6}>
           <h3>
-            Оставить заявку на бесплатное посещение
+            Все еще думаете? Оставьте заявку на бесплатное посещение
           </h3>
-
-          <input
-            name="name"
-            onChange={this.handeInput}
-            placeholder="Ваше Имя*"
-            className="form-control"
-            value={name}
-          />
 
           <input
             name="phone"
@@ -81,7 +73,7 @@ export default class Contacts extends Component {
           </button>
         </Col>
 
-      </Col>
+      </footer>
     )
   }
 
