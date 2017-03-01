@@ -31,8 +31,8 @@ export default class Index extends Component {
         <Stock />
         <Services />
         <Reviews />
-        <Contacts />
         <Test />
+        <Contacts />
         <Footer />
 
       </Col>

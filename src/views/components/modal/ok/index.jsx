@@ -14,32 +14,27 @@ export default class okModal extends Component {
   }
 
   onClose = () => {
-    UIStore.hideModalOk()
+    UIStore.hideModalForm()
   }
 
   render () {
     return (
-      <Modal
-        show={ UIStore.modalOk }
-        onHide={ this.onClose }
-        onKeyPress={ this.handleOnKeyPress }
-      >
+      <div className="form-ok">
         <Modal.Header closeButton>
-          <Modal.Title> Спасибо за вашу заявку </Modal.Title>
+          <Modal.Title> Спасибо </Modal.Title>
         </Modal.Header>
 
-        <Modal.Body>
-          Мы с вами обязательно свяжемся
+        <Modal.Body className="text-center">
+          Мы вам скоро перезвоним.
         </Modal.Body>
 
         <Modal.Footer>
           <button
+            className="btn ok"
             onClick={ this.onClose }
-            className="btn btn-outlined btn-danger"
-          > Ok </button>
+          > Хорошо </button>
         </Modal.Footer>
-
-      </Modal>
+      </div>
     )
   }
 

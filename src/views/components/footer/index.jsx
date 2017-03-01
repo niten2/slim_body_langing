@@ -6,10 +6,11 @@ import sendEmail from 'lib/email'
 import "./index.scss"
 
 @observer
-export default class Contacts extends Component {
+export default class Footer extends Component {
 
   state = {
     error: false,
+    isSendEmail: false,
     contact: {
       phone: "",
     },
@@ -30,7 +31,7 @@ export default class Contacts extends Component {
     if (phone == "") {
       this.setState({ error: true })
     } else {
-      this.setState({ error: false })
+      this.setState({ error: false, isSendEmail: true })
       sendEmail({ phone: phone})
     }
 
@@ -42,34 +43,51 @@ export default class Contacts extends Component {
     )
   }
 
-  render() {
-    let { name, phone, error } = this.state
+  renderOk() {
     return (
-      <footer>
+      <Col xsOffset={3} xs={6} className="ok">
+        <h3> Заявка принята. </h3>
+        <h4> Скоро мы с вами свяжемся </h4>
+      </Col>
+    )
+  }
 
-        <Col xsOffset={3} xs={6}>
-          <h3>
-            Все еще думаете? Оставьте заявку на бесплатное посещение
-          </h3>
+  renderForm() {
+    let { phone, error } = this.state
+    return (
+      <Col xsOffset={4} xs={4}>
+        <h1>
+          Все еще думаете?
+          <br />
+          Оставьте заявку на бесплатное посещение.
+        </h1>
 
-          <input
-            name="phone"
-            onChange={this.handeInput}
-            placeholder="Ваш Телефон*"
-            className="form-control"
-            value={phone}
-          />
+        <input
+          name="phone"
+          onChange={this.handeInput}
+          placeholder="Ваш Телефон*"
+          className="form-control"
+          value={phone}
+        />
 
-          <Clearfix />
-          { error ? this.renderError() : null }
+        <Clearfix />
+        { error ? this.renderError() : null }
 
-          <button
-            onClick={this.handeSendEmail}
-          >
-            Оставить заявку
-          </button>
-        </Col>
+        <button
+          onClick={this.handeSendEmail}
+        >
+          Оставить заявку
+        </button>
+      </Col>
+    )
+  }
 
+  render() {
+    let { isSendEmail } = this.state
+
+    return (
+      <footer className="text-center">
+        { isSendEmail ? this.renderOk() : this.renderForm() }
       </footer>
     )
   }

@@ -10,8 +10,8 @@ export default class Main extends Component {
 
   handeShowModalForm() {
     UIStore.showModalForm({
-      title: "Оставить заявку на бесплатное посещение",
-      button: "Записаться",
+      title: "Получить процедуру",
+      button: "Получить",
     })
   }
 
@@ -23,15 +23,15 @@ export default class Main extends Component {
 
         <div className="col-sm-6">
           <h1>
-            Уменьшим обьемы тела на 3-5 сантиметров за 10 процедур с помощью массажей и аппаратного похудения.
+            Уменьшим обьемы тела на 3 - 5 сантиметров за 10 процедур с помощью массажей и аппаратного похудения.
           </h1>
 
           <h3>
-            Оставьте заявку и получите бесплатную процедуру.
+            Получите бесплатную процедуру.
           </h3>
 
           <button onClick={this.handeShowModalForm}>
-            Оставить заявку
+            Получить
           </button>
 
         </div>

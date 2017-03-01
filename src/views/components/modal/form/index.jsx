@@ -5,6 +5,7 @@ import sendEmail from 'lib/email'
 
 import { Modal, Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
 import "./index.scss"
+import FormOk from "components/modal/ok"
 
 @observer
 export default class modalForm extends Component {
@@ -104,27 +105,6 @@ export default class modalForm extends Component {
     )
   }
 
-  renderOk() {
-    return (
-      <div>
-        <Modal.Header closeButton>
-          <Modal.Title> Спасибо за вашу заявку </Modal.Title>
-        </Modal.Header>
-
-        <Modal.Body>
-          Мы с вами обязательно свяжемся
-        </Modal.Body>
-
-        <Modal.Footer>
-          <button
-            onClick={ this.onClose }
-            className="btn btn-outlined btn-danger"
-          > Ok </button>
-        </Modal.Footer>
-      </div>
-    )
-  }
-
   render () {
     let { email_send } = this.state
 
@@ -136,14 +116,11 @@ export default class modalForm extends Component {
         onKeyPress={ this.handleOnKeyPress }
         dialogClassName="first-modal-form"
       >
-        { email_send ? this.renderOk() : this.renderEmail() }
+        { email_send ? <FormOk /> : this.renderEmail() }
       </Modal>
 
     )
   }
 
 }
-
-
-
 

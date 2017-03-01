@@ -9,8 +9,8 @@ export default class Contacts extends Component {
 
   handeShowModalForm() {
     UIStore.showModalForm({
-      title: "Купить абонемент по акции",
-      button: "Купить",
+      title: "Записаться на первую процедуру",
+      button: "Записаться",
     })
   }
 
@@ -54,7 +54,7 @@ export default class Contacts extends Component {
 
         <div className="flex-center">
           <button onClick={this.handeShowModalForm}>
-            Оставить заявку на абонемент
+            Записаться на первую процедуру
           </button>
         </div>
 

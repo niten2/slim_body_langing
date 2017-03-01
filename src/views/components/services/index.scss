@@ -1,5 +1,4 @@
 .services {
-
   padding-bottom: 50px;
   border-bottom: 3px solid #d1cad0;
 
@@ -12,27 +11,18 @@
     text-align: center;
   }
 
-  .texts {
-    margin-bottom: 50px;
-  }
-
-  // .block {
-  //   display: block;
-  //   border-width: 1px;
-  //   border-color: #cccccc;
-  //   border-style: none;
-  //   border-top: 1px solid #d1cad0;
-  // }
-
   img {
     margin: auto;
     display: block;
-    width: 200px;
-    height: 200px;
+    height: 300px;
     border-radius: 20px;
 
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+
+  .texts {
+    margin-bottom: 50px;
   }
 
 }
