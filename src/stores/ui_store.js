@@ -19,7 +19,6 @@ extendObservable(UIStore, {
   questions: questions,
   question: questions[0],
   isSendOffer: false,
-
   user: {
     phone: "",
   },
@@ -28,7 +27,6 @@ extendObservable(UIStore, {
   modalForm: false,
   titleModalForm: "",
   buttonModalForm: "",
-  // modalForm: true,
 
 })
 

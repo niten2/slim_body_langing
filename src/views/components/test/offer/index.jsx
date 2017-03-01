@@ -15,9 +15,8 @@ export default class Offer extends Component {
   renderOk() {
     return (
       <h4 className="offer ok">
-        Заявка успешно отправлена.
-        <br />
-        Мы с вами обязательно свяжемся.
+        <h3> Заявка принята. </h3>
+        <h4> Скоро мы с вами свяжемся. </h4>
       </h4>
     )
   }
