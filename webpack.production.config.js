@@ -22,9 +22,9 @@ var SECRET_KEY_ID = process.env.SECRET_KEY_ID || "";
 var ENV = "production"
 
 console.log('PRODUCTION CONFIG');
-// console.log('S3_BUCKET>', S3_BUCKET);
 console.log('API_ROOT>', API_ROOT);
 console.log('ASSETS_HOST>', ASSETS_HOST);
+// console.log('S3_BUCKET>', S3_BUCKET);
 // console.log('APPLICATION_ID>', APPLICATION_ID)
 // console.log('SECRET_KEY_ID>', SECRET_KEY_ID)
 
@@ -47,17 +47,15 @@ module.exports = {
         path.resolve(__dirname, 'node_modules', "react-bootstrap", "dist"),
 
         path.resolve(__dirname, "src"),
-        path.resolve(__dirname, 'src/_vendor'),
-
         path.resolve(__dirname, 'src', "assets"),
         path.resolve(__dirname, 'src', "lib"),
         path.resolve(__dirname, 'src', "models"),
         path.resolve(__dirname, 'src', "stores"),
         path.resolve(__dirname, 'src', "views"),
         path.resolve(__dirname, 'src', "views", "shared"),
-
-        path.resolve(__dirname, 'src'),
         path.resolve(__dirname, 'src/_vendor'),
+
+        path.resolve(__dirname, 'static'),
         path.resolve(__dirname, 'static', "images"),
       ],
       modulesDirectories: [
@@ -76,11 +74,6 @@ module.exports = {
 
     module: {
       loaders: [
-        // {
-        //   test: /\.(jsx|js)?$/,
-        //   loader: 'react-hot',
-        //   include: path.join(__dirname, 'src')
-        // },
 
         {
           test: /\.(jsx|js)?$/,
@@ -98,46 +91,29 @@ module.exports = {
           }
         },
 
-        /* Styles */
-        { // SCSS styles included in js
-            test: /\.scss$/,
-            loader: ExtractTextPlugin.extract(
-                'style',
-                [
-                    'css?module',
-                    // 'resolve-url',
-                    'sass?sourceMap'
-                ].join('!'),
-                { allChunks: true }
-            ),
-            include: [
-                path.resolve(__dirname, "src")
-            ]
-        },
-        { // SCSS styles
-            test: /\.scss$/,
-            loader: ExtractTextPlugin.extract(
-                'style',
-                [
-                    'css',
-                    // 'resolve-url',
-                    'sass?sourceMap'
-                ].join('!'),
-                { allChunks: true }
-            ),
-            include: [
-                path.resolve(__dirname, "stylesheets")
-            ]
-        },
+        // scss styles
         {
-            test: /\.css$/,
-            loader: ExtractTextPlugin.extract(
-                'style',
-                'css',
-                { allChunks: true }
-            )
+          test: /\.scss$/,
+          loader: ExtractTextPlugin.extract(
+            'style',
+            [
+              'css',
+              'sass?sourceMap'
+            ].join('!'),
+            { allChunks: true }
+          ),
         },
 
+        {
+          test: /\.css$/,
+          loader: ExtractTextPlugin.extract(
+            'style',
+            'css',
+            { allChunks: true }
+          )
+        },
+
+        // files
         {
           test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
           loader: "file?name=[name].[ext]",
@@ -154,49 +130,6 @@ module.exports = {
           test: /\.(png|jpg|jpeg|gif)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
           loader: "file?name=images/[name].[ext]"
         },
-
-            // {
-            //     test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-            //     loader: "file?name=fonts/[name].[ext]"
-            // },
-
-            // {
-            //     test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-            //     loader: "file?name=fonts/[name].[ext]",
-            //     include: [
-            //         path.resolve(__dirname, "node_modules/font-awesome")
-            //     ]
-            // }
-
-
-        // {
-        //   test: /\.(png|jpg|jpeg|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        //   loader: "file?name=images/[name].[ext]"
-        // },
-
-        // {
-        //   test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        //   loader: "file?name=fonts/[name].[ext]"
-        // },
-
-        // {
-        //   test: /\.(ttf|eot|svg|woff(2))(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        //   loader: "file?name=fonts/[name].[ext]",
-        //   include: [
-        //     path.resolve(__dirname, "node_modules/font-awesome")
-        //   ]
-        // },
-
-        // {
-        //   test:   /\.(png|jpg|svg|ttf|eot|woff|woff2)$/,
-        //   loader: 'file?name=[path][name].[ext]'
-        // }
-
-
-        // {
-        //   test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        //   loader: "url-loader?limit=10000&mimetype=application/font-woff"
-        // },
 
       ]
     },
@@ -274,39 +207,38 @@ module.exports = {
 
 }
 
+// function FindAndReplaceInFilePlugin (options) {
+//   var PLUGIN_NAME = 'FindAndReplaceInFilePlugin';
 
-function FindAndReplaceInFilePlugin (options) {
-  var PLUGIN_NAME = 'FindAndReplaceInFilePlugin';
+//   var fs = require('fs');
+//   if (!options) options = {};
 
-  var fs = require('fs');
-  if (!options) options = {};
+//   options.encoding = options.encoding || 'utf8';
 
-  options.encoding = options.encoding || 'utf8';
+//   return function () {
+//     this.plugin("done", function (stats) {
+//       console.log(PLUGIN_NAME, '... start');
 
-  return function () {
-    this.plugin("done", function (stats) {
-      console.log(PLUGIN_NAME, '... start');
+//       try {
+//         var html = fs.readFileSync(options.file, { encoding : options.encoding});
+//         console.log('Source file open:', options.file);
+//       } catch (e) {
+//         console.error(PLUGIN_NAME, 'ERROR', e);
+//         return;
+//       }
 
-      try {
-        var html = fs.readFileSync(options.file, { encoding : options.encoding});
-        console.log('Source file open:', options.file);
-      } catch (e) {
-        console.error(PLUGIN_NAME, 'ERROR', e);
-        return;
-      }
+//       html = html.replace(options.regExp, options.text);
+//       console.log(PLUGIN_NAME, '`'+options.regExp+'`', 'replaced to', '`'+options.text+'`');
 
-      html = html.replace(options.regExp, options.text);
-      console.log(PLUGIN_NAME, '`'+options.regExp+'`', 'replaced to', '`'+options.text+'`');
+//       try {
+//         fs.writeFileSync(options.file, html, { encoding : options.encoding});
+//         console.log('Changes saved to:', options.file);
+//       } catch (e) {
+//         console.error(PLUGIN_NAME, 'ERROR', e);
+//         return;
+//       }
 
-      try {
-        fs.writeFileSync(options.file, html, { encoding : options.encoding});
-        console.log('Changes saved to:', options.file);
-      } catch (e) {
-        console.error(PLUGIN_NAME, 'ERROR', e);
-        return;
-      }
-
-      console.log(PLUGIN_NAME, '... done');
-    });
-  }
-}
+//       console.log(PLUGIN_NAME, '... done');
+//     });
+//   }
+// }

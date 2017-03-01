@@ -49,16 +49,18 @@ module.exports = {
     root: [
       path.resolve(__dirname, 'node_modules'),
       path.resolve(__dirname, 'node_modules', "react-bootstrap", "dist"),
+
       path.resolve(__dirname, "src"),
-      path.resolve(__dirname, 'src/_vendor'),
       path.resolve(__dirname, 'src', "assets"),
       path.resolve(__dirname, 'src', "lib"),
       path.resolve(__dirname, 'src', "models"),
       path.resolve(__dirname, 'src', "stores"),
       path.resolve(__dirname, 'src', "views"),
       path.resolve(__dirname, 'src', "views", "shared"),
-      path.resolve(__dirname, 'static', "images"),
+      path.resolve(__dirname, 'src/_vendor'),
+
       path.resolve(__dirname, 'static'),
+      path.resolve(__dirname, 'static', "images"),
     ],
     modulesDirectories: [
       'node_modules',
@@ -183,6 +185,7 @@ module.exports = {
         loader: "style-loader!css-loader"
       },
 
+      // Files
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: "url-loader?limit=10000&mimetype=application/font-woff"
