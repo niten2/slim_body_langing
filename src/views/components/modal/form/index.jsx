@@ -23,7 +23,6 @@ export default class modalForm extends Component {
     email_send: false,
     error: false,
     contact: {
-      name: "",
       phone: "",
     },
   }
@@ -62,7 +61,7 @@ export default class modalForm extends Component {
   }
 
   renderEmail() {
-    let { name, phone, error } = this.state
+    let { phone, error } = this.state
     return (
       <div>
         <Modal.Header closeButton>

@@ -11,7 +11,6 @@ export default class Contacts extends Component {
   state = {
     error: false,
     contact: {
-      name: "",
       phone: "",
     },
   }
@@ -26,17 +25,15 @@ export default class Contacts extends Component {
 
   handeSendEmail = () => {
     let { contact } = this.state
-    let { name, phone } = contact
+    let { phone } = contact
 
-    if (name == "" || phone == "") {
+    if (phone == "") {
       this.setState({ error: true })
+    } else {
+      this.setState({ error: false })
+      sendEmail({ phone: phone})
     }
 
-    if (name != "" && phone != "") {
-      this.setState({ error: false })
-      sendEmail({ name: name, phone: phone})
-      UIStore.showModalOk()
-    }
   }
 
   renderError() {
@@ -69,7 +66,7 @@ export default class Contacts extends Component {
           <button
             onClick={this.handeSendEmail}
           >
-            Записаться
+            Оставить заявку
           </button>
         </Col>
 

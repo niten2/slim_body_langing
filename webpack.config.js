@@ -1,7 +1,6 @@
 "use strict"
 
 require('dotenv').config()
-// require("babel-polyfill")
 
 var _ = require('lodash')
 var webpack = require('webpack')
@@ -14,9 +13,6 @@ var autoprefixer = require('autoprefixer')
 var API_ROOT = process.env.API_ROOT || 'http://127.0.0.1:3000'
 var ASSETS_HOST = 'http://127.0.0.1:8080/'
 var ENV = "development"
-// var APP_TOKEN = process.env.APP_TOKEN || ""
-// var APPLICATION_ID = process.env.APPLICATION_ID || ""
-// var SECRET_KEY_ID = process.env.SECRET_KEY_ID || ""
 
 module.exports = {
 
@@ -94,12 +90,6 @@ module.exports = {
       }
     }),
 
-    // new ExtractTextPlugin("styles.css", { allChunks: true })
-    // new webpack.ProvidePlugin({
-    //     "$" : "jquery",
-    //     "jQuery" : "jquery",
-    //     "window.jQuery" : "jquery",
-    // }),
   ],
 
   stats: {

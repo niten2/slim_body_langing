@@ -8,7 +8,7 @@ export default function(options = {}) {
       "test",
       {
         phone: phone,
-        questions: questions.slice()
+        questions: questions,
       }
     )
   } else {
