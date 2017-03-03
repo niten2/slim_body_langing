@@ -14,9 +14,15 @@
     margin: 20px;
   }
 
-  button.ok {
-    color: #ffffff;
-    background-color: #b62673;
+  // button.ok {
+  //   color: #ffffff;
+  //   background-color: #b62673;
+  // }
+
+  @media screen and (min-width: 480px) {
+    .body {
+      font-size: 30pt;
+    }
   }
 
 }

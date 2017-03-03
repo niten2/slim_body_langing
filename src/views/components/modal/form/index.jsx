@@ -56,7 +56,7 @@ export default class modalForm extends Component {
   renderError() {
     return (
       <div className="error">
-        Необходимо заполнить поля Имя и Телефон
+        Необходимо заполнить поле.
       </div>
     )
   }
@@ -77,7 +77,7 @@ export default class modalForm extends Component {
             <input
               name="phone"
               onChange={this.handeInput}
-              placeholder="Ваш Телефон*"
+              placeholder="Ваш Телефон или Email*"
               className="form-control"
               value={phone}
             />

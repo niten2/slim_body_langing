@@ -25,4 +25,17 @@
     margin-bottom: 50px;
   }
 
+  @media screen and (min-width: 480px) {
+    height: 100vh;
+
+    img {
+      display: none;
+    }
+
+    .flex-1 {
+      flex: 1 100%;
+    }
+
+  }
+
 }

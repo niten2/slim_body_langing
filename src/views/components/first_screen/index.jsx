@@ -21,14 +21,14 @@ export default class Main extends Component {
 
       <div className="row main align-items-center">
 
-        <div className="col-sm-6">
+        <div className="col">
           <h1>
             Уменьшим обьемы тела на 3 - 5 сантиметров за 10 процедур с помощью массажей и аппаратного похудения.
           </h1>
 
-          <h3>
+          <h2>
             Получите бесплатную процедуру.
-          </h3>
+          </h2>
 
           <button onClick={this.handeShowModalForm}>
             Получить

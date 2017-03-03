@@ -6,14 +6,6 @@
   cursor: pointer !important;
 }
 
-.background-green {
-  background-color: #d2c566;
-}
-
-.color-blue {
-  color:blue;
-}
-
 .red-line-through {
   color: red;
   text-decoration: line-through;
@@ -27,35 +19,42 @@
   color: red;
 }
 
+.color-blue {
+  color:blue;
+}
+
+.background-green {
+  background-color: #d2c566;
+}
 
 // flex
-.align-items-center {
-  align-items: center;
-}
+// .align-items-center {
+//   align-items: center;
+// }
 
-.justify-content-center {
-  justify-content: center;
-}
+// .justify-content-center {
+//   justify-content: center;
+// }
 
-.row {
-  display: flex;
-}
+// .row {
+//   display: flex;
+// }
 
-.flex-1 {
-  flex: 1;
-}
+// .flex-1 {
+//   flex: 1;
+// }
 
-.flex-2 {
-  flex: 2;
-}
+// .flex-2 {
+//   flex: 2;
+// }
 
-.flex-first {
-  order: -1;
-}
+// .flex-first {
+//   order: -1;
+// }
 
-.flex-center {
-  flex: 1 100%;
-}
+// .flex-center {
+//   flex: 1 100%;
+// }
 
 // .clearfix::before,
 // .clearfix::after {
@@ -161,3 +160,49 @@
 //   vertical-align: middle;
 // }
 
+// <a href="#" class="action-button shadow animate red">How</a>
+
+// button
+button {
+  display: block;
+
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+
+	padding: 10px 40px;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;
+
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+}
+
+button:active {
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+
+// modal center
+.modal {
+  text-align: center;
+  padding: 40 !important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}

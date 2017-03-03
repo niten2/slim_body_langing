@@ -24,7 +24,7 @@ export default class okModal extends Component {
           <Modal.Title> Спасибо </Modal.Title>
         </Modal.Header>
 
-        <Modal.Body className="text-center">
+        <Modal.Body className="body text-center">
           Мы вам скоро перезвоним.
         </Modal.Body>
 

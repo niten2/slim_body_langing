@@ -107,7 +107,7 @@ module.exports = {
     loaders: [
       {
         test: /\.(jsx|js)?$/,
-        loader: 'react-hot',
+        loader: 'react-hot-loader/webpack',
         include: path.join(__dirname, 'src')
       },
 
