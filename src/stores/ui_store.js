@@ -5,7 +5,7 @@ import { isObject, isInteger, find } from "lodash"
 import { autorun } from 'mobx'
 
 import { questions } from 'components/test/data/questions'
-import { subscription } from 'components/test/data/subscription'
+// import { subscription } from 'components/test/data/subscription'
 
 let UIStore  = {
   notificationSystem: null,
