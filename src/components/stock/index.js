@@ -18,7 +18,7 @@ export default class Contacts extends Component {
     return (
       <Row>
         <div className="col-sm-6 align-self-center">
-          <img src="static/images/stock/bomb.jpg" />
+          <img src="images/stock/bomb.jpg" />
         </div>
 
         <div className="offer col-sm-6 align-self-center">
