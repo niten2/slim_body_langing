@@ -1,0 +1,54 @@
+.first-screen {
+  height: 100vh;
+  // height: 100%;
+  text-align: center;
+  border-bottom: 3px solid #d1cad0;
+
+  h1 {
+    font-size: 4em;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  button {
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    font-size: 3em;
+  }
+
+  input {
+    margin-top: 4em;
+  }
+
+  .ok {
+    margin-top: 4em;
+  }
+
+//   @media screen and (min-width: 480px) {
+//     // height: 100vh;
+
+//     // img {
+//     //   display: none;
+//     // }
+
+//     h1 {
+//       font-size: 52pt;
+//     }
+
+//     h2 {
+//       font-size: 24pt;
+//     }
+
+//     button {
+//       margin: auto;
+//       margin-top: 150px;
+//       font-size: 60pt;
+//     }
+
+//   }
+
+}

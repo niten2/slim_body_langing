@@ -1,0 +1,121 @@
+.test {
+  height: 800px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 50px;
+  border-bottom: 3px solid #d1cad0;
+
+  .flex-center {
+    flex: 1 100%;
+  }
+
+  .flex-1 {
+    flex: 1;
+  }
+
+  input {
+    width: 50% !important;
+    margin: auto;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  button {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .test-footer div {
+    display: inline-block;
+  }
+
+  .comments {
+    margin: 20px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .card-title {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .card-text div {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .flex-answer {
+    flex: 1 27%;
+    margin-left: 35%;
+  }
+
+  .offer {
+    text-align: center;
+  }
+
+  .offer.ok {
+    margin: 100px;
+  }
+
+  .checkbox {
+    display: none;
+  }
+
+  .checkbox-custom {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .checkbox-custom, .label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .checkbox:checked + .checkbox-custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+
+    background: #b62673;
+    border-radius: 2px;
+  }
+
+
+  // @media screen and (min-width : 0px) and (max-width : 1024px) {
+  //   div {
+  //     padding-top: 50px;
+  //     padding-bottom: 50px;
+  //     order: -1;
+  //   }
+
+  //   .offer {
+  //     width: 100%;
+  //   }
+  // }
+
+}
+

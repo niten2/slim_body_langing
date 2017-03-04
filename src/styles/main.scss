@@ -1,0 +1,211 @@
+.pointer {
+  cursor: pointer;
+}
+
+.btn {
+  cursor: pointer !important;
+}
+
+.red-line-through {
+  color: red;
+  text-decoration: line-through;
+}
+
+.color-black {
+  color: black;
+}
+
+.color-red {
+  color: red;
+}
+
+.color-blue {
+  color:blue;
+}
+
+.background-green {
+  background-color: #d2c566;
+}
+
+button.btn {
+  display: block;
+
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+
+	padding: 10px 40px;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	// font-size: 25px;
+	color: #FFF;
+	text-decoration: none;
+
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+}
+
+button.btn:active {
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+
+
+
+// flex
+// .align-items-center {
+//   align-items: center;
+// }
+
+// .justify-content-center {
+//   justify-content: center;
+// }
+
+// .row {
+//   display: flex;
+// }
+
+// .flex-1 {
+//   flex: 1;
+// }
+
+// .flex-2 {
+//   flex: 2;
+// }
+
+// .flex-first {
+//   order: -1;
+// }
+
+// .flex-center {
+//   flex: 1 100%;
+// }
+
+// .clearfix::before,
+// .clearfix::after {
+//   flex-basis: 0;
+//   order: 1;
+// }
+
+
+// @media only screen and (max-device-width: 768px) {
+
+//   body {
+//     font-size: 26pt;
+//   }
+
+//   .services .block img {
+//     margin-top: 20px;
+//     margin-bottom: 20px;
+//   }
+
+//   .parent {
+//     height: auto;
+//   }
+//   .child {
+//     display:auto;
+//     vertical-align:auto;
+//   }
+//   .helper {
+//     display:auto;
+//     vertical-align:auto;
+//     height:auto;
+//     width:auto;
+//   }
+
+//   .main h1 {
+//     margin-top: 20px;
+//   }
+
+//   h2 {
+//     font-size: 26pt;
+//   }
+
+//   h3 {
+//     font-size: 26pt;
+//   }
+
+//   h4 {
+//     font-size: 26pt;
+//   }
+
+//   .modal {
+//     position: fixed;
+//     top: 3%;
+//     right: 3%;
+//     left: 3%;
+//     width: auto;
+//     margin: 0;
+//   }
+
+//   .modal > div {
+//     font-size: 26pt;
+//   }
+
+//   .modal-body {
+//     font-size: 26pt;
+//     height: 60%;
+//   }
+
+//   .modal-body {
+//     max-height: 350px;
+//     padding: 15px;
+//     overflow-y: auto;
+//     -webkit-overflow-scrolling: touch;
+//   }
+
+//   .form-control {
+//     height: 82px;
+//     font-size: 37px;
+//   }
+
+//   .btn {
+//     font-size: 40px;
+
+//   }
+
+// }
+
+// .modal {
+//   text-align: center;
+// }
+
+// @media screen and (min-width: 768px) {
+//   .modal:before {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     height: 100%;
+//   }
+// }
+
+// .modal-dialog {
+//   display: inline-block;
+//   text-align: left;
+//   vertical-align: middle;
+// }
+
+// <a href="#" class="action-button shadow animate red">How</a>
+
+// button
+
+// // modal center
+// .modal {
+//   text-align: center;
+//   padding: 40 !important;
+// }
+
+// .modal:before {
+//   content: '';
+//   display: inline-block;
+//   height: 100%;
+//   vertical-align: middle;
+//   margin-right: -4px;
+// }
+
+// .modal-dialog {
+//   display: inline-block;
+//   text-align: left;
+//   vertical-align: middle;
+// }

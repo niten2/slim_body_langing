@@ -1,0 +1,28 @@
+.form-ok {
+
+  input {
+    margin-top: 10px;
+  }
+
+  .modal-button {
+    float: right;
+  }
+
+  .error {
+    color: red;
+    text-align: center;
+    margin: 20px;
+  }
+
+  // button.ok {
+  //   color: #ffffff;
+  //   background-color: #b62673;
+  // }
+
+  @media screen and (min-width: 480px) {
+    .body {
+      font-size: 30pt;
+    }
+  }
+
+}

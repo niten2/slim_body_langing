@@ -1,0 +1,49 @@
+.services {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 3px solid #d1cad0;
+
+  h1 {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  img {
+    margin: auto;
+    display: block;
+    width: 300px;
+    border-radius: 20px;
+  }
+
+  .texts {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .image {
+    margin: auto;
+    width: 400px;
+  }
+
+  .offer {
+    margin: auto;
+    width: 400px;
+  }
+
+  @media screen and (min-width : 0px) and (max-width : 1024px) {
+    .image {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      order: -1;
+    }
+
+    .offer {
+      width: 100%;
+    }
+  }
+
+}
+
