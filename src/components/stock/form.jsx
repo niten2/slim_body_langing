@@ -66,6 +66,7 @@ export default class Footer extends Component {
         { error ? this.renderError() : null }
 
         <button
+          className="btn"
           onClick={this.handeSendEmail}
         >
           Оставить заявку
