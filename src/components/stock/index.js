@@ -4,6 +4,11 @@ import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
 import Form from "./form"
 import "./index.scss"
 
+import path from 'path';
+// console.log(path.resolve(__dirname, "src", "static"))
+// console.log(path.resolve(__dirname, "src"))
+
+
 export default class Contacts extends Component {
 
   state = {
