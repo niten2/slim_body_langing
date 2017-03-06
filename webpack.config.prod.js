@@ -8,6 +8,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 import autoprefixer from 'autoprefixer'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
 import path from 'path'
+import ProgressBarPlugin from "progress-bar-webpack-plugin"
 import _ from 'lodash'
 
 // let ASSETS_HOST = process.env.ASSETS_HOST || 'http://127.0.0.1:8080';
@@ -93,9 +94,10 @@ export default {
       ignore: []
     }),
 
-    // new webpack.DefinePlugin({
+    new ProgressBarPlugin(),
 
   ],
+
   module: {
     rules: [
       {test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader'},
@@ -108,4 +110,5 @@ export default {
       {test: /(\.css|\.scss|\.sass)$/, loader: ExtractTextPlugin.extract('css-loader?sourceMap!postcss-loader!sass-loader?sourceMap')}
     ]
   }
+
 }

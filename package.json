@@ -92,6 +92,7 @@
     "npm-run-all": "3.1.2",
     "open": "0.0.5",
     "postcss-loader": "1.2.1",
+    "progress-bar-webpack-plugin": "1.9.3",
     "prompt": "1.0.0",
     "react-addons-test-utils": "15.4.1",
     "redux-immutable-state-invariant": "1.2.4",
