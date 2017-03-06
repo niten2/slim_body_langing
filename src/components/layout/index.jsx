@@ -15,7 +15,6 @@ export default class Index extends Component {
     return (
       <div>
         <FirstScreen />
-        <Stock />
         <Services />
         <Reviews />
         <Test />
@@ -26,3 +25,4 @@ export default class Index extends Component {
   }
 
 }
+        // <Stock />

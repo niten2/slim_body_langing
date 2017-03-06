@@ -8,6 +8,7 @@ export default function(options = {}) {
       "mailgun",
       "test",
       {
+        place: place,
         phone: phone,
         questions: questions,
       }
