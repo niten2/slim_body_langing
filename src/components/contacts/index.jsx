@@ -5,7 +5,7 @@ import "./index.scss"
 export default class Contacts extends Component {
 
   componentDidMount() {
-    if (true) {
+    if (!_DEV_) {
       const script = document.createElement("script")
       script.src = "https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=wG6Fe7o8YH3RQ8vsuFDXimjPPmOgYFYZ&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"
       script.async = true
@@ -27,7 +27,7 @@ export default class Contacts extends Component {
           </p>
         </Grid>
 
-        { __DEV__ == "production" ? <div ref="script"/> : null }
+        <div ref="script"/>
 
       </div>
     )
