@@ -72,28 +72,28 @@ Object.assign(UIStore, {
     this.isSendOffer = false
   },
 
-  // modals
-  showModalForm(options) {
-    let { title, button } = options
+  // // modals
+  // showModalForm(options) {
+  //   let { title, button } = options
 
-    autorun(() => {
-      this.modalForm = true
-      this.titleModalForm = title
-      this.buttonModalForm = button
-    })
-  },
+  //   autorun(() => {
+  //     this.modalForm = true
+  //     this.titleModalForm = title
+  //     this.buttonModalForm = button
+  //   })
+  // },
 
-  hideModalForm() {
-    this.modalForm = false
-  },
+  // hideModalForm() {
+  //   this.modalForm = false
+  // },
 
 })
 
 export default bindAll(UIStore, [
   "firstQuestion",
   "nextQuestion",
-  "showModalForm",
-  "hideModalForm",
+  // "showModalForm",
+  // "hideModalForm",
   "sendOffer",
   "returnOffer",
 ])

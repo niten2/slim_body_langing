@@ -15,7 +15,7 @@ export default class Answers extends Component {
         { question.answers.map((answer, index) => (
               <Answer
                 key={index}
-                answer={answer}
+                answerId={answer.id}
                 questionId={question.id}
               />
             )

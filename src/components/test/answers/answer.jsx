@@ -1,23 +1,29 @@
 import React, { PropTypes, Component } from 'react'
 import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
-import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
+import { find } from "lodash"
 
 @observer
 export default class Answer extends Component {
 
+  getAnswer() {
+    let { questionId, answerId } = this.props
+    let question = find(UIStore.questions, (obj) => { return obj.id == questionId })
+    let answer = find(question.answers, (obj) => { return obj.id == answerId })
+    return answer
+  }
+
+
   handleInput = () => {
     let { questionId } = this.props
-    let { answer } = this.props
-
+    let { answerId } = this.props
     let question = find(UIStore.questions, (obj) => { return obj.id == questionId })
-    let findAnswer = find(question.answers, (obj) => { return obj.id == answer.id })
-
-    findAnswer.checked = !findAnswer.checked
+    let answer = find(question.answers, (obj) => { return obj.id == answerId })
+    answer.checked = !answer.checked
   }
 
   render() {
-    let { answer } = this.props
+    let answer = this.getAnswer()
 
     return  (
       <div className="flex-center">

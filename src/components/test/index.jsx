@@ -19,6 +19,7 @@ export default class Test extends Component {
         <h4 className="card-title">
           { question.question }
         </h4>
+
         <div className="card-text">
           <Answers question={question} />
         </div>
