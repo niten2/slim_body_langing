@@ -1,5 +1,6 @@
 import React, { PropTypes, Component } from 'react'
 import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
+import imageUrl from "lib/image_url"
 
 export default class Massaj extends Component {
 
@@ -8,7 +9,7 @@ export default class Massaj extends Component {
       <div className="texts">
 
         <div className="image">
-          <img src="static/images/services/massaj.jpg" />
+          <img src={ imageUrl('services/massaj.jpg') } />
         </div>
 
         <div className="offer">

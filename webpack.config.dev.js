@@ -6,7 +6,12 @@ import path from 'path';
 export default {
 
   resolve: {
-    modules: [path.resolve(__dirname, "src", "static"), path.resolve(__dirname, "src"), "node_modules"],
+    modules: [
+      // path.resolve(__dirname, "src", "static"),
+      path.resolve(__dirname, "src"),
+      "src/static/images",
+      "node_modules"
+    ],
     // modules: [
     //   mainFields,
     //   // path.resolve(__dirname, "src"),

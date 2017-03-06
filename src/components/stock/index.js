@@ -1,13 +1,8 @@
 import React, { PropTypes, Component } from 'react'
-
 import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
+import imageUrl from "lib/image_url"
 import Form from "./form"
 import "./index.scss"
-
-import path from 'path';
-// console.log(path.resolve(__dirname, "src", "static"))
-// console.log(path.resolve(__dirname, "src"))
-
 
 export default class Contacts extends Component {
 
@@ -23,7 +18,7 @@ export default class Contacts extends Component {
     return (
       <Row>
         <div className="col-sm-6 align-self-center">
-          <img src="images/stock/bomb.jpg" />
+          <img src={imageUrl("stock/bomb.jpg")} />
         </div>
 
         <div className="offer col-sm-6 align-self-center">
