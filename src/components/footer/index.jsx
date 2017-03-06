@@ -31,8 +31,11 @@ export default class Footer extends Component {
     if (phone == "") {
       this.setState({ error: true })
     } else {
+      sendEmail({
+        phone: phone,
+        place: "footer"
+      })
       this.setState({ error: false, isSendEmail: true })
-      sendEmail({ phone: phone})
     }
 
   }

@@ -1,6 +1,4 @@
-import React, { PropTypes, Component } from 'react'
-
-// console.log(111)
+// import React, { PropTypes, Component } from 'react'
 
 // const yandex = () => {
 //   const script = document.createElement("script")
@@ -23,30 +21,30 @@ import React, { PropTypes, Component } from 'react'
 //   return script
 // }
 
-export default class Vendors extends Component {
+// export default class Vendors extends Component {
 
-  componentDidMount() {
-    if (__DEV__) {
-      // const script = document.createElement("script")
-      // script.src = "https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=wG6Fe7o8YH3RQ8vsuFDXimjPPmOgYFYZ&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"
-      // script.async = true
-      // this.refs.yandex.appendChild(script)
-      // this.refs.yandex.appendChild(yandex())
-      // this.refs.facebook.appendChild(facebook())
-      // this.refs.email.appendChild(emailjs())
-    }
-  }
+//   componentDidMount() {
+//     if (DEV) {
+//       // const script = document.createElement("script")
+//       // script.src = "https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=wG6Fe7o8YH3RQ8vsuFDXimjPPmOgYFYZ&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"
+//       // script.async = true
+//       // this.refs.yandex.appendChild(script)
+//       // this.refs.yandex.appendChild(yandex())
+//       // this.refs.facebook.appendChild(facebook())
+//       // this.refs.email.appendChild(emailjs())
+//     }
+//   }
 
-  render() {
-    return (
-      <div>
-        <div ref="emailjs"/>
-        <div ref="yandex"/>
-        <div ref="facebook"/>
-      </div>
-    )
-  }
+//   render() {
+//     return (
+//       <div>
+//         <div ref="emailjs"/>
+//         <div ref="yandex"/>
+//         <div ref="facebook"/>
+//       </div>
+//     )
+//   }
 
-}
+// }
 
 

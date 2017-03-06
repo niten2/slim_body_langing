@@ -1,8 +1,9 @@
 // import sendEmail from "lib/email"
-export default function(options = {}) {
-  let { phone, questions } = options
 
-  if (__DEV__ == "production") {
+export default function(options = {}) {
+  let { phone, questions, place } = options
+
+  if (!DEV) {
     emailjs.send(
       "mailgun",
       "test",
@@ -12,8 +13,7 @@ export default function(options = {}) {
       }
     )
   } else {
-    console.log("send test email!!!")
-    console.log(options)
+    console.log("SEND TEST EMAIL", options)
   }
 
 }

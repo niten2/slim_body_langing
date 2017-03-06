@@ -14,7 +14,7 @@ import _ from 'lodash'
 
 const GLOBALS = {
   'process.env.NODE_ENV': JSON.stringify('production'),
-  __DEV__: false,
+  DEV: false,
 }
 
 export default {

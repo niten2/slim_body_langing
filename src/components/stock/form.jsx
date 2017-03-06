@@ -28,15 +28,18 @@ export default class Footer extends Component {
     if (phone == "") {
       this.setState({ error: true })
     } else {
+      sendEmail({
+        phone: phone,
+        place: "stock"
+      })
       this.setState({ error: false, isSendEmail: true })
-      sendEmail({ phone: phone})
     }
 
   }
 
   renderError() {
     return (
-      <div className="text-danger">Необходимо заполнить поля Имя и Телефон</div>
+      <div className="text-danger">Необходимо заполнить полe</div>
     )
   }
 

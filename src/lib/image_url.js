@@ -2,7 +2,7 @@
 // <img src={imageUrl('logo.png')} />
 
 export default function imageUrl(imageName) {
-  if (__DEV__) {
+  if (DEV) {
     return `/static/images/${imageName}`
   } else {
     return `/images/${imageName}`

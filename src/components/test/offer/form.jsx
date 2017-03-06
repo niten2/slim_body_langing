@@ -25,16 +25,19 @@ export default class Form extends Component {
     if (phone == "") {
       this.setState({ error: true })
     } else {
+      sendEmail({
+        phone: phone,
+        questions: questions,
+        place: "test",
+      })
       this.setState({ error: false })
       UIStore.sendOffer()
-      sendEmail({ phone: phone, questions: questions })
     }
-
   }
 
   renderError() {
     return (
-      <div className="text-danger">Необходимо заполнить полe телефон</div>
+      <div className="text-danger">Необходимо заполнить полe</div>
     )
   }
 
