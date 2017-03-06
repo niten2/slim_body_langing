@@ -1,6 +1,7 @@
 import React, { PropTypes, Component } from 'react'
 import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
 import ImageGallery from 'react-image-gallery'
+import images from "./images"
 import "./index.scss"
 
 export default class Contacts extends Component {
@@ -26,25 +27,4 @@ export default class Contacts extends Component {
   }
 
 }
-
-const images = [
-  {
-    original: 'static/images/reviews/1.jpg',
-  },
-  {
-    original: 'static/images/reviews/2.jpg',
-  },
-  {
-    original: 'static/images/reviews/3.jpg',
-  },
-  {
-    original: 'static/images/reviews/4.jpg',
-  },
-  {
-    original: 'static/images/reviews/5.jpg',
-  },
-  {
-    original: 'static/images/reviews/6.jpg',
-  },
-]
 
