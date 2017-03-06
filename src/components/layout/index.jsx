@@ -1,8 +1,4 @@
 import React, { PropTypes, Component } from 'react'
-// import { observer } from 'mobx-react'
-// import { UIStore } from 'stores'
-
-// import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
 
 import FirstScreen from "components/first_screen"
 import Stock from "components/stock"
@@ -11,10 +7,8 @@ import Reviews from "components/reviews"
 import Contacts from "components/contacts"
 import Footer from "components/footer"
 import Test from "components/test"
-// import ModalForm from 'components/modal/form'
-// import ModalOk from 'components/modal/ok'
+// import Vendors from 'components/vendors'
 
-// @observer
 export default class Index extends Component {
 
   render() {
