@@ -13,7 +13,6 @@ export default class Answer extends Component {
     return answer
   }
 
-
   handleInput = () => {
     let { questionId } = this.props
     let { answerId } = this.props
