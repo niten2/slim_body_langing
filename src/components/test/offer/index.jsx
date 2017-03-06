@@ -29,7 +29,9 @@ export default class Offer extends Component {
 
         Спасибо за ваши ответы.
         <br />
-        Мы скоро с вами свяжемся и предложим вам персональный комплекс процедур с скидкой { discount }.
+        Мы скоро с вами свяжемся и предложим вам персональный комплекс процедур с скидкой
+        <strong className="color-red"> { discount } </strong>
+        рублей.
 
         <Col xsOffset={3} xs={6}>
           <h2 className="card-title"> Получить специальное предложение: </h2>

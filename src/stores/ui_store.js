@@ -59,7 +59,7 @@ Object.assign(UIStore, {
     if (!isObject(nextNextQuestion)) {
       this.isLastQuestion = true
       this.isShowOffer = true
-      this.discount = this.discount + stepDiscount
+      this.discount = this.discount + stepDiscount + 5
     }
 
   },
