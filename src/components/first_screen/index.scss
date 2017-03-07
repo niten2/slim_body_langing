@@ -1,6 +1,5 @@
 .first-screen {
   height: 100vh;
-  // height: 100%;
   text-align: center;
   border-bottom: 3px solid #d1cad0;
 
@@ -28,27 +27,27 @@
     margin-top: 4em;
   }
 
-//   @media screen and (min-width: 480px) {
-//     // height: 100vh;
+  @media not all and (orientation: landscape) {
+    h1 {
+      font-size: 5em;
+    }
 
-//     // img {
-//     //   display: none;
-//     // }
+    h2 {
+      font-size: 3.5em;
+    }
 
-//     h1 {
-//       font-size: 52pt;
-//     }
+    h3 {
+      font-size: 3em;
+    }
 
-//     h2 {
-//       font-size: 24pt;
-//     }
+    button {
+      font-size: 4em;
+    }
 
-//     button {
-//       margin: auto;
-//       margin-top: 150px;
-//       font-size: 60pt;
-//     }
+    input {
+      font-size: 3.5em;
+    }
 
-//   }
+  }
 
 }

@@ -7,7 +7,7 @@ import "./index.scss"
 export default class Main extends Component {
 
   state = {
-    isClick: false,
+    isClick: true,
   }
 
   handeShowForm = () => {

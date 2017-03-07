@@ -47,7 +47,7 @@ export default class Footer extends Component {
     return (
       <Col xsOffset={3} xs={6} className="ok">
         <h3> Заявка принята. </h3>
-        <h4> Скоро мы с вами свяжемся. </h4>
+        <h3> Скоро мы с вами свяжемся. </h3>
       </Col>
     )
   }
