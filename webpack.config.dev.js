@@ -7,31 +7,23 @@ export default {
 
   resolve: {
     modules: [
-      // path.resolve(__dirname, "src", "static"),
       path.resolve(__dirname, "src"),
       "src/static/images",
       "node_modules"
     ],
-    // modules: [
-    //   mainFields,
-    //   // path.resolve(__dirname, "src"),
-    //   // path.resolve(__dirname, "src", 'static', "images"),
-    //   "node_modules",
-    // ],
-
-    // mainFields: ["src", 'src/static'],
-    // modules: [path.resolve(__dirname, "src", "static"), path.resolve(__dirname, "src"), "node_modules"],
     extensions: ['*', '.js', '.jsx', '.json'],
   },
 
-  // more info:https://webpack.github.io/docs/build-performance.html#sourcemaps and https://webpack.github.io/docs/configuration.html#devtool
+  // https://webpack.github.io/docs/build-performance.html#sourcemaps
+  // https://webpack.github.io/docs/configuration.html#devtool
   devtool: 'eval-source-map',
 
   entry: [
     // must be first entry to properly set public path
     './src/webpack-public-path',
     'webpack-hot-middleware/client?reload=true',
-    path.resolve(__dirname, 'src/index.js') // Defining path seems necessary for this to work consistently on Windows machines.
+    // Defining path seems necessary for this to work consistently on Windows machines.
+    path.resolve(__dirname, 'src/index.js')
   ],
 
   // necessary per https://webpack.github.io/docs/testing.html#compile-and-test

@@ -13,6 +13,7 @@ export default function(options = {}) {
         questions: questions,
       }
     )
+    console.log("SEND TEST EMAIL Production", options)
   } else {
     console.log("SEND TEST EMAIL", options)
   }
