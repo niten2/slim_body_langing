@@ -23,7 +23,9 @@ export default class Contacts extends Component {
             <br />
             г. Красноярск <strong>ул. Краснодарская, 35</strong>
             <br />
-            Часы работы: с ПН по СБ <strong>с 10.00 до 21.00</strong>
+            Часы работы: с ПН по СБ
+            <br />
+            <strong>с 10.00 до 21.00</strong>
           </p>
         </Grid>
 

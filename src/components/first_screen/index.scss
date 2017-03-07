@@ -2,6 +2,7 @@
   height: 100vh;
   text-align: center;
   border-bottom: 3px solid #d1cad0;
+  padding-bottom: 50px;
 
   h1 {
     font-size: 4em;
@@ -20,7 +21,9 @@
   }
 
   input {
+    margin: auto;
     margin-top: 4em;
+    width: 50%;
   }
 
   .ok {
@@ -47,7 +50,6 @@
     input {
       font-size: 3.5em;
     }
-
   }
 
 }

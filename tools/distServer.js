@@ -15,6 +15,8 @@ browserSync({
     port: 4001
   },
 
+  open: false,
+
   server: {
     baseDir: 'dist'
   },
@@ -25,4 +27,5 @@ browserSync({
   ],
 
   middleware: [ historyApiFallback() ]
+
 })
