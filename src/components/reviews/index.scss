@@ -6,24 +6,33 @@
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    font-size: 4em;
   }
 
   img {
-    // height: 80vh !important;
     width: 359px;
     height: 633px;
-    // width: 35%;
-    // height: 35%;
   }
-
 
   .image-gallery {
     margin: auto;
     display: block;
-    // width: 359px;
-    // height: 633px;
     width: 35%;
     height: 35%;
+  }
+
+  @media screen and (min-width : 0px) and (max-width : 1024px) {
+
+    img {
+      height: 120%;
+    }
+
+    .image-gallery {
+      margin-left: -10%;
+      display: block;
+      width: 120%;
+    }
+
   }
 
 }

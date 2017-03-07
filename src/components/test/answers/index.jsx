@@ -11,7 +11,7 @@ export default class Answers extends Component {
     let { question, isLastQuestion } = UIStore
 
     return  (
-      <div className="row align-items-center">
+      <div className="row">
         { question.answers.map((answer, index) => (
               <Answer
                 key={index}
@@ -22,12 +22,14 @@ export default class Answers extends Component {
           )
         }
 
-        <button
-          className="btn"
-          onClick={ UIStore.nextQuestion }
-        >
-          Ответить
-        </button>
+        <div className="answer-btn">
+          <button
+            className="btn"
+            onClick={ UIStore.nextQuestion }
+          >
+            Ответить
+          </button>
+        </div>
 
       </div>
     )

@@ -1,13 +1,15 @@
 import React, { PropTypes, Component } from 'react'
 
 import FirstScreen from "components/first_screen"
-import Stock from "components/stock"
 import Services from "components/services"
 import Reviews from "components/reviews"
 import Contacts from "components/contacts"
 import Footer from "components/footer"
 import Test from "components/test"
+
+// import Stock from "components/stock"
 // import Vendors from 'components/vendors'
+// <Stock />
 
 export default class Index extends Component {
 
@@ -25,4 +27,3 @@ export default class Index extends Component {
   }
 
 }
-        // <Stock />

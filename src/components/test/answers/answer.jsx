@@ -25,24 +25,25 @@ export default class Answer extends Component {
     let answer = this.getAnswer()
 
     return  (
-      <div className="flex-center">
+      <div className="answer-main">
 
-        <div className="flex-answer">
-          <label>
-            <input
-              className="checkbox"
-              type="checkbox"
-              name="check"
-              checked={answer.checked}
-              onChange={this.handleInput}
-            />
-              <span className="checkbox-custom"></span>
-              &nbsp;
-              &nbsp;
-              <span className="">{ answer.body }</span>
-          </label>
+        <div className="answer-checkbox">
+          <input
+            className="checkbox"
+            type="checkbox"
+            name="check"
+            checked={answer.checked}
+            onChange={this.handleInput}
+          />
+
+          <div className="checkbox-custom"></div>
         </div>
 
+        <div className="answer-body">
+          { answer.body }
+        </div>
+
+        <br />
       </div>
     )
   }

@@ -60,8 +60,6 @@ export default class Footer extends Component {
     return (
       <Col>
         <h1>
-          Все еще думаете?
-          <br />
           Оставьте заявку на бесплатное посещение.
         </h1>
 

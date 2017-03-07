@@ -14,10 +14,11 @@ export default class Offer extends Component {
 
   renderOk() {
     return (
-      <h4 className="offer ok">
-        <h3> Заявка принята. </h3>
+      <div className="card-title">
+        <h3> Мы аккуратно записали ваши данные. </h3>
+        <h4> И уже почти отправили администратора составлять для вас комплекс процедур. </h4>
         <h4> Скоро мы с вами свяжемся. </h4>
-      </h4>
+      </div>
     )
   }
 

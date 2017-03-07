@@ -1,18 +1,28 @@
 .contacts {
-
-  padding-bottom: 50px;
   border-bottom: 3px solid #d1cad0;
+  margin-bottom: 10%;
 
   h1 {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20%;
+    font-size: 2.5em;
   }
 
   p {
-    // text-align: center;
     text-align: right;
-    font-size: 14pt;
+    font-size: 1.5em;
+  }
+
+  @media not all and (orientation: landscape) {
+
+    h1 {
+      font-size: 5em;
+    }
+
+    p {
+      font-size: 2.4em;
+    }
+
   }
 
 }

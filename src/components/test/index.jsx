@@ -20,7 +20,7 @@ export default class Test extends Component {
           { question.question }
         </h4>
 
-        <div className="card-text">
+        <div className="card-text row clearfix">
           <Answers question={question} />
         </div>
       </div>

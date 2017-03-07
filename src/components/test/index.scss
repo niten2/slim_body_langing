@@ -1,31 +1,11 @@
 .test {
-  height: 800px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-
+  text-align: center;
   padding-bottom: 50px;
   border-bottom: 3px solid #d1cad0;
-
-  .flex-center {
-    flex: 1 100%;
-  }
-
-  .flex-1 {
-    flex: 1;
-  }
-
-  input {
-    width: 50% !important;
-    margin: auto;
-  }
-
-  h1 {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
 
   button {
     margin: auto;
@@ -41,81 +21,126 @@
     margin: 20px;
   }
 
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+  .answer-btn {
+    flex: 1 100%;
   }
 
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+  @media all and (orientation: landscape) {
 
-  .card-title {
-    text-align: center;
-    margin: 20px;
-  }
+    h1 {
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
 
-  .card-text div {
-    display: flex;
-    flex-flow: row wrap;
-  }
+    .answer-main {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      flex: 1 100%;
+    }
 
-  .flex-answer {
-    flex: 1 27%;
-    margin-left: 35%;
-  }
+    .answer-checkbox {
+      flex: 1 50%;
+      padding-left: 25%;
+    }
 
-  .offer {
-    text-align: center;
-  }
+    .answer-body {
+      flex: 1 50%;
+      text-align: left;
+      padding-right: 15%;
+    }
 
-  .offer.ok {
-    margin: 100px;
-  }
 
-  .checkbox {
-    display: none;
-  }
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
 
-  .checkbox-custom {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #ccc;
-    border-radius: 3px;
-  }
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
 
-  .checkbox-custom, .label {
-    display: inline-block;
-    vertical-align: middle;
-  }
+    .card-title {
+      text-align: center;
+      margin: 20px;
+    }
 
-  .checkbox:checked + .checkbox-custom::before {
-    content: "";
-    display: block;
-    position: absolute;
+    .checkbox {
+      width: 20px;
+      height: 20px;
+      margin: auto;
+    }
 
-    top: 2px;
-    right: 2px;
-    bottom: 2px;
-    left: 2px;
+    .test-footer {
+      flex: 1 100%;
+    }
 
-    background: #b62673;
-    border-radius: 2px;
   }
 
 
-  // @media screen and (min-width : 0px) and (max-width : 1024px) {
-  //   div {
-  //     padding-top: 50px;
-  //     padding-bottom: 50px;
-  //     order: -1;
-  //   }
+  @media not all and (orientation: landscape) {
+    margin-top: 10%;
+    margin-bottom: 20%;
 
-  //   .offer {
-  //     width: 100%;
-  //   }
-  // }
+    h1 {
+      font-size: 4em;
+    }
+
+    h4, h3 {
+      padding-top: 10%;
+      padding-bottom: 10%;
+      font-size: 1.3em;
+    }
+
+    button {
+      font-size: 1.5em;
+    }
+
+    input {
+      width: 100% !important;
+      font-size: 1em;
+      margin: auto;
+      margin-top: 20%;
+      margin-bottom: 10%;
+    }
+
+    .comments {
+      font-size: 3.5em;
+    }
+
+    .card {
+      font-size: 3em;
+    }
+
+    .card-title {
+      padding-top: 10%;
+      font-size: 1.2em;
+    }
+
+    .answer-main {
+      display: flex;
+      flex-flow: row wrap;
+      flex: 1 100%;
+    }
+
+    .answer-checkbox {
+      padding-left: 30px;
+      flex: 1 20%;
+    }
+
+    .answer-body {
+      flex: 1 80%;
+      padding-left: 30px;
+      text-align: left;
+    }
+
+    .checkbox {
+      width: 5vh;
+      height: 10vw;
+      margin: auto;
+    }
+
+  }
 
 }
 
