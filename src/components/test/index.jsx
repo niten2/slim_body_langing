@@ -17,7 +17,7 @@ export default class Test extends Component {
     return (
       <div>
         <h4 className="card-title">
-          { question.question }
+          <strong> { question.question } </strong>
         </h4>
 
         <div className="card-text row clearfix">
