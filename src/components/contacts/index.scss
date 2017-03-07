@@ -1,6 +1,6 @@
 .contacts {
-  border-bottom: 3px solid #d1cad0;
   padding-bottom: 10%;
+
 
   h1 {
     text-align: center;
@@ -12,6 +12,11 @@
   p {
     text-align: right;
     font-size: 1.5em;
+  }
+
+  .bottom {
+    margin-top: 5%;
+    border-bottom: 3px solid #d1cad0;
   }
 
   @media not all and (orientation: landscape) {

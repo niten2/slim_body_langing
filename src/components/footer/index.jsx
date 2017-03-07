@@ -66,7 +66,7 @@ export default class Footer extends Component {
         <input
           name="phone"
           onChange={this.handeInput}
-          placeholder="Ваш Телефон*"
+          placeholder="Ваш Телефон или Email*"
           className="form-control"
           value={phone}
         />
