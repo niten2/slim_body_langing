@@ -28,7 +28,7 @@
     "test:watch": "npm run test -- --watch",
     "open:cover": "npm run test:cover && open coverage/lcov-report/index.html",
     "analyze-bundle": "babel-node ./tools/analyzeBundle.js",
-    "clear": "rm -rf dist/*"
+    "clear": "rm -rf docs/*"
   },
   "author": "niten2",
   "license": "MIT",
