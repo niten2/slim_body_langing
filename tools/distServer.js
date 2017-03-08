@@ -9,16 +9,16 @@ console.log(chalkProcessing('Opening production build...'))
 
 // Run Browsersync
 browserSync({
-  port: 4000,
+  port: 5000,
 
   ui: {
-    port: 4001
+    port: 5001
   },
 
   open: false,
 
   server: {
-    baseDir: 'dist'
+    baseDir: 'docs'
   },
 
   files: [

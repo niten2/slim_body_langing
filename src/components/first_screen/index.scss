@@ -1,5 +1,6 @@
 .first-screen {
   height: 100vh;
+  min-height: 1000px;
   text-align: center;
   border-bottom: 3px solid #d1cad0;
   padding-bottom: 50px;
@@ -30,7 +31,18 @@
     margin-top: 4em;
   }
 
+  @media all and (orientation: landscape) {
+    background-image: url("~static/images/first.gif");
+    background-size: 100%;
+    // background-position: -500px;
+    background-repeat: no-repeat;
+    color: white;
+  }
+
   @media not all and (orientation: landscape) {
+    width: 90%;
+    margin-left: 5% !important;
+
     h1 {
       font-size: 5em;
     }

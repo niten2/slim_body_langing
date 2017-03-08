@@ -1,4 +1,4 @@
-// import imageUrl from "image_url"
+// import imageUrl from "lib/image_url"
 // <img src={imageUrl('logo.png')} />
 
 export default function imageUrl(imageName) {

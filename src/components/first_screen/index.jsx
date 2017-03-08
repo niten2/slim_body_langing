@@ -1,8 +1,8 @@
 import React, { PropTypes, Component } from 'react'
 
-import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
 import Form from "./form"
 import "./index.scss"
+import imageUrl from "lib/image_url"
 
 export default class Main extends Component {
 
@@ -26,8 +26,8 @@ export default class Main extends Component {
     let { isClick } = this.state
 
     return (
-      <Grid>
-        <Row className="first-screen">
+      <div className="">
+        <div className="row first-screen">
 
           <div className="align-self-center">
             <h1>
@@ -41,9 +41,11 @@ export default class Main extends Component {
             { isClick ? <Form /> : this.renderButton() }
           </div>
 
-        </Row>
-      </Grid>
+        </div>
+      </div>
     )
   }
 
 }
+
+          // <img src={imageUrl("first.gif")} />
