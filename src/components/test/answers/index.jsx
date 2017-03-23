@@ -10,7 +10,9 @@ export default class Answers extends Component {
     let { question, isLastQuestion } = UIStore
 
     return  (
-      <div>
+      <div className="row">
+
+        <div className="col-12 align-self-center answer-block">
         { question.answers.map((answer, index) => (
               <Answer
                 key={index}
@@ -20,8 +22,9 @@ export default class Answers extends Component {
             )
           )
         }
+        </div>
 
-        <div className="answer-btn">
+        <div className="col-12 align-self-end answer-btn">
           <button
             className="btn btn-primary btn-lg raised"
             onClick={ UIStore.nextQuestion }

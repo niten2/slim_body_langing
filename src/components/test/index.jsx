@@ -41,7 +41,7 @@ export default class Test extends Component {
         </div>
 
         <div className="col-12 custom-card">
-          { isShowOffer ? <Offer /> : this.renderAnswers() }
+            { isShowOffer ? <Offer /> : this.renderAnswers() }
         </div>
 
         <div className="col-12 text-center test-footer">

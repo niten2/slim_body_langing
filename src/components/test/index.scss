@@ -82,6 +82,8 @@
 
     h2 {
       margin: 10% 10%;
+      font-size: 1.5rem;
+      height: 10vh;
     }
 
     input[type="checkbox"] {
@@ -90,6 +92,24 @@
       margin: 5px;
       margin-left: 10%;
       vertical-align: middle;
+    }
+
+    .custom-card {
+      height: 90vh;
+      min-height: 600px;
+    }
+
+    .offer {
+      height: 80vh;
+      font-size: 1.5rem;
+    }
+
+    .form-control {
+      font-size: 1.5rem;
+    }
+
+    .answer-block {
+      height: 63vh;
     }
 
   }

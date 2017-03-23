@@ -55,8 +55,10 @@ export default class Offer extends Component {
     let { isSendOffer } = UIStore
 
     return  (
-      <div className="text-center">
-        { isSendOffer ? this.renderOk() : this.renderOffer() }
+      <div className="row offer align-items-center justify-content-center text-center">
+        <div className="col">
+          { isSendOffer ? this.renderOk() : this.renderOffer() }
+        </div>
       </div>
     )
   }
