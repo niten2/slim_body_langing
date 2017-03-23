@@ -26,7 +26,7 @@ export default class Answer extends Component {
 
     return  (
       <div className="row answer">
-        <div className="checkbox col-12 offset-sm-5 col-sm-4 align-self-center text-left">
+        <div className="checkbox col-12 offset-sm-4 col-sm-4 align-self-center text-left">
           <div className="col">
 
             <div className="checkbox text-center">

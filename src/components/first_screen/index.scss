@@ -18,9 +18,19 @@
     background-size: 100%;
     background-repeat: no-repeat;
     color: white;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    .form-control {
+      font-size: 1.5rem;
+    }
+
   }
 
   @media (max-width: 576px) {
+
     h1 {
       font-size: 2rem;
     }

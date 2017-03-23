@@ -4,15 +4,14 @@
 
   h1 {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 4em;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 
-  img {
-    width: 359px;
-    height: 633px;
-  }
+  // img {
+  //   width: 359px;
+  //   height: 633px;
+  // }
 
   @media (min-width: 575px) {
     .image-gallery {
@@ -30,7 +29,7 @@
     }
 
     .image-gallery {
-      margin-left: -2.5%;
+      margin-left: -10%;
       display: block;
       width: 120%;
     }

@@ -1,5 +1,4 @@
 import React, { PropTypes, Component } from 'react'
-import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
 import ImageGallery from 'react-image-gallery'
 import images from "./images"
 import "./index.scss"
@@ -8,8 +7,8 @@ export default class Contacts extends Component {
 
   render() {
     return (
-      <Grid>
-        <Col className="reviews">
+      <div className="container">
+        <div className="col reviews">
           <h1> Отзывы </h1>
 
           <ImageGallery
@@ -21,8 +20,8 @@ export default class Contacts extends Component {
             showFullscreenButton={false}
           />
 
-        </Col>
-      </Grid>
+        </div>
+      </div>
     )
   }
 

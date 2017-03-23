@@ -1,5 +1,4 @@
 import React, { PropTypes, Component } from 'react'
-import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
 import imageUrl from "lib/image_url"
 import Form from "./form"
 import "./index.scss"
@@ -16,7 +15,7 @@ export default class Contacts extends Component {
 
   renderView() {
     return (
-      <Row>
+      <div className="row">
         <div className="col-sm-6 align-self-center">
           <img src={imageUrl("stock/bomb.jpg")} />
         </div>
@@ -56,7 +55,7 @@ export default class Contacts extends Component {
           Записаться на первую процедуру
         </button>
 
-      </Row>
+      </div>
     )
   }
 
@@ -64,11 +63,11 @@ export default class Contacts extends Component {
     let { isClick } = this.state
 
     return (
-      <Grid>
+      <div className="container">
         <div className="stock">
           { isClick ? <Form /> : this.renderView() }
         </div>
-      </Grid>
+      </div>
     )
   }
 

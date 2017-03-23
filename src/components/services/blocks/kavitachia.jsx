@@ -1,5 +1,4 @@
 import React, { PropTypes, Component } from 'react'
-import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
 import imageUrl from "lib/image_url"
 
 export default class Kavitachia extends Component {

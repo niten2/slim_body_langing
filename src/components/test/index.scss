@@ -22,20 +22,34 @@
     }
   }
 
+  .answer {
+    .body {
+      display: inline-block;
+      word-wrap: break-word;
+      vertical-align: middle;
+      width: 80%;
+    }
+
+    .checkbox {
+      display: inline-block;
+    }
+  }
+
   @media (min-width: 575px) {
+
+    .offset-sm-4 {
+      margin-left: 36.333333%;
+    }
+
     h1 {
       padding-bottom: 2%;
     }
 
     input[type="checkbox"] {
-      width: 20px;
-      height: 20px;
+      width: 35px;
+      height: 35px;
+      margin: 10px;
       vertical-align:middle;
-    }
-
-    .answer .body {
-      display: inline-block;
-      vertical-align: middle;
     }
 
     .custom-card {
@@ -51,21 +65,23 @@
     .custom-card:hover {
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
+
+    .card-title {
+      font-size: 1.5rem;
+    }
+
   }
 
   @media (max-width: 576px) {
     margin-top: 5%;
     margin-bottom: 5%;
-    font-size: 1.5rem;
 
     h1 {
-      font-size: 2rem;
       margin: 5% 5%;
     }
 
     h2 {
       margin: 10% 10%;
-      font-size: 1.5rem;
     }
 
     input[type="checkbox"] {
@@ -74,23 +90,6 @@
       margin: 5px;
       margin-left: 10%;
       vertical-align: middle;
-    }
-
-    .form-control {
-      font-size: 1.5rem;
-    }
-
-    .answer {
-      .body {
-        display: inline-block;
-        word-wrap: break-word;
-        width: 80%;
-        vertical-align: middle;
-      }
-
-      .checkbox {
-        display: inline-block;
-      }
     }
 
   }

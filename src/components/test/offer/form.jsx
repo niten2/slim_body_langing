@@ -44,7 +44,7 @@ export default class Form extends Component {
     let { error } = this.state
 
     return (
-      <div>
+      <div className="offset-sm-3 col-sm-6">
         <input
           name="phone"
           onChange={ this.handeInput }

@@ -51,100 +51,28 @@
 }
 
 
-// // btn
-// .btn-primary.raised:active, .btn-primary.raised.active {
-// 	background: #33a6cc;
-// 	box-shadow: none;
-// 	margin-bottom: -3px;
-// 	margin-top: 3px;
+
+// @media (min-width: 575px) {
+
+//   h1 {
+//     font-size: 3rem;
+//   }
+
+//   p {
+//     font-size: 1.5rem;
+//   }
+
 // }
 
-// /**************************
-//   DEFAULT BOOTSTRAP STYLES
-// **************************/
+// @media (max-width: 576px) {
 
-// .btn {
-//   display: inline-block;
-//   padding: 6px 12px;
-//   margin-bottom: 0;
-//   font-size: 14px;
-//   font-weight: normal;
-//   line-height: 1.42857143;
-//   text-align: center;
-//   white-space: nowrap;
-//   vertical-align: middle;
-//   cursor: pointer;
-//   -webkit-user-select: none;
-//      -moz-user-select: none;
-//       -ms-user-select: none;
-//           user-select: none;
-//   background-image: none;
-//   border: 1px solid transparent;
-//   border-radius: 4px;
-//   padding: 10px 16px;
+//   h1 {
+//     font-size: 3rem;
+//   }
+
+//   p {
+//     font-size: 1.5rem;
+//   }
+
 // }
 
-// .btn-lg {
-//   font-size: 18px;
-//   line-height: 1.33;
-//   border-radius: 6px;
-// }
-
-// .btn-primary {
-//   color: #fff;
-//   background-color: #428bca;
-//   border-color: #357ebd;
-// }
-
-// .btn-primary:hover,
-// .btn-primary:focus,
-// .btn-primary:active,
-// .btn-primary.active,
-// .open .dropdown-toggle.btn-primary {
-//   color: #fff;
-//   background-color: #3276b1;
-//   border-color: #285e8e;
-// }
-
-// /***********************
-//   RAISED BUTTONS
-// ************************/
-// .btn-primary.raised {
-//     box-shadow: 0 3px 0 0 #007299;
-// }
-// .btn-primary.raised:active, .btn-primary.raised.active {
-//     background: #33a6cc;
-//     box-shadow: none;
-//     margin-bottom: -3px;
-//     margin-top: 3px;
-// }
-
-/***********************
-  CUSTON BTN VALUES
-************************/
-
-
-
-
-// button.btn {
-//   display: block;
-
-// 	transition: all 0.1s;
-// 	-webkit-transition: all 0.1s;
-
-// 	padding: 2% 5%;
-// 	border-radius: 10px;
-// 	font-family: 'Pacifico', cursive;
-// 	color: #FFF;
-// 	text-decoration: none;
-
-// 	background-color: #E74C3C;
-// 	border-bottom: 5px solid #BD3E31;
-// 	text-shadow: 0px -2px #BD3E31;
-// }
-
-// button.btn:active {
-// 	transform: translate(0px,5px);
-//   -webkit-transform: translate(0px,5px);
-// 	border-bottom: 1px solid;
-// }
