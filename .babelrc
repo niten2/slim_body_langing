@@ -4,23 +4,13 @@
     "stage-1",
     'es2015',
     "react",
-    "latest",
-    "react-hmre",
-  ],
-  "plugins": [
-    "transform-react-constant-elements",
-    "transform-react-remove-prop-types",
-    "transform-class-properties",
-    "transform-decorators-legacy",
-    "babel-plugin-syntax-async-functions",
-    'add-module-exports',
   ],
 
   "env": {
+
     "development": {
       "presets": [
         "latest",
-        "react-hmre"
       ],
       "plugins": [
         "transform-react-constant-elements",
@@ -31,6 +21,7 @@
         'add-module-exports',
       ]
     },
+
     "production": {
       "presets": [
         ["latest", {
@@ -48,11 +39,15 @@
         'add-module-exports',
       ]
     },
+
     "test": {
       "presets": [
         "latest"
       ]
     }
+
   }
 }
+
+
 

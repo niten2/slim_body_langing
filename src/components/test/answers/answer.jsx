@@ -1,7 +1,7 @@
 import React, { PropTypes, Component } from 'react'
 import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
-import { find } from "lodash"
+import find from "lodash/find"
 
 @observer
 export default class Answer extends Component {

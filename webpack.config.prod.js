@@ -24,11 +24,13 @@ export default {
     extensions: ['*', '.js', '.jsx', '.json']
   },
 
-  devtool: 'source-map', // more info:https://webpack.github.io/docs/build-performance.html#sourcemaps and https://webpack.github.io/docs/configuration.html#devtool
+  // https://webpack.github.io/docs/build-performance.html#sourcemaps and https://webpack.github.io/docs/configuration.html#devtool
+  devtool: 'source-map',
 
   entry: path.resolve(__dirname, 'src/index'),
 
-  target: 'web', // necessary per https://webpack.github.io/docs/testing.html#compile-and-test
+  // necessary per https://webpack.github.io/docs/testing.html#compile-and-test
+  target: 'web',
 
   output: {
     path: path.resolve(__dirname, 'docs'),
@@ -42,6 +44,7 @@ export default {
   },
 
   plugins: [
+
     // Hash the files using MD5 so that their names change when the content changes.
     new WebpackMd5Hash(),
 
@@ -79,7 +82,10 @@ export default {
     new webpack.LoaderOptionsPlugin({
       minimize: true,
       debug: false,
-      noInfo: true, // set to false to see a list of every file being bundled.
+
+      // set to false to see a list of every file being bundled.
+      noInfo: true,
+
       options: {
         sassLoader: {
           includePaths: [path.resolve(__dirname, 'src', 'scss')]

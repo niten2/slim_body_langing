@@ -1,11 +1,12 @@
 // // import { UIStore } from 'stores'
 import { extendObservable, transaction } from 'mobx'
-import bindAll from 'lodash/bindAll'
-import { isObject, isInteger, find } from "lodash"
-import { autorun } from 'mobx'
 
+import bindAll from 'lodash/bindAll'
+import find from "lodash/find"
+import isObject from "lodash/isObject"
+
+import { autorun } from 'mobx'
 import { questions } from 'components/test/data/questions'
-// import { subscription } from 'components/test/data/subscription'
 
 let UIStore  = {
   notificationSystem: null,
@@ -92,8 +93,8 @@ Object.assign(UIStore, {
 export default bindAll(UIStore, [
   "firstQuestion",
   "nextQuestion",
-  // "showModalForm",
-  // "hideModalForm",
   "sendOffer",
   "returnOffer",
+  // "showModalForm",
+  // "hideModalForm",
 ])

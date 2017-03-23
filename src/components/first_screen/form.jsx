@@ -1,7 +1,7 @@
 import React, { PropTypes, Component } from 'react'
 import sendEmail from 'lib/email'
 
-export default class Footer extends Component {
+export default class Form extends Component {
 
   state = {
     error: false,

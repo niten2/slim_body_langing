@@ -2,8 +2,6 @@ import React, { PropTypes, Component } from 'react'
 import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
 
-import { isObject, isInteger, find } from "lodash"
-
 import Answers from './answers'
 import Offer from './offer'
 import "./index.scss"

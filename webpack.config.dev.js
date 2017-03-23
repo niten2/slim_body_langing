@@ -30,16 +30,21 @@ export default {
   ],
 
   output: {
+
     // Note: Physical files are only output by the production build task `npm run build`.
     path: path.resolve(__dirname, 'dist'),
+
     publicPath: '/',
     filename: 'bundle.js'
   },
 
   plugins: [
     new webpack.DefinePlugin({
-      // Tells React to build in either dev or prod modes. https://facebook.github.io/react/downloads.html (See bottom)
+
+      // Tells React to build in either dev or prod modes.
+      // https://facebook.github.io/react/downloads.html (See bottom)
       'process.env.NODE_ENV': JSON.stringify('development'),
+
       DEV: true
     }),
 
@@ -59,8 +64,10 @@ export default {
     new webpack.LoaderOptionsPlugin({
       minimize: false,
       debug: true,
+
       // set to false to see a list of every file being bundled.
       noInfo: true,
+
       options: {
         sassLoader: {
           includePaths: [path.resolve(__dirname, 'src', 'scss')]

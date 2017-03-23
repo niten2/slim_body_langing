@@ -7,9 +7,6 @@ import Contacts from "components/contacts"
 import Footer from "components/footer"
 import Test from "components/test"
 
-// import Stock from "components/stock"
-// import Vendors from 'components/vendors'
-
 export default class Index extends Component {
 
   render() {
