@@ -10,8 +10,9 @@
     color: red;
   }
 
-  // @media (min-width: 575px) {
-  // }
+  @media (min-width: 575px) {
+    padding-bottom: 20%;
+  }
 
   @media (max-width: 576px) {
     height: 100vh;
