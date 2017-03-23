@@ -11,6 +11,7 @@
     "development": {
       "presets": [
         "latest",
+        "react-hmre",
       ],
       "plugins": [
         "transform-react-constant-elements",

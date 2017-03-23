@@ -66,7 +66,7 @@
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
 
-    .card-title {
+    .card-title-offer {
       font-size: 1.5rem;
     }
 
@@ -83,7 +83,7 @@
     h2 {
       margin: 10% 10%;
       font-size: 1.5rem;
-      height: 10vh;
+      height: 5vh;
     }
 
     input[type="checkbox"] {
@@ -100,7 +100,7 @@
     }
 
     .offer {
-      height: 80vh;
+      height: 90vh;
       font-size: 1.5rem;
     }
 
@@ -109,7 +109,12 @@
     }
 
     .answer-block {
-      height: 63vh;
+      height: 68vh;
+    }
+
+    .card-title-offer {
+      font-size: 1.5rem;
+      // height: 68vh;
     }
 
   }
