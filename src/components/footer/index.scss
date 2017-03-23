@@ -1,57 +1,35 @@
 .footer {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  text-align: center;
 
-  h1 {
-    margin: 20px;
-    display: block;
-    text-align: center;
-  }
-
-  button {
-    margin: auto;
-    margin-top: 20px;
-  }
-
-  .ok {
-    margin-top: 40px;
-    margin-bottom: 100px;
-  }
-
-  input {
-    width: 50%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  @media not all and (orientation: landscape) {
+  .form-control {
     margin-top: 5%;
     margin-bottom: 5%;
+  }
 
-    h1 {
-      font-size: 5em;
+  .error {
+    color: red;
+  }
+
+  // @media (min-width: 575px) {
+
+  // }
+
+  @media (max-width: 576px) {
+    height: 100vh;
+
+    h2 {
+      font-size: 3.5rem;
     }
 
-    h3 {
-      font-size: 5em;
+    .form-control {
+      font-size: 1.5rem;
     }
 
-    h4 {
-      font-size: 4em;
-    }
-
-    input {
-      font-size: 3em;
-      width: 100%;
-      margin-top: 5%;
-      margin-bottom: 5%;
-    }
-
-    button {
-      font-size: 4em;
+    .error {
+      font-size: 2rem;
     }
 
   }
 
 }
+

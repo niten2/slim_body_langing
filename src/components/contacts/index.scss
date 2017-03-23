@@ -1,17 +1,15 @@
 .contacts {
   padding-bottom: 10%;
 
-
   h1 {
     text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
-    font-size: 2.5em;
   }
 
   p {
     text-align: right;
-    font-size: 1.5em;
+    margin-right: 5%;
   }
 
   .bottom {
@@ -19,16 +17,24 @@
     border-bottom: 3px solid #d1cad0;
   }
 
-  @media not all and (orientation: landscape) {
-
+  @media (min-width: 575px) {
     h1 {
-      font-size: 5em;
+      font-size: 5rem;
     }
 
     p {
-      font-size: 2.4em;
+      font-size: 2.4rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 3rem;
     }
 
+    p {
+      font-size: 1.5rem;
+    }
   }
 
 }

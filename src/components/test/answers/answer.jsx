@@ -25,25 +25,27 @@ export default class Answer extends Component {
     let answer = this.getAnswer()
 
     return  (
-      <div className="answer-main">
+      <div className="row answer">
+        <div className="checkbox col-12 offset-sm-5 col-sm-4 align-self-center text-left">
+          <div className="col">
 
-        <div className="answer-checkbox">
-          <input
-            className="checkbox"
-            type="checkbox"
-            name="check"
-            checked={answer.checked}
-            onChange={this.handleInput}
-          />
+            <div className="checkbox text-center">
+              <input
+                type="checkbox"
+                name="check"
+                checked={answer.checked}
+                onChange={this.handleInput}
+              />
+            </div>
 
-          <div className="checkbox-custom"></div>
+            &nbsp;
+
+            <div className="body text-center">
+              { answer.body }
+            </div>
+
+          </div>
         </div>
-
-        <div className="answer-body">
-          { answer.body }
-        </div>
-
-        <br />
       </div>
     )
   }

@@ -3,7 +3,6 @@ import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
 
 import { isObject, isInteger, find } from "lodash"
-import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
 
 import Answers from './answers'
 import Offer from './offer'
@@ -14,14 +13,17 @@ export default class Test extends Component {
 
   renderAnswers() {
     let { question } = UIStore
-    return (
-      <div>
-        <h4 className="card-title">
-          <strong> { question.question } </strong>
-        </h4>
 
-        <div className="card-text row clearfix">
-          <Answers question={question} />
+    return (
+      <div className="row align-items-center justify-content-center text-center">
+        <div className="col-12">
+          <h2 className="title">
+            <strong> { question.question } </strong>
+          </h2>
+
+          <div className="text">
+            <Answers question={question} />
+          </div>
         </div>
       </div>
     )
@@ -32,31 +34,38 @@ export default class Test extends Component {
 
     return (
       <div className="container test">
-        <h1 className="flex-center">
-          Пройдите тест и получите персональное спец. предложение
-        </h1>
+      <div className="row">
 
-        <div className="card flex-center">
+        <div className="col-12 text-center">
+          <h1>
+            Пройдите тест и получите персональное спец. предложение
+          </h1>
+        </div>
+
+        <div className="col-12 custom-card">
           { isShowOffer ? <Offer /> : this.renderAnswers() }
         </div>
 
-        <div className="test-footer">
-
+        <div className="col-12 text-center test-footer">
           <div onClick={ UIStore.firstQuestion } className="pointer comments">
             Начать заново
           </div>
+
+          &nbsp;
+          &nbsp;
+          &nbsp;
 
           <div className="comments">
             Ваша скидка
             &nbsp;
             <div className="color-red">{ discount } </div>
-
             &nbsp;
             руб.
           </div>
 
         </div>
 
+      </div>
       </div>
     )
   }

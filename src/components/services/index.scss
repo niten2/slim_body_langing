@@ -1,79 +1,78 @@
 .services {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   border-bottom: 3px solid #d1cad0;
 
-  h1 {
-    text-align: center;
-    font-size: 4em;
-  }
-
-  img {
-    margin: auto;
-    display: block;
-    width: 300px;
-    border-radius: 20px;
-  }
-
-  .texts {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .image {
-    margin: auto;
-    width: 400px;
-  }
-
-  .offer {
-    margin: auto;
-    width: 400px;
-  }
-
-  .text-right-only-web {
-    text-align: right;
-  }
-
-  @media screen and (min-width : 0px) and (max-width : 1024px) {
+  @media (min-width: 575px) {
     h1 {
       text-align: center;
-      font-size: 7em;
-      margin-bottom: 10%;
-    }
-
-    h2 {
-      text-align: center;
-      font-size: 2em;
+      font-size: 4em;
     }
 
     img {
       margin: auto;
-      width: 100%;
+      display: block;
+      width: 300px;
       border-radius: 20px;
     }
 
-    .image {
+    .texts {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
       padding-top: 50px;
       padding-bottom: 50px;
-      order: -1;
-      width: 100%;
+    }
+
+    .image {
+      margin: auto;
+      width: 400px;
     }
 
     .offer {
-      width: 100%;
-      font-size: 3em;
-      margin-top: 10%;
-      margin-bottom: 20%;
+      margin: auto;
+      width: 333px;
     }
 
     .text-right-only-web {
-      text-align: left;
+      text-align: right;
+    }
+  }
+
+  @media (max-width: 576px) {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      text-align: center;
+      font-size: 4em;
+      margin-top: 5%;
+      margin-bottom: 15%;
     }
 
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
 
+    img {
+      margin: auto;
+      display: block;
+      width: 80%;
+      border-radius: 5%;
+    }
+
+    .offer {
+      font-size: 1.5rem;
+      margin-bottom: 10%;
+      margin-left: 10%;
+      max-width: 80%;
+    }
   }
 
 }

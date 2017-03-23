@@ -28,7 +28,9 @@
     "test:watch": "npm run test -- --watch",
     "open:cover": "npm run test:cover && open coverage/lcov-report/index.html",
     "analyze-bundle": "babel-node ./tools/analyzeBundle.js",
-    "clear": "rm -rf docs/*"
+    "clear": "rm -rf docs/*",
+    "story": "start-storybook -p 6006 ",
+    "build-storybook": "build-storybook"
   },
   "author": "niten2",
   "license": "MIT",
@@ -49,6 +51,7 @@
     "redux-thunk": "2.1.0"
   },
   "devDependencies": {
+    "@kadira/storybook": "^2.21.0",
     "autoprefixer": "6.5.4",
     "babel-cli": "6.18.0",
     "babel-core": "6.20.0",
@@ -83,6 +86,7 @@
     "eslint-watch": "2.1.14",
     "extract-text-webpack-plugin": "2.0.0-beta.4",
     "file-loader": "0.9.0",
+    "glob-loader": "0.3.0",
     "html-webpack-plugin": "2.24.1",
     "identity-obj-proxy": "3.0.0",
     "jest": "18.1.0",

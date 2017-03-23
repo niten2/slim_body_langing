@@ -1,5 +1,4 @@
 import React, { PropTypes, Component } from 'react'
-import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
 
 import Kavitachia from "components/services/blocks/kavitachia"
 import Massaj from "components/services/blocks/massaj"
@@ -12,7 +11,7 @@ export default class Contacts extends Component {
 
   render() {
     return (
-      <Grid className="services">
+      <div className="container services">
         <h1> Услуги </h1>
 
         <Massaj />
@@ -20,7 +19,7 @@ export default class Contacts extends Component {
         <Mio />
         <Press />
         <RfLifting />
-      </Grid>
+      </div>
     )
   }
 

@@ -1,51 +1,30 @@
 import React, { PropTypes, Component } from 'react'
-
 import Form from "./form"
-import "./index.scss"
 import imageUrl from "lib/image_url"
+import "./index.scss"
 
 export default class Main extends Component {
 
-  state = {
-    isClick: true,
-  }
-
-  handeShowForm = () => {
-    this.setState({ isClick: true })
-  }
-
-  renderButton() {
-    return (
-      <button className="btn" onClick={ this.handeShowForm }>
-        Получить
-      </button>
-    )
-  }
-
   render() {
-    let { isClick } = this.state
-
     return (
-      <div className="">
-        <div className="row first-screen">
+      <div className="first-screen row align-items-center justify-content-center text-center">
 
-          <div className="align-self-center">
-            <h1>
-              Уменьшим обьемы тела на 3 - 5 сантиметров за 10 процедур с помощью массажей и аппаратного похудения.
-            </h1>
-
-            <h2>
-              Получите бесплатную процедуру.
-            </h2>
-
-            { isClick ? <Form /> : this.renderButton() }
+        <div className="col-11 col-md-6">
+          <h1>
+            Уменьшим обьемы тела на 3 - 5 сантиметров за 10 процедур с помощью массажей и аппаратного похудения.
+          </h1>
+          <h2>
+            Получите бесплатную процедуру.
+          </h2>
+          <div className="row justify-content-center">
+            <Form />
           </div>
-
         </div>
+
       </div>
     )
   }
 
 }
 
-          // <img src={imageUrl("first.gif")} />
+

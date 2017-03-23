@@ -9,7 +9,6 @@ import Test from "components/test"
 
 // import Stock from "components/stock"
 // import Vendors from 'components/vendors'
-// <Stock />
 
 export default class Index extends Component {
 

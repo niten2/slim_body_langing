@@ -1,5 +1,4 @@
 import React, { PropTypes, Component } from 'react'
-import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
 import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
 import sendEmail from 'lib/email'
@@ -42,45 +41,44 @@ export default class Footer extends Component {
 
   renderError() {
     return (
-      <div className="text-danger text-center">Необходимо заполнить поля Имя и Телефон</div>
+      <div className="error">Необходимо заполнить поля Имя и Телефон</div>
     )
   }
 
   renderOk() {
     return (
-      <Col xsOffset={3} xs={6} className="ok text-center">
-        <h3> Заявка принята. </h3>
-        <h4> Скоро мы с вами свяжемся. </h4>
-      </Col>
+      <div className="col">
+        <h1> Заявка принята. </h1>
+        <h1> Скоро мы с вами свяжемся. </h1>
+      </div>
     )
   }
 
   renderForm() {
     let { phone, error } = this.state
     return (
-      <Col>
-        <h1>
+      <div className="col">
+        <h2>
           Оставьте заявку на бесплатное посещение.
-        </h1>
+        </h2>
 
         <input
           name="phone"
           onChange={this.handeInput}
           placeholder="Ваш Телефон или Email*"
-          className="form-control"
+          className="form-control input"
           value={phone}
         />
 
-        <Clearfix />
         { error ? this.renderError() : null }
 
         <button
-          className="btn"
+          className="btn btn-primary btn-lg raised"
           onClick={this.handeSendEmail}
         >
           Оставить заявку
         </button>
-      </Col>
+      </div>
     )
   }
 
@@ -88,9 +86,11 @@ export default class Footer extends Component {
     let { isSendEmail } = this.state
 
     return (
-      <Grid className="footer">
-        { isSendEmail ? this.renderOk() : this.renderForm() }
-      </Grid>
+      <div className="container">
+        <div className="footer row align-items-center justify-content-center text-center">
+          { isSendEmail ? this.renderOk() : this.renderForm() }
+        </div>
+      </div>
     )
   }
 

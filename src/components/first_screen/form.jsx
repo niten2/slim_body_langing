@@ -1,7 +1,5 @@
 import React, { PropTypes, Component } from 'react'
-import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
 import sendEmail from 'lib/email'
-import "./index.scss"
 
 export default class Footer extends Component {
 
@@ -45,18 +43,17 @@ export default class Footer extends Component {
 
   renderOk() {
     return (
-      <Col xsOffset={3} xs={6} className="ok">
+      <div>
         <h3> Заявка принята. </h3>
         <h3> Скоро мы с вами свяжемся. </h3>
-      </Col>
+      </div>
     )
   }
 
   renderForm() {
     let { phone, error } = this.state
     return (
-      <Col xsOffset={6} xs={2}>
-
+      <div>
         <input
           name="phone"
           onChange={this.handeInput}
@@ -64,17 +61,17 @@ export default class Footer extends Component {
           className="form-control"
           value={phone}
         />
+        <br />
 
-        <Clearfix />
         { error ? this.renderError() : null }
 
         <button
-          className="btn"
+          className="btn btn-primary raised btn-block"
           onClick={this.handeSendEmail}
         >
           Оставить заявку
         </button>
-      </Col>
+      </div>
     )
   }
 
@@ -82,9 +79,9 @@ export default class Footer extends Component {
     let { isSendEmail } = this.state
 
     return (
-      <footer className="text-center">
+      <div>
         { isSendEmail ? this.renderOk() : this.renderForm() }
-      </footer>
+      </div>
     )
   }
 

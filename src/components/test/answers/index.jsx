@@ -1,7 +1,6 @@
 import React, { PropTypes, Component } from 'react'
 import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
-
 import Answer from './answer'
 
 @observer
@@ -11,7 +10,7 @@ export default class Answers extends Component {
     let { question, isLastQuestion } = UIStore
 
     return  (
-      <div className="row">
+      <div>
         { question.answers.map((answer, index) => (
               <Answer
                 key={index}
@@ -24,7 +23,7 @@ export default class Answers extends Component {
 
         <div className="answer-btn">
           <button
-            className="btn"
+            className="btn btn-primary btn-lg raised"
             onClick={ UIStore.nextQuestion }
           >
             Ответить

@@ -19,16 +19,22 @@
     <meta http-equiv="expires" content="0">
     <meta http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1' />
 
+    <!-- <meta name="viewport" content="width=device-width"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=480, user-scalable=yes"> -->
+    <!-- <meta name="viewport" content="width=576, initial-scale=1.0"> -->
+
+    <!-- html5.js for IE less than 9 -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- css3-mediaqueries.js for IE less than 9 -->
+    <!--[if lt IE 9]>
+      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
     <link rel='icon' type='image/png' href='favicon.png'>
-
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-       (function(){
-          emailjs.init("user_kyH6IK7l6VJW8D0i5acE2");
-       })();
-    </script>
-
-
     <title>Slim Body</title>
 
   </head>
@@ -82,5 +88,14 @@
   src="https://www.facebook.com/tr?id=176314032865906&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Facebook Pixel Code -->
+
+  <!-- send images -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+     (function(){
+        emailjs.init("user_kyH6IK7l6VJW8D0i5acE2");
+     })();
+  </script>
+  <!-- send images -->
 
 </html>

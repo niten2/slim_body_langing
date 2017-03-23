@@ -1,7 +1,7 @@
-import webpack from 'webpack';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import autoprefixer from 'autoprefixer';
-import path from 'path';
+import webpack from 'webpack'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import autoprefixer from 'autoprefixer'
+import path from 'path'
 
 export default {
 
@@ -18,6 +18,9 @@ export default {
   // https://webpack.github.io/docs/configuration.html#devtool
   devtool: 'eval-source-map',
 
+  // necessary per https://webpack.github.io/docs/testing.html#compile-and-test
+  target: 'web',
+
   entry: [
     // must be first entry to properly set public path
     './src/webpack-public-path',
@@ -25,9 +28,6 @@ export default {
     // Defining path seems necessary for this to work consistently on Windows machines.
     path.resolve(__dirname, 'src/index.js')
   ],
-
-  // necessary per https://webpack.github.io/docs/testing.html#compile-and-test
-  target: 'web',
 
   output: {
     // Note: Physical files are only output by the production build task `npm run build`.
@@ -83,4 +83,4 @@ export default {
       { test: /(\.css|\.scss|\.sass)$/, loaders: ['style-loader', 'css-loader?sourceMap', 'postcss-loader', 'sass-loader?sourceMap']}
     ]
   }
-};
+}

@@ -2,7 +2,6 @@ import React, { PropTypes, Component } from 'react'
 import { observer} from 'mobx-react'
 import { toJS } from "mobx"
 import { UIStore } from 'stores'
-import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
 import sendEmail from "lib/email"
 
 @observer
@@ -59,7 +58,7 @@ export default class Form extends Component {
         <br />
 
         <button
-          className="btn"
+          className="btn btn-primary btn-lg raised"
           onClick={this.handeSendEmail}
         >
           Получить

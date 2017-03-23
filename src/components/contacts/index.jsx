@@ -1,5 +1,4 @@
 import React, { PropTypes, Component } from 'react'
-import { Button, Clearfix, Grid, Row, Col } from 'react-bootstrap'
 import "./index.scss"
 
 export default class Contacts extends Component {
@@ -15,28 +14,30 @@ export default class Contacts extends Component {
 
   render() {
     return (
-      <div className="contacts">
-        <Grid>
-          <h1> Контакты </h1>
-          <p>
-            Тел. <strong>8-913-830-2357</strong>
-            <br />
-            г. Красноярск <strong>ул. Краснодарская, 35</strong>
-            <br />
-            Часы работы: с ПН по СБ
-            <br />
-            <strong>с 10.00 до 21.00</strong>
-          </p>
-        </Grid>
+      <div className="container contacts">
+        <div className="row">
+          <div className="col">
+            <div>
+              <h1> Контакты </h1>
+              <p>
+                Тел. <strong>8-913-830-2357</strong>
+                <br />
+                г. Красноярск <strong>ул. Краснодарская, 35</strong>
+                <br />
+                Часы работы: с ПН по СБ
+                <br />
+                <strong>с 10.00 до 21.00</strong>
+              </p>
+            </div>
 
-        <div ref="script"/>
+            <div ref="script"/>
 
-        <Grid className="bottom"/>
-
+            <div className="bottom"/>
+          </div>
+        </div>
       </div>
     )
 
   }
 
 }
-
