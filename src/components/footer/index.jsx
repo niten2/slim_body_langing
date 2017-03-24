@@ -57,7 +57,7 @@ export default class Footer extends Component {
   renderForm() {
     let { phone, error } = this.state
     return (
-      <div className="col">
+      <div className="col col-sm-6">
         <h2>
           Оставьте заявку на бесплатное посещение.
         </h2>
