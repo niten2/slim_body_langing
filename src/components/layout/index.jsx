@@ -6,6 +6,7 @@ import Reviews from "components/reviews"
 import Contacts from "components/contacts"
 import Footer from "components/footer"
 import Test from "components/test"
+import Stock from "components/stock"
 
 export default class Index extends Component {
 
@@ -13,6 +14,7 @@ export default class Index extends Component {
     return (
       <div>
         <FirstScreen />
+        <Stock />
         <Services />
         <Reviews />
         <Test />
