@@ -24,6 +24,7 @@ export default class Form extends Component {
     let { contact } = this.state
     let { phone } = contact
 
+
     if (phone == "") {
       this.setState({ error: true })
     } else {
@@ -33,7 +34,6 @@ export default class Form extends Component {
       })
       this.setState({ error: false, isSendEmail: true })
     }
-
   }
 
   renderError() {
