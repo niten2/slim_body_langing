@@ -1,5 +1,6 @@
 import React, { PropTypes, Component } from 'react'
 import sendEmail from 'lib/email'
+import { initWidjet } from 'lib/vk_widjet'
 import "./index.scss"
 
 export default class Footer extends Component {
@@ -43,10 +44,14 @@ export default class Footer extends Component {
   }
 
   renderOk() {
+    initWidjet("vk-group-stock")
+
     return (
       <div className="col offset-sm-3 col-sm-6 ok text-center">
-        <h3> Заявка принята. </h3>
-        <h4> Скоро мы с вами свяжемся. </h4>
+        <h1> Спасибо за вашу заявку. </h1>
+        <h3> Мы скоро с вами свяжемся. </h3>
+        <h4> Что бы быть в курсе акций и скидок вы можете подписаться на нашу группу: </h4>
+        <div id="vk-group-stock" />
       </div>
     )
   }

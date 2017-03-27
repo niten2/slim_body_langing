@@ -1,5 +1,6 @@
 import React, { PropTypes, Component } from 'react'
 import sendEmail from 'lib/email'
+import { initWidjet } from 'lib/vk_widjet'
 
 export default class Form extends Component {
 
@@ -42,10 +43,13 @@ export default class Form extends Component {
   }
 
   renderOk() {
+    initWidjet("vk-group-first-screen")
     return (
       <div>
-        <h3> Заявка принята. </h3>
-        <h3> Скоро мы с вами свяжемся. </h3>
+        <h1> Спасибо за вашу заявку. </h1>
+        <h3> Мы скоро с вами свяжемся. </h3>
+        <h4> Что бы быть в курсе акций и скидок вы можете подписаться на нашу группу: </h4>
+        <div id="vk-group-first-screen" />
       </div>
     )
   }
@@ -77,12 +81,25 @@ export default class Form extends Component {
 
   render() {
     let { isSendEmail } = this.state
+    if (isSendEmail) {
+      return this.renderOk()
+    } else {
+      return (
+        <div>
+          <h1>
+            Уменьшим обьемы тела на 3 - 5 сантиметров за 10 посещений с помощью массажей и аппаратного похудения.
+          </h1>
 
-    return (
-      <div>
-        { isSendEmail ? this.renderOk() : this.renderForm() }
-      </div>
-    )
+          <h2>
+            Получите бесплатную процедуру.
+          </h2>
+
+          <div className="row justify-content-center">
+            { this.renderForm() }
+          </div>
+        </div>
+      )
+    }
   }
 
 }
