@@ -11,14 +11,13 @@
   }
 
   @media (min-width: 575px) {
-    color: red;
     width: 100%;
     min-height: 1000px;
 
-    background-image: url("~static/images/first.gif");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    color: white;
+    // background-image: url("~static/images/first.gif");
+    // background-size: 100%;
+    // background-repeat: no-repeat;
+    // color: white;
 
     h1 {
       font-size: 4rem;
