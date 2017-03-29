@@ -4,7 +4,7 @@ import routes from './routes'
 import 'styles/index.scss'
 
 // global values
-import 'lib/callback_phone'
+// import 'lib/callback_phone'
 // if (!DEV) {
 //   require("lib/vk")
 // }

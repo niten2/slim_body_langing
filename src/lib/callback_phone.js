@@ -1,5 +1,5 @@
-import scriptjs from "scriptjs"
+// import scriptjs from "scriptjs"
 
-if (!DEV) {
-  scriptjs('//my.clevercallback.com/callback.js')
-}
+// if (!DEV) {
+//   scriptjs('//my.clevercallback.com/callback.js')
+// }
