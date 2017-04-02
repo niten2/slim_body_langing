@@ -9,9 +9,6 @@ import 'styles/index.scss'
 //   require("lib/vk")
 // }
 
-
-
-
 render(
   routes(),
   document.getElementById('app')
