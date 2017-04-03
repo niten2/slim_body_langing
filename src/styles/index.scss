@@ -1,5 +1,73 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~react-image-gallery/styles/css/image-gallery.css";
-@import "./main.scss";
 @import "./fonts.scss";
+
+.pointer {
+  cursor: pointer;
+}
+
+.red-line-through {
+  color: red;
+  text-decoration: line-through;
+}
+
+.color-first {
+  background-color: #A8D8EA;
+}
+.color-second {
+  background-color: #AA96DA;
+}
+.color-three {
+  background-color: #FCBAD3;
+}
+.color-four {
+  background-color: #FFFFD2;
+}
+
+.color-black {
+  color: black;
+}
+
+.color-red {
+  color: red;
+}
+
+.color-blue {
+  color:blue;
+}
+
+.background-green {
+  background-color: #d2c566;
+}
+
+.btn {
+  cursor: pointer !important;
+}
+
+.btn {
+  padding: 14px 24px;
+  border: 0 none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: 0 none;
+}
+
+.btn-primary {
+  background: #0099cc;
+  color: #ffffff;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+  background: #33a6cc;
+}
+.btn-primary:active, .btn-primary.active {
+  background: #007299;
+  box-shadow: none;
+}
+
+#vk-group-first-screen, #vk-group-footer, #vk-group-test, #vk-group-stock {
+  margin: auto;
+}
 

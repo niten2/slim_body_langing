@@ -1,5 +1,6 @@
 .first-screen {
   height: 100vh;
+  background-color: #A8D8EA;
 
   h1 {
     font-weight: bold;
@@ -8,10 +9,11 @@
   .form-control {
     margin-top: 5%;
     margin-bottom: 5%;
+
+  background-color: #FFFFD2;
   }
 
   @media (min-width: 575px) {
-    width: 100%;
     min-height: 550px;
 
     // background-image: url("~static/images/first.gif");

@@ -1,15 +1,15 @@
-// font-family: "SegoeUIRegular";
-@font-face {
-    font-family: "SegoeUIRegular";
-    src: url("~static/fonts/SegoeUIRegular/SegoeUIRegular.eot");
-    src: url("~static/fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
-    url("~static/fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
-    url("~static/fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
+// // font-family: "SegoeUIRegular";
+// @font-face {
+//     font-family: "SegoeUIRegular";
+//     src: url("~static/fonts/SegoeUIRegular/SegoeUIRegular.eot");
+//     src: url("~static/fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
+//     url("~static/fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
+//     url("~static/fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+//     font-style: normal;
+//     font-weight: normal;
+// }
 
-// // font-family: "SegoeUIBold";
+// // // font-family: "SegoeUIBold";
 // @font-face {
 //     font-family: "SegoeUIBold";
 //     src: url("~fonts/SegoeUIBold/SegoeUIBold.eot");
@@ -50,6 +50,28 @@
 //     font-weight: normal;
 // }
 
+/* font-family: "DroidSansRegular"; */
+@font-face {
+    font-family: "DroidSansRegular";
+    src: url("~/fonts/DroidSansRegular/DroidSansRegular.eot");
+    src: url("~/fonts/DroidSansRegular/DroidSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("~/fonts/DroidSansRegular/DroidSansRegular.woff") format("woff"),
+    url("~/fonts/DroidSansRegular/DroidSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "DroidSansBold"; */
+@font-face {
+    font-family: "DroidSansBold";
+    src: url("~/fonts/DroidSansBold/DroidSansBold.eot");
+    src: url("~/fonts/DroidSansBold/DroidSansBold.eot?#iefix")format("embedded-opentype"),
+    url("~/fonts/DroidSansBold/DroidSansBold.woff") format("woff"),
+    url("~/fonts/DroidSansBold/DroidSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 body {
-  font-family: 'SegoeUIRegular';
+  // font-family: 'SegoeUIRegular' !important;
+  font-family: 'DroidSansRegular' !important;
 }

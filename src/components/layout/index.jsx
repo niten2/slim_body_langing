@@ -13,15 +13,27 @@ export default class Index extends Component {
 
   render() {
     return (
-      <div>
-        <FirstScreen />
-        <Services />
-        <Stock />
-        <Reviews />
-        <Test />
-        <Contacts />
-        <Footer />
+      <div className="color-first">
 
+        <FirstScreen />
+
+      <div className="color-second">
+        <Services />
+      </div>
+
+        <Stock />
+
+      <div className="color-second">
+        <Reviews />
+      </div>
+
+        <Test />
+
+      <div className="color-second">
+        <Contacts />
+      </div>
+
+        <Footer />
 
       </div>
     )

@@ -8,7 +8,7 @@ export default class Main extends Component {
   render() {
     return (
       <div className="first-screen row align-items-center justify-content-center text-center">
-        <div className="col-12 col-md-6">
+        <div className="col-10">
           <Form />
         </div>
       </div>
