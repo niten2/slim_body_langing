@@ -1,16 +1,21 @@
 .first-screen {
   height: 100vh;
   background-color: #A8D8EA;
+  font-family: 'SegoeUIBold' !important;
 
-  h1 {
-    font-weight: bold;
-  }
+  // h1 {
+    // font-weight: bold;
+  // }
 
   .form-control {
     margin-top: 5%;
     margin-bottom: 5%;
+    background-color: #FFFFD2;
+    font-family: 'SegoeUIBold' !important;
+  }
 
-  background-color: #FFFFD2;
+  button {
+    font-family: 'SegoeUIBold' !important;
   }
 
   @media (min-width: 575px) {
@@ -39,8 +44,12 @@
       font-size: 2rem;
     }
 
+    h2 {
+      font-size: 1.4rem;
+    }
+
     .form-control {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
 
   }

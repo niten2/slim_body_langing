@@ -93,6 +93,9 @@ export default class Form extends Component {
           <h2>
             Получите бесплатную процедуру.
           </h2>
+          <h2>
+            ул. Краснодарская 35.
+          </h2>
 
           <div className="row justify-content-center">
             { this.renderForm() }

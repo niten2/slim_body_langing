@@ -1,25 +1,23 @@
-// // font-family: "SegoeUIRegular";
-// @font-face {
-//     font-family: "SegoeUIRegular";
-//     src: url("~static/fonts/SegoeUIRegular/SegoeUIRegular.eot");
-//     src: url("~static/fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
-//     url("~static/fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
-//     url("~static/fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
-//     font-style: normal;
-//     font-weight: normal;
-// }
+@font-face {
+    font-family: "SegoeUIRegular";
+    src: url("~static/fonts/SegoeUIRegular/SegoeUIRegular.eot");
+    src: url("~static/fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
+    url("~static/fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
+    url("~static/fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
-// // // font-family: "SegoeUIBold";
-// @font-face {
-//     font-family: "SegoeUIBold";
-//     src: url("~fonts/SegoeUIBold/SegoeUIBold.eot");
-//     src: url("~fonts/SegoeUIBold/SegoeUIBold.eot?#iefix")format("embedded-opentype"),
-//     url("~fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"),
-//     url("~fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
-//     font-style: normal;
-//     font-weight: normal;
-// }
-// // font-family: "SegoeUIItalic";
+@font-face {
+    font-family: "SegoeUIBold";
+    src: url("~static/fonts/SegoeUIBold/SegoeUIBold.eot");
+    src: url("~static/fonts/SegoeUIBold/SegoeUIBold.eot?#iefix")format("embedded-opentype"),
+    url("~static/fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"),
+    url("~static/fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 // @font-face {
 //     font-family: "SegoeUIItalic";
 //     src: url("~fonts/SegoeUIItalic/SegoeUIItalic.eot");
@@ -29,7 +27,7 @@
 //     font-style: normal;
 //     font-weight: normal;
 // }
-// // font-family: "SegoeUILight";
+
 // @font-face {
 //     font-family: "SegoeUILight";
 //     src: url("~fonts/SegoeUILight/SegoeUILight.eot");
@@ -39,39 +37,17 @@
 //     font-style: normal;
 //     font-weight: normal;
 // }
-// // font-family: "SegoeUISemiBold";
-// @font-face {
-//     font-family: "SegoeUISemiBold";
-//     src: url("~fonts/SegoeUISemiBold/SegoeUISemiBold.eot");
-//     src: url("~fonts/SegoeUISemiBold/SegoeUISemiBold.eot?#iefix")format("embedded-opentype"),
-//     url("~fonts/SegoeUISemiBold/SegoeUISemiBold.woff") format("woff"),
-//     url("~fonts/SegoeUISemiBold/SegoeUISemiBold.ttf") format("truetype");
-//     font-style: normal;
-//     font-weight: normal;
-// }
 
-/* font-family: "DroidSansRegular"; */
 @font-face {
-    font-family: "DroidSansRegular";
-    src: url("~/fonts/DroidSansRegular/DroidSansRegular.eot");
-    src: url("~/fonts/DroidSansRegular/DroidSansRegular.eot?#iefix")format("embedded-opentype"),
-    url("~/fonts/DroidSansRegular/DroidSansRegular.woff") format("woff"),
-    url("~/fonts/DroidSansRegular/DroidSansRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "DroidSansBold"; */
-@font-face {
-    font-family: "DroidSansBold";
-    src: url("~/fonts/DroidSansBold/DroidSansBold.eot");
-    src: url("~/fonts/DroidSansBold/DroidSansBold.eot?#iefix")format("embedded-opentype"),
-    url("~/fonts/DroidSansBold/DroidSansBold.woff") format("woff"),
-    url("~/fonts/DroidSansBold/DroidSansBold.ttf") format("truetype");
+    font-family: "SegoeUISemiBold";
+    src: url("~static/fonts/SegoeUISemiBold/SegoeUISemiBold.eot");
+    src: url("~static/fonts/SegoeUISemiBold/SegoeUISemiBold.eot?#iefix")format("embedded-opentype"),
+    url("~static/fonts/SegoeUISemiBold/SegoeUISemiBold.woff") format("woff"),
+    url("~static/fonts/SegoeUISemiBold/SegoeUISemiBold.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
 body {
-  // font-family: 'SegoeUIRegular' !important;
-  font-family: 'DroidSansRegular' !important;
+  font-family: 'SegoeUIRegular';
 }

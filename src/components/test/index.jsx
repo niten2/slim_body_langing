@@ -16,7 +16,7 @@ export default class Test extends Component {
       <div className="row align-items-center justify-content-center text-center">
         <div className="col-12">
           <h2 className="title">
-            <strong> { question.question } </strong>
+            { question.question }
           </h2>
 
           <div className="text">

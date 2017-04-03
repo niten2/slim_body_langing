@@ -1,11 +1,14 @@
 .services {
   width: 100%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+
+  // color: #A8D8EA;
   // border-bottom: 3px solid #d1cad0;
   // background-color: #AA96DA;
 
   @media (min-width: 575px) {
+    font-size: 1.2rem;
 
     h1 {
       text-align: center;
@@ -14,7 +17,7 @@
     img {
       margin: auto;
       display: block;
-      width: 300px;
+      width: 329px;
       border-radius: 20px;
     }
 

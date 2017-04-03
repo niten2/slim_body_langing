@@ -1,6 +1,8 @@
 .test {
-  margin: 5% 5%;
-  border-bottom: 3px solid #d1cad0;
+  // margin: 5% 5%;
+  // border-bottom: 3px solid #d1cad0;
+  padding-top: 2%;
+  padding-bottom: 2%;
 
   button {
     margin: 3% 0%;
@@ -28,6 +30,8 @@
       word-wrap: break-word;
       vertical-align: middle;
       width: 80%;
+
+      font-family: 'SegoeUISemiBold' !important;
     }
 
     .checkbox {
@@ -45,6 +49,10 @@
       padding-bottom: 2%;
     }
 
+    h2 {
+      font-family: 'SegoeUIBold' !important;
+    }
+
     input[type="checkbox"] {
       width: 35px;
       height: 35px;
@@ -53,6 +61,8 @@
     }
 
     .custom-card {
+
+
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
       transition: 0.3s;
 
