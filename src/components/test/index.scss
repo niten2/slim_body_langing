@@ -9,7 +9,8 @@
   }
 
   .form-control {
-    margin: 3% 0% 0% 0%;
+    margin: 3% 0% 0% 3%;
+    background-color: #FFFFD2;
   }
 
   .success {
@@ -38,6 +39,14 @@
       display: inline-block;
     }
   }
+
+  .card-bold {
+    font-family: 'SegoeUISemiBold' !important;
+    div {
+      display: inline-block;
+    }
+  }
+
 
   @media (min-width: 575px) {
 
@@ -80,6 +89,7 @@
 
     .card-title-offer {
       font-size: 1.5rem;
+      padding: 2%;
     }
 
   }

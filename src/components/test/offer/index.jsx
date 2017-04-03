@@ -36,16 +36,13 @@ export default class Offer extends Component {
           Спасибо за ваши ответы.
           <br />
 
-          Взамен вы получаете
-          &nbsp;
-          <strong>
-            первое бесплатное посещение персонального комплекса процедур разработанного специально для вас.
-          </strong>
-          <br />
+          <div className="card-bold">
+            Вы получаете первое бесплатное посещение персонального комплекса процедур разработанного специально для вас.
+          </div>
 
-          С скидкой в
-          <strong className="color-red"> { discount } </strong>
-          рублей.
+          <div className="card-bold">
+            С скидкой в <div className="color-red"> { discount } </div> рублей.
+          </div>
 
           <Form />
         </div>
