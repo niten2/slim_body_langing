@@ -10,18 +10,17 @@ export default class Answers extends Component {
     let { question, isLastQuestion } = UIStore
 
     return  (
-      <div className="row">
+      <div className="row answers">
 
         <div className="col-12 align-self-center answer-block">
-        { question.answers.map((answer, index) => (
+          { question.answers.map((answer, index) =>
               <Answer
                 key={index}
                 answerId={answer.id}
                 questionId={question.id}
               />
             )
-          )
-        }
+          }
         </div>
 
         <div className="col-12 align-self-end answer-btn">
@@ -32,6 +31,7 @@ export default class Answers extends Component {
             Ответить
           </button>
         </div>
+
 
       </div>
     )

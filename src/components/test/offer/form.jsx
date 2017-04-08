@@ -55,8 +55,6 @@ export default class Form extends Component {
 
         { error ? this.renderError() : null }
 
-        <br />
-
         <button
           className="btn btn-primary btn-lg raised"
           onClick={this.handeSendEmail}

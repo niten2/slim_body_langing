@@ -7,9 +7,11 @@ export default class Main extends Component {
 
   render() {
     return (
-      <div className="first-screen row align-items-center justify-content-center text-center">
-        <div className="col-10">
-          <Form />
+      <div className="container">
+        <div className="first-screen row align-items-center justify-content-center text-center">
+          <div className="col-10">
+            <Form />
+          </div>
         </div>
       </div>
     )

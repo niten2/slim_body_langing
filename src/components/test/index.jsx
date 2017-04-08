@@ -13,16 +13,9 @@ export default class Test extends Component {
     let { question } = UIStore
 
     return (
-      <div className="row align-items-center justify-content-center text-center">
-        <div className="col-12">
-          <h2 className="title">
-            { question.question }
-          </h2>
-
-          <div className="text">
-            <Answers question={question} />
-          </div>
-        </div>
+      <div className="text-center">
+        <h2> { question.question } </h2>
+        <Answers question={question} />
       </div>
     )
   }
@@ -32,38 +25,38 @@ export default class Test extends Component {
 
     return (
       <div className="container test">
-      <div className="row">
+        <div className="row">
 
-        <div className="col-12 text-center">
-          <h1>
-            Пройдите тест и получите персональное спец. предложение
-          </h1>
-        </div>
-
-        <div className="col-12 custom-card">
-            { isShowOffer ? <Offer /> : this.renderAnswers() }
-        </div>
-
-        <div className="col-12 text-center test-footer">
-          <div onClick={ UIStore.firstQuestion } className="pointer comments">
-            Начать заново
+          <div className="col-12 text-center">
+            <h1>
+              Пройдите тест и получите персональное спец. предложение
+            </h1>
           </div>
 
-          &nbsp;
-          &nbsp;
-          &nbsp;
+          <div className="col-12 custom-card">
+              { isShowOffer ? <Offer /> : this.renderAnswers() }
+          </div>
 
-          <div className="comments">
-            Ваша скидка
+          <div className="col-12 text-center test-footer">
+            <div onClick={ UIStore.firstQuestion } className="pointer comments">
+              Начать заново
+            </div>
+
             &nbsp;
-            <div className="color-red">{ discount } </div>
             &nbsp;
-            руб.
+            &nbsp;
+
+            <div className="comments">
+              Ваша скидка
+              &nbsp;
+              <div className="color-red">{ discount } </div>
+              &nbsp;
+              руб.
+            </div>
+
           </div>
 
         </div>
-
-      </div>
       </div>
     )
   }

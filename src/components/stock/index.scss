@@ -1,8 +1,6 @@
 .stock {
   justify-content: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  // border-bottom: 3px solid #d1cad0;
+  padding: 2% 2%;
 
   img {
     border-radius: 5%;
@@ -12,18 +10,34 @@
   }
 
   .form-control {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5% 5%;
   }
 
   .error {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5% 5%;
   }
 
   .button-offer {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5% 5%;
+  }
+
+  @media only screen and (max-device-width : 1024px) and (orientation : landscape) {
+    .row {
+      display: inline-block;
+    }
+    .col-sm-6 {
+      max-width: 100%;
+    }
+
+    img {
+      width: 60%;
+    }
+
+    h3 {
+      text-align: center;
+      margin: 5% 5%;
+    }
+
   }
 
   @media (min-width: 575px) {
@@ -35,13 +49,11 @@
 
     h3 {
       text-align: center;
-      margin-top: 5%;
-      margin-bottom: 5%;
+      margin: 5% 5%;
     }
 
     .offer {
       padding-left: 10%;
-
     }
 
     button {

@@ -3,13 +3,8 @@
   background-color: #A8D8EA;
   font-family: 'SegoeUIBold' !important;
 
-  // h1 {
-    // font-weight: bold;
-  // }
-
   .form-control {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5% 5%;
     background-color: #FFFFD2;
     font-family: 'SegoeUIBold' !important;
   }
@@ -19,12 +14,11 @@
   }
 
   @media (min-width: 575px) {
-    min-height: 550px;
-
     // background-image: url("~static/images/first.gif");
     // background-size: 100%;
     // background-repeat: no-repeat;
     // color: white;
+    min-height: 550px;
 
     h1 {
       font-size: 4rem;
@@ -36,7 +30,24 @@
 
   }
 
-  @media (max-width: 576px) {
+  @media only screen and (max-device-width : 1024px) and (orientation : landscape) {
+    min-height: 0px;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+
+    .form-control {
+      font-size: 1.4rem;
+    }
+  }
+
+
+  @media (max-width: 576px) and (orientation : portrait) {
     padding-left: 5%;
     padding-right: 5%;
 
@@ -51,7 +62,6 @@
     .form-control {
       font-size: 1.4rem;
     }
-
   }
 
 }

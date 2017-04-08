@@ -19,7 +19,11 @@
   @media (min-width: 575px) {
     height: 50vh;
     min-height: 100px;
-    // min-height: 550px;
+  }
+
+  @media only screen and (max-device-width : 1024px) and (orientation : landscape) {
+    min-height: 0px;
+    height: 100vh;
   }
 
   @media (max-width: 576px) {
