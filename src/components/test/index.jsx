@@ -14,7 +14,7 @@ export default class Test extends Component {
 
     return (
       <div className="text-center">
-        <h2> { question.question } </h2>
+        <h2 className="question"> { question.question } </h2>
         <Answers question={question} />
       </div>
     )
@@ -29,7 +29,7 @@ export default class Test extends Component {
 
           <div className="col-12 text-center">
             <h1>
-              Пройдите тест и получите персональное спец. предложение
+              Пройдите тест и получите персональное специальное предложение
             </h1>
           </div>
 
