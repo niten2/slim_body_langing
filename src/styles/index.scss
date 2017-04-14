@@ -1,6 +1,16 @@
+// @import "~bootstrap/dist/css/bootstrap-reboot.min.css";
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~react-image-gallery/styles/css/image-gallery.css";
 @import "./fonts.scss";
+
+body {
+  font-family: 'Arima Madurai', cursive !important;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #292b2c;
+  background-color: #fff;
+}
 
 .pointer {
   cursor: pointer;

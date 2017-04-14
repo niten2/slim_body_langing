@@ -1,16 +1,21 @@
 .first-screen {
   height: 100vh;
   background-color: #A8D8EA;
-  font-family: 'SegoeUIBold' !important;
+  // font-family: 'SegoeUIBold' !important;
+
+  h1, h2 {
+    font-weight: bold;
+  }
 
   .form-control {
     margin: 5% 0% 5% 0%;
     background-color: #FFFFD2;
-    font-family: 'SegoeUIBold' !important;
+    // font-family: 'SegoeUIBold' !important;
   }
 
   button {
-    font-family: 'SegoeUIBold' !important;
+  font-family: 'Arima Madurai', cursive !important;
+    // font-family: 'SegoeUIBold' !important;
   }
 
   @media (min-width: 575px) {

@@ -1,6 +1,6 @@
 .stock {
   justify-content: center;
-  padding: 2% 2%;
+  padding: 2% 0%;
 
   img {
     border-radius: 5%;
@@ -14,17 +14,18 @@
   }
 
   .error {
-    margin: 5% 5%;
+    margin: 5% 0%;
   }
 
   .button-offer {
-    margin: 5% 5%;
+    margin: 5% 0%;
   }
 
   @media only screen and (max-device-width : 1024px) and (orientation : landscape) {
     .row {
       display: inline-block;
     }
+
     .col-sm-6 {
       max-width: 100%;
     }

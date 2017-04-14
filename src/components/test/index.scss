@@ -1,23 +1,21 @@
 .test {
-  padding: 2% 2%;
+  padding: 2% 0%;
 
   button {
     margin-bottom: 3%;
   }
 
   .form-control {
-    margin: 3% 3%;
+    margin: 3% 0%;
     background-color: #FFFFD2;
   }
 
   .success {
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding: 10% 0%;
   }
 
   .test-footer {
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding: 2% 0%;
 
     div {
       display: inline-block;
@@ -30,8 +28,7 @@
       word-wrap: break-word;
       vertical-align: middle;
       width: 80%;
-
-      font-family: 'SegoeUISemiBold' !important;
+      // font-family: 'SegoeUISemiBold' !important;
     }
 
     .checkbox {
@@ -40,7 +37,7 @@
   }
 
   .card-bold {
-    font-family: 'SegoeUISemiBold' !important;
+    // font-family: 'SegoeUISemiBold' !important;
     div {
       display: inline-block;
     }
@@ -53,9 +50,9 @@
       padding-bottom: 2%;
     }
 
-    h2 {
-      font-family: 'SegoeUIBold' !important;
-    }
+    // h2 {
+    //   font-family: 'SegoeUIBold' !important;
+    // }
 
     .question {
       padding: 2% 0%;
