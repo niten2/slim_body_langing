@@ -9,7 +9,7 @@ export default class Main extends Component {
     return (
       <div className="container">
         <div className="first-screen row align-items-center justify-content-center text-center">
-          <div className="col-10">
+          <div className="col-12">
             <Form />
           </div>
         </div>
