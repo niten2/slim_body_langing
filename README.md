@@ -1,4 +1,4 @@
-This landing page for http://slim-body-krsk.ru
+This is landing page for http://slim-body-krsk.ru
 
 - es6
 - webpack 2
