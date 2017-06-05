@@ -1,6 +1,3 @@
-// require('babel-register')()
-// require('babel-polyfill')()
-
 var jsdom = require('jsdom').jsdom
 
 var exposedProperties = ['window', 'navigator', 'document']
@@ -49,5 +46,4 @@ require("babel-core/register")({
     path.resolve(__dirname, 'static', "images")
   )
 })
-
 
