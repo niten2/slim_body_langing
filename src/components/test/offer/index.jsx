@@ -5,8 +5,7 @@ import { initWidjet } from 'lib/vk_widjet'
 
 import Form from './form'
 
-@observer
-export default class Offer extends Component {
+export default observer(class Offer extends Component {
 
   handleReturnOffer() {
     UIStore.returnOffer()
@@ -58,4 +57,4 @@ export default class Offer extends Component {
     )
   }
 
-}
+})

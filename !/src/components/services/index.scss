@@ -1,0 +1,92 @@
+.services {
+  width: 100%;
+  padding: 2% 0%;
+
+  @media (min-width: 575px) {
+    font-size: 1.2rem;
+
+    h1 {
+      text-align: center;
+    }
+
+    img {
+      margin: auto;
+      display: block;
+      width: 329px;
+      border-radius: 20px;
+    }
+
+    .texts {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .image {
+      margin: auto;
+      width: 400px;
+    }
+
+    .offer {
+      margin: auto;
+      width: 333px;
+    }
+
+    .text-right-only-web {
+      text-align: right;
+    }
+  }
+
+  @media only screen and (max-device-width : 1024px) and (orientation : landscape) {
+    h2 {
+      text-align: center;
+      padding: 2% 2%;
+    }
+
+    .text-right-only-web {
+      text-align: left;
+    }
+
+    .texts {
+      display: block;
+    }
+
+  }
+
+  @media (max-width: 576px) {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      text-align: center;
+      margin-top: 5%;
+      margin-bottom: 15%;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+
+    img {
+      margin: auto;
+      display: block;
+      width: 80%;
+      border-radius: 5%;
+    }
+
+    .offer {
+      font-size: 1.5rem;
+      margin-bottom: 10%;
+      margin-left: 10%;
+      max-width: 80%;
+    }
+  }
+
+}
+

@@ -3,8 +3,7 @@ import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
 import find from "lodash/find"
 
-@observer
-export default class Answer extends Component {
+export default observer(class Answer extends Component {
 
   getAnswer() {
     let { questionId, answerId } = this.props
@@ -50,4 +49,4 @@ export default class Answer extends Component {
     )
   }
 
-}
+})

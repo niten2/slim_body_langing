@@ -3,10 +3,12 @@
 // return `${ASSETS_HOST}/static/images/${imageName}`
 
 export default function imageUrl(imageName) {
-  if (DEV) {
-    return `/static/images/${imageName}`
-  } else {
-    return `/images/${imageName}`
-  }
+  console.log(process.env)
+
+  // if (process.env) {
+  //   return `public/images/${imageName}`
+  // } else {
+  //   return `/images/${imageName}`
+  // }
 }
 

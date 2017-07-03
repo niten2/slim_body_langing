@@ -3,8 +3,7 @@ import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
 import Answer from './answer'
 
-@observer
-export default class Answers extends Component {
+export default observer(class Answers extends Component {
 
   render() {
     let { question, isLastQuestion } = UIStore
@@ -37,5 +36,4 @@ export default class Answers extends Component {
     )
   }
 
-}
-
+})

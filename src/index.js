@@ -1,15 +1,11 @@
 import React from 'react'
-import { render } from 'react-dom'
-import routes from './routes'
-import 'styles/index.scss'
+import ReactDOM from 'react-dom'
+import App from 'lib/router'
 
-// document.getElementById("app").remove()
-// var test = document.createElement('div')
-// test.id = 'app'
-// document.body.appendChild(test)
+// import "font-awesome/css/font-awesome.css"
+// import 'bootstrap/dist/css/bootstrap.css'
 
-render(
-  routes(),
-  document.getElementById('app')
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
 )
-

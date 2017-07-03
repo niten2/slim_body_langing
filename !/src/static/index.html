@@ -9,6 +9,9 @@
 
     <link rel='icon' type='image/png' href='favicon.png'>
 
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
        (function(){
@@ -18,13 +21,9 @@
 
   </head>
 
-  <!-- chunk_app_css -->
-  <!-- /chunk_app_css -->
-
   <body>
     <div id='pace-loader' class='pace-small'></div>
     <div id='app-container'>
-      <!-- instant-spinner -->
       <style>
         .instant-spinner-wrapper-out {
           display: table;
@@ -71,7 +70,6 @@
           <div class="instant-spinner"></div>
         </div>
       </div>
-      <!-- /instant-spinner -->
   </body>
 
   <!-- chunk_app_js -->
@@ -109,20 +107,18 @@
   <!-- /Yandex.Metrika counter -->
 
   <!-- Facebook Pixel Code -->
-  <script>
-  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-  document,'script','https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '176314032865906'); // Insert your pixel ID here.
-  fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=176314032865906&ev=PageView&noscript=1"
-  /></noscript>
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '176314032865906'); // Insert your pixel ID here.
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=176314032865906&ev=PageView&noscript=1"
+    /></noscript>
   <!-- End Facebook Pixel Code -->
 
-
 </html>
-

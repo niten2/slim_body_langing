@@ -1,11 +1,11 @@
 import React, { PropTypes, Component } from 'react'
-import { observer } from 'mobx-react'
+// import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
 import sendEmail from 'lib/email'
 import { initWidjet } from 'lib/vk_widjet'
 import "./index.scss"
 
-@observer
+// @observer
 export default class Footer extends Component {
 
   state = {

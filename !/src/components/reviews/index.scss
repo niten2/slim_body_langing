@@ -1,0 +1,33 @@
+.reviews {
+  padding: 2% 0%;
+
+  h1 {
+    text-align: center;
+    margin: 5% 0%;
+  }
+
+  @media (min-width: 575px) {
+    .image-gallery {
+      margin: auto;
+      display: block;
+      width: 35%;
+      height: 35%;
+    }
+  }
+
+  @media (max-width: 576px) {
+
+    img {
+      height: 100%;
+    }
+
+    .image-gallery {
+      display: block;
+      width: 100%;
+    }
+
+  }
+
+}
+
+

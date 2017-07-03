@@ -1,0 +1,72 @@
+.first-screen {
+  height: 100vh;
+  background-color: #A8D8EA;
+  // font-family: 'SegoeUIBold' !important;
+
+  h1, h2 {
+    font-weight: bold;
+  }
+
+  .form-control {
+    margin: 5% 0% 5% 0%;
+    background-color: #FFFFD2;
+    // font-family: 'SegoeUIBold' !important;
+  }
+
+  button {
+    // font-family: 'Arima Madurai', cursive !important;
+    // font-family: 'SegoeUIBold' !important;
+  }
+
+  @media (min-width: 575px) {
+    // background-image: url("~static/images/first.gif");
+    // background-size: 100%;
+    // background-repeat: no-repeat;
+    // color: white;
+    min-height: 550px;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    .form-control {
+      font-size: 1.5rem;
+    }
+
+  }
+
+  @media only screen and (max-device-width : 1024px) and (orientation : landscape) {
+    min-height: 0px;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+
+    .form-control {
+      font-size: 1.4rem;
+    }
+  }
+
+
+  @media (max-width: 576px) and (orientation : portrait) {
+    padding-left: 5%;
+    padding-right: 5%;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    .form-control {
+      font-size: 1.4rem;
+    }
+  }
+
+}

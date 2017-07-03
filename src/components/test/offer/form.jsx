@@ -4,8 +4,7 @@ import { toJS } from "mobx"
 import { UIStore } from 'stores'
 import sendEmail from "lib/email"
 
-@observer
-export default class Form extends Component {
+export default observer(class Form extends Component {
 
   state = {
     error: false,
@@ -65,6 +64,4 @@ export default class Form extends Component {
     )
   }
 
-}
-
-
+})

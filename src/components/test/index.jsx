@@ -6,8 +6,7 @@ import Answers from './answers'
 import Offer from './offer'
 import "./index.scss"
 
-@observer
-export default class Test extends Component {
+export default observer(class Test extends Component {
 
   renderAnswers() {
     let { question } = UIStore
@@ -61,5 +60,4 @@ export default class Test extends Component {
     )
   }
 
-}
-
+})

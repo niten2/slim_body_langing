@@ -1,0 +1,174 @@
+.test {
+  padding: 2% 0%;
+
+  button {
+    margin-bottom: 3%;
+  }
+
+  .form-control {
+    margin: 3% 0%;
+    background-color: #FFFFD2;
+  }
+
+  .success {
+    padding: 10% 0%;
+  }
+
+  .test-footer {
+    padding: 2% 0%;
+
+    div {
+      display: inline-block;
+    }
+  }
+
+  .answer {
+    .body {
+      display: inline-block;
+      word-wrap: break-word;
+      vertical-align: middle;
+      width: 80%;
+      // font-family: 'SegoeUISemiBold' !important;
+    }
+
+    .checkbox {
+      display: inline-block;
+    }
+  }
+
+  .card-bold {
+    // font-family: 'SegoeUISemiBold' !important;
+    div {
+      display: inline-block;
+    }
+  }
+
+
+  @media (min-width: 575px) {
+
+    h1 {
+      padding-bottom: 2%;
+    }
+
+    // h2 {
+    //   font-family: 'SegoeUIBold' !important;
+    // }
+
+    .question {
+      padding: 2% 0%;
+    }
+
+    .answer-block {
+      padding-bottom: 2%;
+    }
+
+    .custom-card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      background-color: #FCBAD3;
+
+      input[type="checkbox"] {
+        width: 35px;
+        height: 35px;
+        padding: 10px;
+        vertical-align:middle;
+      }
+
+      .title {
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+      }
+
+    }
+
+    .custom-card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .card-title-offer {
+      font-size: 1.5rem;
+      padding: 2%;
+    }
+
+    .text-danger {
+      padding-bottom: 2%;
+    }
+
+  }
+
+  @media only screen and (max-device-width : 1024px) and (orientation : landscape) {
+    // min-height: 0px;
+    // height: 100vh;
+    .col-sm-4 {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+
+    .offset-sm-4 {
+      margin-left: 10%;
+    }
+
+
+  }
+
+  @media (max-width: 576px) {
+    padding: 5% 5%;
+
+    h1 {
+      padding: 5% 5%;
+    }
+
+    h2 {
+      padding: 10% 10%;
+      font-size: 1.5rem;
+      height: 5vh;
+    }
+
+    .custom-card {
+      height: 90vh;
+      min-height: 600px;
+
+      .form-control {
+        font-size: 1.5rem;
+      }
+
+      input[type="checkbox"] {
+        padding-left: 10%;
+        vertical-align: middle;
+        width: 40px;
+        height: 40px;
+      }
+
+      .answers {
+        height: 83vh;
+
+        .answer-block {
+          .answer {
+            padding: 1% 1%;
+          }
+        }
+
+      }
+
+      .offer {
+        height: 90vh;
+        font-size: 1.5rem;
+
+        .title {
+          font-size: 1.5rem;
+        }
+
+        .answer-block {
+          height: 68vh;
+        }
+
+      }
+
+    }
+
+
+  }
+
+}
+
