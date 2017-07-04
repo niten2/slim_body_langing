@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react'
+import React, { Component } from 'react'
 import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
 
@@ -20,7 +20,7 @@ export default observer(class Test extends Component {
   }
 
   render() {
-    let { question, isLastQuestion, isShowOffer, discount } = UIStore
+    let { isShowOffer, discount } = UIStore
 
     return (
       <div className="container test">

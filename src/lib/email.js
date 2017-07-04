@@ -1,5 +1,5 @@
 // import sendEmail from "lib/email"
-import scriptjs from "scriptjs"
+// import scriptjs from "scriptjs"
 
 export default function(options = {}) {
   // let { phone, questions, place } = options

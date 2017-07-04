@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react'
+import React, { Component } from 'react'
 import imageUrl from "lib/image_url"
 import Form from "./form"
 import "./index.scss"
@@ -18,7 +18,7 @@ export default class Contacts extends Component {
       <div className="row">
 
         <div className="col-12 col-sm-6 align-self-center">
-          <img src={imageUrl("stock/hot.jpg")} />
+          <img alt="" src={imageUrl("stock/hot.jpg")} />
         </div>
 
         <div className="col-12 offer col-sm-6 align-self-center">

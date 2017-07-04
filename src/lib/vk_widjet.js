@@ -1,4 +1,4 @@
-import scriptjs from "scriptjs"
+// import scriptjs from "scriptjs"
 
 export function initWidjet(id) {
   // if (!DEV) {

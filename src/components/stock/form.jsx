@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react'
+import React, { Component } from 'react'
 import sendEmail from 'lib/email'
 import { initWidjet } from 'lib/vk_widjet'
 import "./index.scss"
@@ -25,7 +25,7 @@ export default class Footer extends Component {
     let { contact } = this.state
     let { phone } = contact
 
-    if (phone == "") {
+    if (phone === "") {
       this.setState({ error: true })
     } else {
       sendEmail({

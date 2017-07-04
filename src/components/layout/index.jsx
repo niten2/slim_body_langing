@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react'
+import React, { Component } from 'react'
 
 import FirstScreen from "components/first_screen"
 import Services from "components/services"

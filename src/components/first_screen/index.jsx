@@ -1,6 +1,6 @@
-import React, { PropTypes, Component } from 'react'
+import React, { Component } from 'react'
 import Form from "./form"
-import imageUrl from "lib/image_url"
+// import imageUrl from "lib/image_url"
 import "./index.scss"
 
 export default class Main extends Component {

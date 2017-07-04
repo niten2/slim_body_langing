@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react'
+import React, { Component } from 'react'
 import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
 import { initWidjet } from 'lib/vk_widjet'

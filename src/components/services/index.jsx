@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react'
+import React, { Component } from 'react'
 
 import Kavitachia from "components/services/blocks/kavitachia"
 import Massaj from "components/services/blocks/massaj"

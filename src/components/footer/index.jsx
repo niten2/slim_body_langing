@@ -1,11 +1,8 @@
-import React, { PropTypes, Component } from 'react'
-// import { observer } from 'mobx-react'
-import { UIStore } from 'stores'
+import React, { Component } from 'react'
 import sendEmail from 'lib/email'
 import { initWidjet } from 'lib/vk_widjet'
 import "./index.scss"
 
-// @observer
 export default class Footer extends Component {
 
   state = {
@@ -28,7 +25,7 @@ export default class Footer extends Component {
     let { contact } = this.state
     let { phone } = contact
 
-    if (phone == "") {
+    if (phone === "") {
       this.setState({ error: true })
     } else {
       sendEmail({

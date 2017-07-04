@@ -1,5 +1,5 @@
 // // import { UIStore } from 'stores'
-import { extendObservable, transaction } from 'mobx'
+import { extendObservable } from 'mobx'
 
 import bindAll from 'lodash/bindAll'
 import find from "lodash/find"
@@ -49,8 +49,13 @@ Object.assign(UIStore, {
     let nextQuestionId = this.question.id + 1
     let nextNextQuestionId = this.question.id + 1
 
-    const nextQuestion = find(this.questions, (obj) => { return obj.id == nextQuestionId })
-    const nextNextQuestion = find(this.questions, (obj) => { return obj.id == nextNextQuestionId })
+    const nextQuestion = find(this.questions, (obj) => {
+      return obj.id === nextQuestionId
+    })
+
+    const nextNextQuestion = find(this.questions, (obj) => {
+      return obj.id === nextNextQuestionId
+    })
 
     if (isObject(nextQuestion)) {
       this.question = nextQuestion

@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react'
+import React, { Component } from 'react'
 import imageUrl from "lib/image_url"
 
 export default class Kavitachia extends Component {
@@ -7,7 +7,7 @@ export default class Kavitachia extends Component {
     return (
       <div className="texts">
 
-        <img src={ imageUrl('services/kavitaciya.jpg') } />
+        <img alt="" src={ imageUrl('services/kavitaciya.jpg') } />
 
         <div className="offer flex-first text-right-only-web">
 
