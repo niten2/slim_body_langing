@@ -35,7 +35,9 @@ export default observer(class Form extends Component {
 
   renderError() {
     return (
-      <div className="text-danger">Необходимо заполнить полe</div>
+      <li>
+        <div className="text-danger">Необходимо заполнить полe</div>
+      </li>
     )
   }
 
@@ -43,23 +45,32 @@ export default observer(class Form extends Component {
     let { error } = this.state
 
     return (
-      <div className="offset-sm-3 col-sm-6">
-        <input
-          name="phone"
-          onChange={ this.handeInput }
-          placeholder="Ваш телефон или Email*"
-          className="form-control"
-          value={ UIStore.user.phone }
-        />
+      <div>
+        <ul className="icons">
+          <li>
+            <input
+              name="phone"
+              type="text"
+              onChange={ this.handeInput }
+              placeholder="Ваш телефон или Email*"
+              className="form-control"
+              value={ UIStore.user.phone }
+            />
+          </li>
 
-        { error ? this.renderError() : null }
+          <li>
+            <a
+              className="button special"
+              onClick={this.handeSendEmail}
+            >
+              Получить
+            </a>
+          </li>
+        </ul>
 
-        <button
-          className="btn btn-primary btn-lg raised"
-          onClick={this.handeSendEmail}
-        >
-          Получить
-        </button>
+        <ul className="icons">
+          { error ? this.renderError() : null }
+        </ul>
       </div>
     )
   }

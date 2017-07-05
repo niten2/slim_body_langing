@@ -2,10 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from 'lib/router'
 
-import "styles/sass/main.scss"
+import "assets/css/main.css"
 
-// import "font-awesome/css/font-awesome.css"
-// import 'bootstrap/dist/css/bootstrap.css'
+import "assets/fonts/fontawesome-webfont.eot"
+import "assets/fonts/fontawesome-webfont.svg"
+import "assets/fonts/fontawesome-webfont.ttf"
+import "assets/fonts/fontawesome-webfont.woff"
+import "assets/fonts/fontawesome-webfont.woff2"
+import "assets/fonts/FontAwesome.otf"
 
 ReactDOM.render(
   <App />,

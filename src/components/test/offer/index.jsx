@@ -15,7 +15,7 @@ export default observer(class Offer extends Component {
     initWidjet("vk-group-test")
 
     return (
-      <div className="col-12 align-self-center title">
+      <div>
         <div className="success">
           <h3> Мы аккуратно записали ваши данные. </h3>
           <h4> И уже почти отправили администратора составлять для вас комплекс процедур. </h4>
@@ -31,19 +31,17 @@ export default observer(class Offer extends Component {
     let { discount } = UIStore
 
     return (
-        <div className="col-12 align-self-center title">
-          Спасибо за ваши ответы.
+      <div>
+        <header>
+          <h4>Спасибо за ваши ответы.</h4>
+          <p>Вы получаете первое бесплатное посещение персонального комплекса процедур разработанного специально для вас.</p>
+          <p>
+            С скидкой в { discount } рублей.
+          </p>
+        </header>
 
-          <div className="card-bold">
-            Вы получаете первое бесплатное посещение персонального комплекса процедур разработанного специально для вас.
-          </div>
-
-          <div className="card-bold">
-            С скидкой в <div className="color-red"> { discount } </div> рублей.
-          </div>
-
-          <Form />
-        </div>
+        <Form />
+      </div>
     )
   }
 

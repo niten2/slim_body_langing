@@ -4,7 +4,7 @@ import { UIStore } from 'stores'
 
 import Answers from './answers'
 import Offer from './offer'
-import "./index.scss"
+// import "./index.scss"
 
 export default observer(class Test extends Component {
 
@@ -12,8 +12,11 @@ export default observer(class Test extends Component {
     let { question } = UIStore
 
     return (
-      <div className="text-center">
-        <h2 className="question"> { question.question } </h2>
+      <div>
+        <h3>
+          { question.question }
+        </h3>
+
         <Answers question={question} />
       </div>
     )
@@ -23,40 +26,41 @@ export default observer(class Test extends Component {
     let { isShowOffer, discount } = UIStore
 
     return (
-      <div className="container test">
-        <div className="row">
+      <section id="one" className="wrapper special">
+        <div className="inner alt">
+          <h2>
+            Пройдите тест и получите персональное специальное предложение
+          </h2>
 
-          <div className="col-12 text-center">
-            <h1>
-              Пройдите тест и получите персональное специальное предложение
-            </h1>
+          <div>
+            { isShowOffer ? <Offer /> : this.renderAnswers() }
           </div>
+        </div>
 
-          <div className="col-12 custom-card">
-              { isShowOffer ? <Offer /> : this.renderAnswers() }
-          </div>
+        <div>
+          <ul className="actions">
+            <li>
+              <div onClick={ UIStore.firstQuestion } className="pointer comments">
+                Начать заново
+              </div>
+            </li>
 
-          <div className="col-12 text-center test-footer">
-            <div onClick={ UIStore.firstQuestion } className="pointer comments">
-              Начать заново
-            </div>
-
-            &nbsp;
-            &nbsp;
-            &nbsp;
-
-            <div className="comments">
+            <li>
               Ваша скидка
               &nbsp;
+            </li>
+
+            <li>
               <div className="color-red">{ discount } </div>
+            </li>
+
+            <li>
               &nbsp;
               руб.
-            </div>
-
-          </div>
-
+            </li>
+          </ul>
         </div>
-      </div>
+      </section>
     )
   }
 

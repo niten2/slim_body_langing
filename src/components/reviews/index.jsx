@@ -1,31 +1,27 @@
 import React, { Component } from 'react'
 import ImageGallery from 'react-image-gallery'
 import images from "./images"
-import "./index.scss"
+import "react-image-gallery/styles/css/image-gallery.css"
+import "./index.css"
 
-export default class Contacts extends Component {
-
+export default class Reviews extends Component {
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col reviews">
-            <h1> Отзывы </h1>
+      <div className="style2 wrapper reviews">
 
-            <ImageGallery
-              ref={i => this._imageGallery = i}
-              items={images}
-              slideInterval={4000}
-              autoPlay={false}
-              showThumbnails={false}
-              showFullscreenButton={false}
-            />
+        <header>
+          <ImageGallery
+            ref={i => this._imageGallery = i}
+            items={images}
+            slideInterval={4000}
+            autoPlay={true}
+            showPlayButton={false}
+            showThumbnails={false}
+            showFullscreenButton={false}
+          />
+        </header>
 
-          </div>
-        </div>
       </div>
     )
   }
-
 }
-

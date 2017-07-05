@@ -9,30 +9,31 @@ export default observer(class Answers extends Component {
     let { question } = UIStore
 
     return  (
-      <div className="row answers">
-
-        <div className="col-12 align-self-center answer-block">
-          { question.answers.map((answer, index) =>
-              <Answer
-                key={index}
-                answerId={answer.id}
-                questionId={question.id}
-              />
-            )
-          }
-        </div>
-
-        <div className="col-12 align-self-end answer-btn">
-          <button
-            className="btn btn-primary btn-lg raised"
-            onClick={ UIStore.nextQuestion }
-          >
-            Ответить
-          </button>
-        </div>
-
-
+      <div>
+      <div className="">
+        <ul className="actions">
+          <li>
+            { question.answers.map((answer, index) =>
+                <Answer
+                  key={index}
+                  answerId={answer.id}
+                  questionId={question.id}
+                />
+              )
+            }
+          </li>
+        </ul>
       </div>
+
+      <ul className="special major actions">
+        <li>
+          <a
+            className="button special icon scrolly"
+            onClick={ UIStore.nextQuestion }
+          >Ответить</a>
+        </li>
+      </ul>
+    </div>
     )
   }
 

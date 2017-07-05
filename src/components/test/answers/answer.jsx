@@ -24,29 +24,22 @@ export default observer(class Answer extends Component {
     let answer = this.getAnswer()
 
     return  (
-      <div className="row answer">
-        <div className="checkbox col-12 offset-sm-4 col-sm-4 align-self-center text-left">
-          <div className="col">
-
-            <div className="checkbox text-center">
-              <input
-                type="checkbox"
-                name="check"
-                checked={answer.checked}
-                onChange={this.handleInput}
-              />
-            </div>
-
-            &nbsp;
-
-            <div className="body text-center">
-              { answer.body }
-            </div>
-
-          </div>
-        </div>
+      <div>
+        <input
+          name="check"
+          type="radio"
+          id="demo-priority-high"
+          checked={answer.checked}
+          onChange={this.handleInput}
+        />
+        <label>{ answer.body }</label>
       </div>
     )
   }
 
 })
+            // &nbsp;
+
+            // <div className="body text-center">
+            //   { answer.body }
+            // </div>

@@ -39,7 +39,11 @@ export default class Footer extends Component {
 
   renderError() {
     return (
-      <div className="error">Необходимо заполнить поля Имя и Телефон</div>
+      <ul className="actions">
+        <li>
+          Необходимо заполнить поля Имя и Телефон
+        </li>
+      </ul>
     )
   }
 
@@ -59,28 +63,41 @@ export default class Footer extends Component {
   renderForm() {
     let { phone, error } = this.state
     return (
-      <div className="col col-sm-6">
-        <h2>
-          Оставьте заявку на бесплатное посещение.
-        </h2>
+      <div>
 
-        <input
-          name="phone"
-          onChange={this.handeInput}
-          placeholder="Ваш Телефон или Email*"
-          className="form-control input"
-          value={phone}
-        />
+        <header class="major">
+          <h2>
+            Оставьте заявку на бесплатное посещение.
+          </h2>
+        </header>
+
+        <ul className="actions">
+          <li>
+            <input
+              name="phone"
+              onChange={this.handeInput}
+              placeholder="Ваш Телефон или Email*"
+              className="form-control input"
+              value={phone}
+              type="text"
+            />
+          </li>
+        </ul>
 
         { error ? this.renderError() : null }
 
-        <button
-          className="btn btn-primary btn-lg raised"
-          onClick={this.handeSendEmail}
-        >
-          Оставить заявку
-        </button>
-      </div>
+        <ul className="actions">
+          <li>
+            <a
+              className="button special"
+              onClick={this.handeSendEmail}
+            >
+              Оставить заявку
+            </a>
+          </li>
+        </ul>
+
+    </div>
     )
   }
 
@@ -88,11 +105,29 @@ export default class Footer extends Component {
     let { isSendEmail } = this.state
 
     return (
-      <div className="container">
-        <div className="footer row align-items-center justify-content-center text-center">
-          { isSendEmail ? this.renderOk() : this.renderForm() }
-        </div>
-      </div>
+			<footer id="footer">
+        { isSendEmail ? this.renderOk() : this.renderForm() }
+
+				<ul className="icons">
+          <li>
+            <a rel="noopener noreferrer" target="_blank" href="https://vk.com/slim_body_krsk" className="icon fa-vk">
+              <span class="label">
+                &nbsp;
+                VK
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/slim_body_krsk/" className="icon fa-instagram">
+              <span class="label">
+                &nbsp;
+                Instagram
+              </span>
+            </a>
+          </li>
+				</ul>
+			</footer>
     )
   }
 

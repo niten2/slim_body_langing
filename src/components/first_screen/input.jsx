@@ -58,23 +58,35 @@ export default class Form extends Component {
     let { phone, error } = this.state
     return (
       <div>
-        <input
-          name="phone"
-          onChange={this.handeInput}
-          placeholder="Ваш Телефон или Email*"
-          className="form-control"
-          value={phone}
-        />
-        <br />
 
-        { error ? this.renderError() : null }
+        <ul className="actions">
+          <li>
+            <input
+              name="phone"
+              onChange={this.handeInput}
+              placeholder="Ваш Телефон или Email*"
+              type="text"
+              value={phone}
+            />
+          </li>
 
-        <button
-          className="btn btn-primary raised btn-block"
-          onClick={this.handeSendEmail}
-        >
-          Оставить заявку
-        </button>
+
+          <li>
+            <a
+              className="button icon fa-reply-all scrolly"
+              onClick={this.handeSendEmail}
+            >
+              Оставить заявку
+            </a>
+          </li>
+        </ul>
+
+        <ul className="actions">
+          <li>
+            { error ? this.renderError() : null }
+          </li>
+        </ul>
+
       </div>
     )
   }
@@ -87,22 +99,22 @@ export default class Form extends Component {
       return (
         <div>
           <h1>
-            Уменьшим обьемы тела на 3 - 5 сантиметров за 10 посещений с помощью массажей и аппаратного похудения.
+            Уменьшим обьемы тела на 3 - 5 сантиметров
           </h1>
 
           <h2>
-            Получите бесплатную процедуру.
-          </h2>
-          <h2>
-            ул. Краснодарская 35.
+            за 10 посещений с помощью массажей и аппаратного похудения.
           </h2>
 
-          <div className="row justify-content-center">
-            { this.renderForm() }
-          </div>
+          <p>
+            ул. Краснодарская 35.
+          </p>
+
+          { this.renderForm() }
         </div>
       )
     }
   }
 
 }
+

@@ -1,0 +1,24 @@
+.reviews button, .button {
+  box-shadow: inset 0 0 0 0px #e6e6e6 !important;
+  -webkit-box-shadow: inset 0 0 0 0px #e6e6e6 !important;
+}
+
+@media (min-width: 575px) {
+  .image-gallery {
+    margin: auto;
+    display: block;
+    width: 20%;
+    height: 20%;
+  }
+}
+
+@media (max-width: 576px) {
+  img {
+    height: 50%;
+  }
+
+  .image-gallery {
+    display: block;
+    width: 100%;
+  }
+}
