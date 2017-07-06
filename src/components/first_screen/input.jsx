@@ -44,12 +44,13 @@ export default class Form extends Component {
 
   renderOk() {
     initWidjet("vk-group-first-screen")
+
     return (
       <div>
         <h1> Спасибо за вашу заявку. </h1>
         <h3> Мы скоро с вами свяжемся. </h3>
         <h4> Что бы быть в курсе акций и скидок вы можете подписаться на нашу группу: </h4>
-        <div id="vk-group-first-screen" />
+        <div className="major" id="vk-group-first-screen" />
       </div>
     )
   }
