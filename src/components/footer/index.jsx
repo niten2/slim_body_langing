@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import sendEmail from 'lib/email'
 import { initWidjet } from 'lib/vk_widjet'
-import "./index.scss"
 
 export default class Footer extends Component {
 
@@ -65,7 +64,7 @@ export default class Footer extends Component {
     return (
       <div>
 
-        <header class="major">
+        <header className="major">
           <h2>
             Оставьте заявку на бесплатное посещение.
           </h2>
@@ -111,7 +110,7 @@ export default class Footer extends Component {
 				<ul className="icons">
           <li>
             <a rel="noopener noreferrer" target="_blank" href="https://vk.com/slim_body_krsk" className="icon fa-vk">
-              <span class="label">
+              <span className="label">
                 &nbsp;
                 VK
               </span>
@@ -120,7 +119,7 @@ export default class Footer extends Component {
 
           <li>
             <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/slim_body_krsk/" className="icon fa-instagram">
-              <span class="label">
+              <span className="label">
                 &nbsp;
                 Instagram
               </span>

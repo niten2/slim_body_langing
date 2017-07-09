@@ -33,7 +33,7 @@ export default observer(class Test extends Component {
           </h2>
 
           <div>
-            { true ? <Offer /> : this.renderAnswers() }
+            { isShowOffer ? <Offer /> : this.renderAnswers() }
           </div>
         </div>
 
