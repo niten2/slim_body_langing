@@ -1,8 +1,15 @@
 import React, { Component } from 'react'
 import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
+import styled from "styled-components"
 import find from "lodash/find"
 
+const AnswerDiv = styled.p`
+  float: left;
+  position: relative;
+  clear: both;
+  margin: 0px;
+`
 export default observer(class Answer extends Component {
 
   getAnswer() {
@@ -12,7 +19,7 @@ export default observer(class Answer extends Component {
     return answer
   }
 
-  handleInput = () => {
+  handleCheck = () => {
     let { questionId } = this.props
     let { answerId } = this.props
     let question = find(UIStore.questions, (obj) => { return obj.id === questionId })
@@ -24,22 +31,17 @@ export default observer(class Answer extends Component {
     let answer = this.getAnswer()
 
     return  (
-      <div>
+      <AnswerDiv
+        onClick={this.handleCheck}
+      >
         <input
           name="check"
-          type="radio"
-          id="demo-priority-high"
+          type="checkbox"
           checked={answer.checked}
-          onChange={this.handleInput}
         />
         <label>{ answer.body }</label>
-      </div>
+      </AnswerDiv>
     )
   }
 
 })
-            // &nbsp;
-
-            // <div className="body text-center">
-            //   { answer.body }
-            // </div>

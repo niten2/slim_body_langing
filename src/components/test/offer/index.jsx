@@ -2,14 +2,11 @@ import React, { Component } from 'react'
 import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
 import { initWidjet } from 'lib/vk_widjet'
+import { MarginAuto } from "assets/styled"
 
 import Form from './form'
 
 export default observer(class Offer extends Component {
-
-  handleReturnOffer() {
-    UIStore.returnOffer()
-  }
 
   renderOk() {
     initWidjet("vk-group-test")
@@ -21,7 +18,9 @@ export default observer(class Offer extends Component {
           <h4> И уже почти отправили администратора составлять для вас комплекс процедур. </h4>
           <h4> Скоро мы с вами свяжемся. </h4>
           <h4> Что бы быть в курсе акций и скидок вы можете подписаться на нашу группу: </h4>
-          <div id="vk-group-test" />
+          <br />
+            <MarginAuto id="vk-group-test" />
+          <br />
         </div>
       </div>
     )
@@ -49,7 +48,7 @@ export default observer(class Offer extends Component {
     let { isSendOffer } = UIStore
 
     return  (
-      <div className="offer row text-center">
+      <div>
         { isSendOffer ? this.renderOk() : this.renderOffer() }
       </div>
     )

@@ -1,4 +1,4 @@
-let questions = [
+export let questions = [
 
   {
     id: 1,
@@ -144,7 +144,7 @@ let questions = [
       },
       {
         id: 6,
-        body: "массаж шейно-воротниковой зоны",
+        body: "шейно-воротниковая зона",
         checked: false,
       },
       {
@@ -252,14 +252,10 @@ let questions = [
       },
       {
         id: 8,
-        body: "я хочу взять в рассрочку эту сумму",
+        body: "я хочу рассрочку",
         checked: false,
       },
     ]
   },
 
 ]
-
-export {
-  questions
-}

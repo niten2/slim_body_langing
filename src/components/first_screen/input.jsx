@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import sendEmail from 'lib/email'
 import { initWidjet } from 'lib/vk_widjet'
+import { Red } from "assets/styled"
 
 export default class Form extends Component {
 
@@ -38,7 +39,7 @@ export default class Form extends Component {
 
   renderError() {
     return (
-      <div className="text-danger">Необходимо заполнить полe</div>
+      <Red>Необходимо заполнить полe</Red>
     )
   }
 

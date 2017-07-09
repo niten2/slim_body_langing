@@ -3,6 +3,7 @@ import { observer} from 'mobx-react'
 import { toJS } from "mobx"
 import { UIStore } from 'stores'
 import sendEmail from "lib/email"
+import { Red } from "assets/styled"
 
 export default observer(class Form extends Component {
 
@@ -36,7 +37,7 @@ export default observer(class Form extends Component {
   renderError() {
     return (
       <li>
-        <div className="text-danger">Необходимо заполнить полe</div>
+        <Red>Необходимо заполнить полe</Red>
       </li>
     )
   }
@@ -63,7 +64,9 @@ export default observer(class Form extends Component {
               className="button special"
               onClick={this.handeSendEmail}
             >
+              &nbsp;
               Получить
+              &nbsp;
             </a>
           </li>
         </ul>

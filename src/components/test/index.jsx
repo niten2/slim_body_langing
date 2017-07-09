@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
+import { Red, StartAfresh } from "assets/styled"
 
 import Answers from './answers'
 import Offer from './offer'
-// import "./index.scss"
 
 export default observer(class Test extends Component {
 
@@ -33,31 +33,26 @@ export default observer(class Test extends Component {
           </h2>
 
           <div>
-            { isShowOffer ? <Offer /> : this.renderAnswers() }
+            { true ? <Offer /> : this.renderAnswers() }
           </div>
         </div>
 
         <div>
           <ul className="actions">
             <li>
-              <div onClick={ UIStore.firstQuestion } className="pointer comments">
+              <StartAfresh onClick={ UIStore.firstQuestion }>
                 Начать заново
-              </div>
+              </StartAfresh>
             </li>
 
             <li>
-              Ваша скидка
-              &nbsp;
+                Ваша скидка
+                &nbsp;
+                <Red>{ discount } </Red>
+                &nbsp;
+                руб.
             </li>
 
-            <li>
-              <div className="color-red">{ discount } </div>
-            </li>
-
-            <li>
-              &nbsp;
-              руб.
-            </li>
           </ul>
         </div>
       </section>
