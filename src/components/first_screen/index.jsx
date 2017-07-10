@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import sendEmail from 'lib/email'
 import { initWidjet } from 'lib/vk_widjet'
-import { Center, Red } from "assets/styled"
+import { Center } from "assets/styled"
 
 export default class Form extends Component {
 
@@ -39,7 +39,7 @@ export default class Form extends Component {
 
   renderError() {
     return (
-      <Red>Необходимо заполнить полe</Red>
+      <div>Необходимо заполнить полe</div>
     )
   }
 
@@ -79,7 +79,7 @@ export default class Form extends Component {
 
           <li>
             <a
-              className="button icon fa-reply-all scrolly"
+              className="button special"
               onClick={this.handeSendEmail}
             >
               Оставить заявку
