@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import sendEmail from 'lib/email'
 import { initWidjet } from 'lib/vk_widjet'
-import { Red } from "assets/styled"
+import { Center, Red } from "assets/styled"
 
 export default class Form extends Component {
 
@@ -52,7 +52,9 @@ export default class Form extends Component {
           <h1> Спасибо за вашу заявку. </h1>
           <h3> Мы скоро с вами свяжемся. </h3>
           <h4> Что бы быть в курсе акций и скидок вы можете подписаться на нашу группу: </h4>
-          <div className="major" id="vk-group-first-screen" />
+          <br />
+          <Center id="vk-group-first-screen" />
+          <br />
         </div>
       </header>
     )

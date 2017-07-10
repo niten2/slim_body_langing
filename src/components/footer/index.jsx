@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import sendEmail from 'lib/email'
 import { initWidjet } from 'lib/vk_widjet'
+import { Center } from "assets/styled"
 
 export default class Footer extends Component {
 
@@ -50,11 +51,13 @@ export default class Footer extends Component {
     initWidjet("vk-group-footer")
 
     return (
-      <div className="col">
+      <div>
         <h1> Спасибо за вашу заявку. </h1>
         <h3> Мы скоро с вами свяжемся. </h3>
         <h4> Что бы быть в курсе акций и скидок вы можете подписаться на нашу группу: </h4>
-        <div id="vk-group-footer" />
+        <br />
+        <Center id="vk-group-footer" />
+        <br />
       </div>
     )
   }

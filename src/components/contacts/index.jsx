@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import setting from "lib/setting"
 
 export default class Contacts extends Component {
+
   componentDidMount() {
-    if (!setting.dev) {
+    if (setting.prod) {
       const script = document.createElement("script")
       script.src = "https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=wG6Fe7o8YH3RQ8vsuFDXimjPPmOgYFYZ&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"
       script.async = true

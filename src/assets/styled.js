@@ -1,3 +1,4 @@
+// import { Center } from "assets/styled"
 import styled from "styled-components"
 
 export const StartAfresh = styled.span`
@@ -7,6 +8,6 @@ export const StartAfresh = styled.span`
 export const Red = styled.span`
   color: red;
 `
-export const MarginAuto = styled.div`
+export const Center = styled.div`
   margin: auto;
 `

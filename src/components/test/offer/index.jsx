@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { observer } from 'mobx-react'
 import { UIStore } from 'stores'
 import { initWidjet } from 'lib/vk_widjet'
-import { MarginAuto } from "assets/styled"
+import { Center } from "assets/styled"
 
 import Form from './form'
 
@@ -19,7 +19,7 @@ export default observer(class Offer extends Component {
           <h4> Скоро мы с вами свяжемся. </h4>
           <h4> Что бы быть в курсе акций и скидок вы можете подписаться на нашу группу: </h4>
           <br />
-            <MarginAuto id="vk-group-test" />
+          <Center id="vk-group-test" />
           <br />
         </div>
       </div>

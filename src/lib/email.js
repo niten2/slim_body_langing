@@ -5,7 +5,7 @@ import setting from "lib/setting"
 export default function(options = {}) {
   let { phone, questions, place } = options
 
-  if (!setting.dev) {
+  if (setting.prod) {
     scriptjs('//cdn.emailjs.com/dist/email.min.js', () => {
       window.emailjs.init(setting.email_js_key)
       window.emailjs.send(
