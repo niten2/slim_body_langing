@@ -2,6 +2,7 @@
   "name": "slim_body",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://niten2.github.io/slim_body_langing",
   "dependencies": {
     "emailjs": "1.0.10",
     "gh-pages": "1.0.0",
