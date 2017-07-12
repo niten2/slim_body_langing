@@ -47,7 +47,7 @@ export default observer(class Form extends Component {
 
     return (
       <div>
-        <ul className="icons">
+        <ul className="actions">
           <li>
             <input
               name="phone"

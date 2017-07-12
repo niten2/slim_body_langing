@@ -18,7 +18,7 @@ export default class Contacts extends Component {
 				<header className="major">
 					<h2>Контакты</h2>
           <p>
-            Тел. <strong>8-913-830-2357</strong>
+            Тел. <strong>8-913-830-23-57</strong>
             <br />
             г. Красноярск <strong>ул. Краснодарская, 35</strong>
             <br />

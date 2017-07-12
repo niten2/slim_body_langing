@@ -1,5 +1,9 @@
 @import url(font-awesome.min.css);
 
+body {
+  font-family: 'Zilla Slab', serif !important;
+}
+
 .padding-left {
   /* margin: auto; */
   /* text-align: center; */
