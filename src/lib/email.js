@@ -6,7 +6,7 @@ import { parseTest } from "lib/parse_test"
 export default function(options = {}) {
   let { phone, questions, place } = options
 
-  if (!setting.prod) {
+  if (setting.prod) {
     scriptjs('//cdn.emailjs.com/dist/email.min.js', () => {
       window.emailjs.init(setting.email_js_key)
       window.emailjs.send(
