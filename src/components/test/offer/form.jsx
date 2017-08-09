@@ -19,7 +19,7 @@ export default observer(class Form extends Component {
 
   handeSendEmail = () => {
     let { phone } = UIStore.user
-    let questions  = JSON.stringify(toJS(UIStore.questions.slice()))
+    let questions = toJS(UIStore.questions.slice())
 
     if (phone === "") {
       this.setState({ error: true })
@@ -27,7 +27,7 @@ export default observer(class Form extends Component {
       sendEmail({
         phone: phone,
         questions: questions,
-        place: "test",
+        place: "Тест",
       })
       this.setState({ error: false })
       UIStore.sendOffer()

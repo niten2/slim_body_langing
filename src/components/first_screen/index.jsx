@@ -31,7 +31,7 @@ export default class Form extends Component {
     } else {
       sendEmail({
         phone: phone,
-        place: "first screen"
+        place: "Первый экран"
       })
       this.setState({ error: false, isSendEmail: true })
     }

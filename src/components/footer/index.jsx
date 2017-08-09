@@ -30,7 +30,7 @@ export default class Footer extends Component {
     } else {
       sendEmail({
         phone: phone,
-        place: "footer"
+        place: "Самый низ лендинга"
       })
       this.setState({ error: false, isSendEmail: true })
     }
