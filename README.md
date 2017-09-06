@@ -2,7 +2,7 @@ Slim Body Landing
 
 http://slim-body-krsk.ru/
 
-#Featured
+# Featured
 
   1. send email
   2. passing the test
@@ -10,10 +10,10 @@ http://slim-body-krsk.ru/
 
 ----
 
-#Setup
+# Setup
 npm install
+npm start
 
-
-#Deploy on gp-pages
+# Deploy on gp-pages
 
 npm run deploy
