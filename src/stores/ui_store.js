@@ -1,11 +1,9 @@
-// // import { UIStore } from 'stores'
-import { extendObservable } from 'mobx'
-
 import bindAll from 'lodash/bindAll'
 import find from "lodash/find"
 import isObject from "lodash/isObject"
-
+import { extendObservable } from 'mobx'
 import { autorun } from 'mobx'
+
 import { questions } from 'components/test/data/questions'
 
 let UIStore  = {
@@ -13,7 +11,7 @@ let UIStore  = {
 }
 
 extendObservable(UIStore, {
-  // questions
+  // NOTE questions
   isLastQuestion: false,
   isShowOffer: false,
   discount: 0,
@@ -24,7 +22,7 @@ extendObservable(UIStore, {
     phone: "",
   },
 
-  // modals
+  // NOTE modals
   modalForm: false,
   titleModalForm: "",
   buttonModalForm: "",
@@ -32,8 +30,7 @@ extendObservable(UIStore, {
 })
 
 Object.assign(UIStore, {
-
-  // questions
+  // NOTE questions
   firstQuestion() {
     autorun(() => {
       this.question = this.questions[0]
@@ -77,22 +74,6 @@ Object.assign(UIStore, {
   returnOffer() {
     this.isSendOffer = false
   },
-
-  // // modals
-  // showModalForm(options) {
-  //   let { title, button } = options
-
-  //   autorun(() => {
-  //     this.modalForm = true
-  //     this.titleModalForm = title
-  //     this.buttonModalForm = button
-  //   })
-  // },
-
-  // hideModalForm() {
-  //   this.modalForm = false
-  // },
-
 })
 
 export default bindAll(UIStore, [
@@ -100,6 +81,4 @@ export default bindAll(UIStore, [
   "nextQuestion",
   "sendOffer",
   "returnOffer",
-  // "showModalForm",
-  // "hideModalForm",
 ])

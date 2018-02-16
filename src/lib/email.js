@@ -1,4 +1,3 @@
-// import sendEmail from "lib/email"
 import scriptjs from "scriptjs"
 import setting from "lib/setting"
 import { parseTest } from "lib/parse_test"

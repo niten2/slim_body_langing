@@ -1,4 +1,3 @@
-// import { Center } from "assets/styled"
 import styled from "styled-components"
 
 export const StartAfresh = styled.span`

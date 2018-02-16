@@ -1,11 +1,9 @@
-language: node_js
-cache: yarn
-node_js:
-  - "7"
-  - "6"
-  - "5"
-  - "4"
-script: yarn run test:CI
-after_success:
-  # Send coverage data to coveralls.
-  - yarn run test:cover:CI
+language: "node_js"
+node_js: "8.8.1"
+script: [
+  "npm run tests"
+]
+notifications:
+  email:
+    on_success: "never"
+    on_failure: "never"
