@@ -1,21 +1,19 @@
 # Slim Body Landing
----
 
-# Featured
+## Featured
 ----
 
 1. send email
 2. passing the test
 3. deploy gp-pages
 
-
-# Setup
+## Setup
 ----
 
-npm install
-npm start
+- npm install
+- npm start
 
-# Deploy on gp-pages
+## Deploy on gp-pages
 ----
 
-npm run deploy
+- npm run deploy
